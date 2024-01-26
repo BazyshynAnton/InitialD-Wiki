@@ -122,3 +122,17 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+body {
+  background-color: #000;
+}
+
+@font-face {
+  font-family: 'Contrail-One';
+  src: url(/fonts/ContrailOne-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Big-Shoulders-Stencil-Display';
+  src: url(/fonts/BigShouldersStencilDisplay-VariableFont_wght.ttf);
+}

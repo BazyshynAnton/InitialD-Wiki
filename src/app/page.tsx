@@ -1,7 +1,7 @@
-import Image from 'next/image'
+import HomePage from '@/components/homePage/HomePage'
 
 const Home = () => {
-  return <main></main>
+  return <HomePage />
 }
 
 export default Home
