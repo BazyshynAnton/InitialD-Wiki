@@ -1,12 +1,39 @@
 .containerOfIntroduce {
+  position: relative;
   display: grid;
   grid-template-columns: 21rem 1fr;
   grid-template-rows: max-content max-content max-content 1fr;
   img {
-    object-fit: cover;
+    object-fit: contain;
     max-width: 100%;
     width: 100%;
     height: auto;
+  }
+
+  .mainImgContainer {
+    position: relative;
+    img {
+      object-fit: cover;
+      max-width: 100%;
+      width: 100%;
+      height: 100%;
+    }
+    .introTextImage {
+      position: absolute;
+      top: 44%;
+      left: 14%;
+      width: 70%;
+      filter: drop-shadow(0.2rem 0.2rem 0 rgba(255, 255, 255, 0.6));
+
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        mask-image: url(/pictures/mask2.png);
+        mask-size: 70% auto;
+      }
+    }
+    z-index: -1;
   }
 }
 
@@ -16,7 +43,7 @@
   display: flex;
   padding: 40px 0px 0px 0px;
   flex-direction: column;
-  background-image: url(/navbarBg.webp);
+  background-image: url(/pictures/navbarBg.webp);
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -63,7 +90,7 @@
       left: 39%;
       width: 100px;
       height: 100px;
-      mask-image: url(/iconPlay.svg);
+      mask-image: url(/pictures/iconPlay.svg);
       mask-repeat: no-repeat;
       background-color: #fff;
       transition: all 0.3s ease-in-out;
@@ -83,7 +110,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     content: '';
-    background-image: url(/movie_bg.webp);
+    background-image: url(/pictures/movie_bg.webp);
 
     z-index: -1;
   }
@@ -101,7 +128,7 @@
     content: '';
     width: 100%;
     height: 100%;
-    background-image: url(/textureStone.webp);
+    background-image: url(/pictures/textureStone.webp);
     position: absolute;
     top: 0;
     left: 0;
@@ -121,7 +148,7 @@
     top: 18%;
     left: 0;
     background-color: #a52110;
-    mask-image: url(/maskBg.webp);
+    mask-image: url(/pictures/maskBg.webp);
     mask-size: 100% 100%;
     mask-repeat: no-repeat;
     rotate: 180deg;
@@ -134,9 +161,27 @@
     bottom: -99%;
     left: 0;
     background-color: #a52110;
-    mask-image: url(/maskBg.webp);
+    mask-image: url(/pictures/maskBg.webp);
     mask-size: 100% auto;
     mask-repeat: no-repeat;
+  }
+
+  .watchNowContainer {
+    position: relative;
+    max-width: 1463px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px;
+    z-index: 10;
+    h2 {
+      font-family: 'Big-Shoulders-Stencil-Display';
+      font-weight: 700;
+      font-size: 10rem;
+      font-style: italic;
+      &:last-of-type {
+        color: #c23220;
+      }
+    }
   }
 }
 
@@ -166,14 +211,14 @@
 
 // header
 
-.headerContainer {
+.footerContainer {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
   height: 500px;
   z-index: 12;
-  background-image: url(/footer_bg.webp);
+  background-image: url(/pictures/footer_bg.webp);
   background-repeat: no-repeat;
   background-size: cover;
 

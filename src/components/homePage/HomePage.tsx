@@ -1,5 +1,4 @@
 import { Image } from '../shared/nextjsImports'
-import Header from './contentOfHomePage/Header'
 import NavigationBar from './contentOfHomePage/NavigationBar'
 import UnderIntro from './contentOfHomePage/UnderIntro'
 
@@ -10,14 +9,22 @@ const HomePage = () => {
     <main>
       <section className={styles.containerOfIntroduce}>
         <NavigationBar />
-
-        <Image
-          priority={true}
-          width={2000}
-          height={3000}
-          src="/prev.jpg"
-          alt="poster"
-        />
+        <div className={styles.mainImgContainer}>
+          <Image
+            width={2000}
+            height={3000}
+            src="/pictures/prev.jpg"
+            alt="poster"
+          />
+          <div className={styles.introTextImage}>
+            <Image
+              width={500}
+              height={500}
+              src="/pictures/introImgText.png"
+              alt="poster"
+            />
+          </div>
+        </div>
       </section>
       <UnderIntro />
     </main>

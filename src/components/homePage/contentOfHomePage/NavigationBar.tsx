@@ -4,7 +4,7 @@ import styles from '../HomePage.module.scss'
 const NavigationBar = () => {
   return (
     <div className={styles.navigationBarContainer}>
-      <Image width={500} height={500} src="/logoD.webp" alt="logoD" />
+      <Image width={500} height={500} src="/pictures/logoD.webp" alt="logoD" />
       <ul>
         <li>Introduction</li>
         <li>Character</li>
@@ -15,7 +15,12 @@ const NavigationBar = () => {
       </ul>
       <section className={styles.videoAd}>
         <div>
-          <Image width={500} height={500} src="/videoPreview.png" alt="logoD" />
+          <Image
+            width={500}
+            height={500}
+            src="/pictures/videoPreview.png"
+            alt="logoD"
+          />
         </div>
       </section>
     </div>
