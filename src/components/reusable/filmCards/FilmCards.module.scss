@@ -1,0 +1,10 @@
+.imageContainer {
+  cursor: pointer;
+  border: 2px solid #fff;
+  width: 360px;
+  height: 460px;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    scale: 1.05;
+  }
+}

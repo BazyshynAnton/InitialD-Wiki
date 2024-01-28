@@ -4,7 +4,13 @@ import styles from '../HomePage.module.scss'
 const NavigationBar = () => {
   return (
     <div className={styles.navigationBarContainer}>
-      <Image width={500} height={500} src="/pictures/logoD.webp" alt="logoD" />
+      <Image
+        width={500}
+        height={500}
+        src="/pictures/logoD.webp"
+        alt="logoD"
+        className={styles.logoD}
+      />
       <ul>
         <li>Introduction</li>
         <li>Character</li>

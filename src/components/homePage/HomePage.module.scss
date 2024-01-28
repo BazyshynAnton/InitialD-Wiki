@@ -29,7 +29,7 @@
         width: 100%;
         height: auto;
         object-fit: contain;
-        mask-image: url(/pictures/mask2.png);
+        mask-image: url(/pictures/maskForIntroText.png);
         mask-size: 70% auto;
       }
     }
@@ -47,6 +47,11 @@
   background-repeat: no-repeat;
   background-size: cover;
 
+  .logoD {
+    mask-image: url(/pictures/maskForIntroText.png);
+    mask-size: 60% auto;
+  }
+
   ul {
     display: inline-flex;
     flex-direction: column;
@@ -54,7 +59,7 @@
 
     li {
       width: max-content;
-      color: #a52110;
+      color: #c23220;
       font-size: 2rem;
       text-transform: uppercase;
       margin-bottom: 20px;
@@ -110,7 +115,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     content: '';
-    background-image: url(/pictures/movie_bg.webp);
+    background-image: url(/pictures/movieBg.webp);
 
     z-index: -1;
   }
@@ -145,7 +150,7 @@
     width: 100%;
     min-height: 100%;
     position: absolute;
-    top: 18%;
+    top: 30%;
     left: 0;
     background-color: #a52110;
     mask-image: url(/pictures/maskBg.webp);
@@ -153,12 +158,13 @@
     mask-repeat: no-repeat;
     rotate: 180deg;
   }
+
   &:before {
     content: '';
     width: 100%;
     height: 100%;
     position: absolute;
-    bottom: -99%;
+    bottom: -110%;
     left: 0;
     background-color: #a52110;
     mask-image: url(/pictures/maskBg.webp);
@@ -169,18 +175,75 @@
   .watchNowContainer {
     position: relative;
     max-width: 1463px;
-    width: 100%;
+    height: 800px;
     margin: 0 auto;
-    padding: 40px;
+    padding: 0 40px;
     z-index: 10;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     h2 {
       font-family: 'Big-Shoulders-Stencil-Display';
       font-weight: 700;
       font-size: 10rem;
       font-style: italic;
-      &:last-of-type {
-        color: #c23220;
-      }
+    }
+  }
+
+  .playLinkToMovies {
+    cursor: pointer;
+    width: 150px;
+    height: 150px;
+    mask-image: url(/pictures/iconPlay.svg);
+    mask-repeat: no-repeat;
+    background: linear-gradient(to bottom, #c23220 40%, #000 100%);
+    transition: all 0.4s ease-in-out;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #000;
+      opacity: 0;
+      transition: opacity 0.4s ease-in-out;
+    }
+
+    &:hover:before {
+      opacity: 1;
+    }
+  }
+
+  .watchPlusMovieContainer {
+    filter: drop-shadow(0.2rem 0.2rem 0 rgba(136, 136, 136, 0.2));
+    position: absolute;
+    top: 5rem;
+    left: 20%;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h2 {
+      color: #000;
+    }
+  }
+  .nowPlusMovieContainer {
+    filter: drop-shadow(0.2rem 0.2rem 0 rgba(136, 136, 136, 0.2));
+    position: absolute;
+    top: 5rem;
+    right: 20%;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    h2 {
+      color: #c23220;
     }
   }
 }
@@ -209,7 +272,7 @@
   }
 }
 
-// header
+// footer
 
 .footerContainer {
   position: absolute;
@@ -218,7 +281,7 @@
   width: 100%;
   height: 500px;
   z-index: 12;
-  background-image: url(/pictures/footer_bg.webp);
+  background-image: url(/pictures/footerBg.webp);
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -246,5 +309,40 @@
       #000 29px
     );
     transform: skewY(-5deg);
+  }
+}
+
+.footerContent {
+  margin-top: 4rem;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .footerLogoD {
+    width: 300px;
+    height: 100px;
+    mask-image: url(/pictures/maskForIntroText.png);
+    mask-size: 60% auto;
+  }
+
+  .televisionLinks {
+    margin-top: 4rem;
+    display: flex;
+    gap: 1rem;
+    img {
+      width: 200px;
+      height: 50px;
+    }
+  }
+
+  h5 {
+    margin-top: 2rem;
+    color: #aaaaaa;
   }
 }

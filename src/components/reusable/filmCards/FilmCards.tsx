@@ -4,21 +4,17 @@ import styles from './FilmCards.module.scss'
 
 interface Prop {
   img: string
-  text: string
-  price: string
 }
 
-const FilmCards = ({ img, text, price }: Prop) => {
+const FilmCards = ({ img }: Prop) => {
   return (
-    <div>
-      <div>
-        <Image width={500} height={500} src={img} alt="film" />
-      </div>
-      <div>
-        <h3>{text}</h3>
-        <p>{price}</p>
-      </div>
-    </div>
+    <Image
+      width={500}
+      height={500}
+      src={img}
+      alt="film"
+      className={styles.imageContainer}
+    />
   )
 }
 

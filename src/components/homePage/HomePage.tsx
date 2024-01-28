@@ -13,7 +13,7 @@ const HomePage = () => {
           <Image
             width={2000}
             height={3000}
-            src="/pictures/prev.jpg"
+            src="/pictures/previewPicture.jpg"
             alt="poster"
           />
           <div className={styles.introTextImage}>
