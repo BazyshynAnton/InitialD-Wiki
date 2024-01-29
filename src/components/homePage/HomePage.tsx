@@ -15,6 +15,7 @@ const HomePage = () => {
             height={3000}
             src="/pictures/previewPicture.jpg"
             alt="poster"
+            priority={true}
           />
           <div className={styles.introTextImage}>
             <Image

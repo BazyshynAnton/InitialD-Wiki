@@ -8,3 +8,17 @@
     scale: 1.05;
   }
 }
+
+@media (max-width: 1160px) {
+  .imageContainer {
+    width: 260px;
+    height: 360px;
+  }
+}
+
+@media (max-width: 650px) {
+  .imageContainer {
+    width: 160px;
+    height: 240px;
+  }
+}
