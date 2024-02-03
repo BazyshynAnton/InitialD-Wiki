@@ -14,6 +14,7 @@ const FilmCards = ({ img }: Prop) => {
       src={img}
       alt="film"
       className={styles.imageContainer}
+      priority={true}
     />
   )
 }

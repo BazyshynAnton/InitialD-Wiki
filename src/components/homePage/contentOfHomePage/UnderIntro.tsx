@@ -8,9 +8,13 @@ import FilmCards from '@/components/reusable/filmCards/FilmCards'
 
 const UnderIntro = () => {
   // Hydration
-  const [isDesktop, setIsDesktop] = useState<boolean | null>(
-    typeof window !== 'undefined' ? window.innerWidth >= 1001 : null
-  )
+  const [isDesktop, setIsDesktop] = useState<boolean | null>()
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      setIsDesktop(window.innerWidth >= 1001)
+    }
+  }, [])
 
   useEffect(() => {
     if (typeof window !== 'undefined') {

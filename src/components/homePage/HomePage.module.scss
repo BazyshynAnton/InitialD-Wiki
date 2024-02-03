@@ -3,6 +3,7 @@
   display: grid;
   grid-template-columns: 21rem 1fr;
   grid-template-rows: max-content max-content max-content 1fr;
+
   img {
     object-fit: contain;
     max-width: 100%;
@@ -12,11 +13,13 @@
 
   .mainImgContainer {
     position: relative;
+    display: grid;
+    grid-template-rows: 1fr 0fr;
     img {
-      object-fit: cover;
       max-width: 100%;
       width: 100%;
-      height: 100%;
+      height: auto;
+      vertical-align: bottom;
     }
     .introTextImage {
       position: absolute;
@@ -74,7 +77,7 @@
 }
 
 .videoAd {
-  margin-top: 30rem;
+  margin-top: 27rem;
   position: relative;
   height: 500px;
   filter: drop-shadow(0.5rem 0.5rem 0 rgba(136, 136, 136, 0.2));
