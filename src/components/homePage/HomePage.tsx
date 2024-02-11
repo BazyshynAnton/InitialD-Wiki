@@ -1,4 +1,6 @@
 import { Image } from '../shared/nextjsImports'
+
+import HeaderForSmallScreens from '../headerForSmallScreens/HeaderForSmallScreens'
 import NavigationBar from './contentOfHomePage/NavigationBar'
 import UnderIntro from './contentOfHomePage/UnderIntro'
 
@@ -8,6 +10,7 @@ const HomePage = () => {
   return (
     <main>
       <section className={styles.containerOfIntroduce}>
+        <HeaderForSmallScreens />
         <NavigationBar />
         <div className={styles.mainImgContainer}>
           <Image

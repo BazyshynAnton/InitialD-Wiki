@@ -1,7 +1,7 @@
 'use client'
-import { useEffect, useState } from 'react'
+import { useEffect, useState } from '../../shared/reactImports'
 
-import Image from 'next/image'
+import { Image } from '../../shared/nextjsImports'
 import Footer from './Footer'
 import styles from '../HomePage.module.scss'
 import FilmCards from '@/components/reusable/filmCards/FilmCards'

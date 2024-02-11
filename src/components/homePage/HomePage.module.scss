@@ -1,8 +1,7 @@
 .containerOfIntroduce {
   position: relative;
   display: grid;
-  grid-template-columns: 21rem 1fr;
-  grid-template-rows: max-content max-content max-content 1fr;
+  grid-template-columns: 25rem 1fr;
 
   img {
     object-fit: contain;
@@ -43,9 +42,11 @@
 // NavBar
 
 .navigationBarContainer {
-  display: flex;
+  display: grid;
+  grid-template-columns: 25rem;
+  grid-template-rows: max-content max-content 1fr;
+
   padding: 40px 0px 0px 0px;
-  flex-direction: column;
   background-image: url(/pictures/navbarBg.webp);
   background-repeat: no-repeat;
   background-size: cover;
@@ -53,6 +54,7 @@
   .logoD {
     mask-image: url(/pictures/maskForIntroText.png);
     mask-size: 60% auto;
+    cursor: pointer;
   }
 
   ul {
@@ -77,24 +79,25 @@
 }
 
 .videoAd {
-  margin-top: 27rem;
+  margin-top: 21rem;
   position: relative;
-  height: 500px;
+  height: 100px;
   filter: drop-shadow(0.5rem 0.5rem 0 rgba(136, 136, 136, 0.2));
   div {
-    width: 400px;
-    height: 250px;
+    width: 600px;
+    height: 450px;
     clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
     cursor: pointer;
+
     img {
-      width: 100%;
-      height: 100%;
+      width: auto;
+      height: auto;
     }
 
     &::before {
       content: '';
       position: absolute;
-      top: 15%;
+      top: 170%;
       left: 39%;
       width: 100px;
       height: 100px;
@@ -110,10 +113,10 @@
   }
   &::before {
     position: absolute;
-    left: -4rem;
-    top: -8rem;
-    width: 500px;
-    height: 500px;
+    left: -8rem;
+    top: -10rem;
+    width: 800px;
+    height: 800px;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -357,6 +360,25 @@
 }
 
 @media (max-width: 1400px) {
+  .videoAd {
+    margin-top: 5rem;
+    div {
+      width: 500px;
+      height: 350px;
+
+      &::before {
+        top: 90%;
+        left: 49%;
+      }
+    }
+
+    &::before {
+      left: -4rem;
+      width: 600px;
+      height: 600px;
+    }
+  }
+
   .footerHelper {
     height: 100px;
   }
@@ -366,6 +388,32 @@
 }
 
 @media (max-width: 1160px) {
+  .containerOfIntroduce {
+    grid-template-columns: 20rem 1fr;
+  }
+
+  .navigationBarContainer {
+    grid-template-columns: 20rem;
+  }
+
+  .videoAd {
+    div {
+      width: 400px;
+      height: 250px;
+
+      &::before {
+        top: 70%;
+        left: 45%;
+      }
+    }
+
+    &::before {
+      top: -8rem;
+      width: 500px;
+      height: 500px;
+    }
+  }
+
   .textInfoContainer {
     .watchNowContainer {
       h2 {
@@ -389,6 +437,25 @@
 }
 
 @media (max-width: 1000px) {
+  .videoAd {
+    margin-top: 0rem;
+    div {
+      width: 400px;
+      height: 250px;
+
+      &::before {
+        top: 70%;
+        left: 45%;
+      }
+    }
+
+    &::before {
+      top: -8rem;
+      width: 500px;
+      height: 500px;
+    }
+  }
+
   .textInfoContainer {
     height: 1200px;
     .watchNowContainer {
@@ -419,6 +486,18 @@
 }
 
 @media (max-width: 900px) {
+  .containerOfIntroduce {
+    grid-template-columns: 0 1fr;
+  }
+
+  .navigationBarContainer {
+    display: none;
+  }
+
+  .mainImgContainer {
+    margin-top: 120px;
+  }
+
   .footerHelper {
     position: relative;
     width: 100%;
