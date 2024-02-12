@@ -1,0 +1,12 @@
+@mixin logo-D {
+  mask-image: url(/pictures/maskForIntroText.png);
+  mask-size: 60% auto;
+  cursor: pointer;
+}
+
+@mixin li-header {
+  width: max-content;
+  text-transform: uppercase;
+  font-family: 'Contrail-One';
+  cursor: pointer;
+}

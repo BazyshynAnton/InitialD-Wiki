@@ -123,10 +123,32 @@ table {
   border-spacing: 0;
 }
 
+//important
+
 body {
+  position: relative;
+  min-height: 100vh;
   background-color: #000;
   overflow-x: hidden;
 }
+
+// styles for links
+
+.active {
+  text-decoration: underline;
+}
+
+a {
+  color: #c23220;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    color: #fff;
+  }
+}
+
+// fonts
 
 @font-face {
   font-family: 'Contrail-One';
@@ -136,4 +158,9 @@ body {
 @font-face {
   font-family: 'Big-Shoulders-Stencil-Display';
   src: url(/fonts/BigShouldersStencilDisplay-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: 'Shippori Mincho B1 extrabold';
+  src: url(/fonts/ShipporiMinchoB1-ExtraBold.ttf);
 }

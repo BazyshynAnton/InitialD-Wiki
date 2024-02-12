@@ -1,0 +1,80 @@
+.introMainContainer {
+  width: 100%;
+  height: 100vh;
+  background-image: url(/pictures/introduce_bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+
+  &::before {
+    content: '';
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.33);
+    top: -10rem;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    mask-image: url(/pictures/maskBg.webp);
+    mask-size: 100% 100%;
+    mask-repeat: no-repeat;
+    mask-position: left top;
+  }
+
+  &::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.33);
+    background-image: url(/pictures/textureStone.webp);
+  }
+
+  .contentContainer {
+    position: relative;
+    z-index: 200;
+    max-width: 1300px;
+    padding: 40px;
+    margin: 0 auto;
+    color: #fff;
+
+    h1 {
+      position: relative;
+      padding-bottom: 0.2rem;
+      margin-bottom: 5rem;
+      .header {
+        filter: drop-shadow(0.2rem 0.2rem 0 rgba(230, 230, 230, 0.4));
+        display: block;
+        line-height: 0.85;
+        transform-origin: left bottom;
+        transform: skewX(-20deg);
+        font-size: 12rem;
+        font-weight: 900;
+        color: #000;
+        font-family: 'Big-Shoulders-Stencil-Display';
+      }
+
+      .underHeader {
+        display: block;
+        position: absolute;
+        left: 0.1em;
+        bottom: 0;
+        color: #e6000f;
+        line-height: 1;
+        letter-spacing: -0.1em;
+        font-family: 'Shippori Mincho B1 extrabold';
+        font-size: 4.1rem;
+        font-weight: 800;
+      }
+    }
+
+    p {
+      font-family: 'Shippori Mincho B1 extrabold';
+      font-size: 1.5rem;
+      max-width: 800px;
+      margin-bottom: 1rem;
+    }
+  }
+}

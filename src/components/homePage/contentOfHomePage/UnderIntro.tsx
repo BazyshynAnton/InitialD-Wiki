@@ -2,7 +2,6 @@
 import { useEffect, useState } from '../../shared/reactImports'
 
 import { Image } from '../../shared/nextjsImports'
-import Footer from './Footer'
 import styles from '../HomePage.module.scss'
 import FilmCards from '@/components/reusable/filmCards/FilmCards'
 
@@ -68,9 +67,6 @@ const UnderIntro = () => {
           src="/pictures/initialDVideo.gif"
           alt="intro-video"
         />
-      </div>
-      <div className={styles.footerHelper}>
-        <Footer />
       </div>
     </div>
   )

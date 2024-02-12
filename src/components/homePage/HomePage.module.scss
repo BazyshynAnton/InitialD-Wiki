@@ -1,3 +1,5 @@
+@import '../SCSS/headerNavMixins.scss';
+
 .containerOfIntroduce {
   position: relative;
   display: grid;
@@ -52,9 +54,7 @@
   background-size: cover;
 
   .logoD {
-    mask-image: url(/pictures/maskForIntroText.png);
-    mask-size: 60% auto;
-    cursor: pointer;
+    @include logo-D;
   }
 
   ul {
@@ -64,15 +64,19 @@
 
     li {
       width: max-content;
-      color: #c23220;
       font-size: 2rem;
       text-transform: uppercase;
       margin-bottom: 20px;
       font-family: 'Contrail-One';
       transition: all 0.2s ease-in-out;
       cursor: pointer;
-      &:hover {
-        color: #fff;
+
+      a {
+        color: #c23220;
+        text-decoration: none;
+        &:hover {
+          color: #fff;
+        }
       }
     }
   }
@@ -97,8 +101,8 @@
     &::before {
       content: '';
       position: absolute;
-      top: 170%;
-      left: 39%;
+      top: 120%;
+      left: 59%;
       width: 100px;
       height: 100px;
       mask-image: url(/pictures/iconPlay.svg);
@@ -114,7 +118,7 @@
   &::before {
     position: absolute;
     left: -8rem;
-    top: -10rem;
+    top: -15rem;
     width: 800px;
     height: 800px;
     background-position: center;
@@ -278,87 +282,6 @@
   }
 }
 
-// footer
-
-.footerHelper {
-  position: relative;
-  width: 100%;
-  height: 200px;
-}
-
-.footerContainer {
-  position: absolute;
-  top: -200%;
-  left: 0;
-  width: 100%;
-  height: 500px;
-  z-index: 12;
-  background-image: url(/pictures/footerBg.webp);
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  &::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(
-      to bottom,
-      #000,
-      #000 3px,
-      transparent 3px,
-      transparent 8px,
-      #000 8px,
-      #000 11px,
-      transparent 11px,
-      transparent 16px,
-      #000 16px,
-      #000 19px,
-      transparent 19px,
-      transparent 29px,
-      #000 29px
-    );
-    transform: skewY(-5deg);
-  }
-}
-
-.footerContent {
-  margin-top: 4rem;
-  position: relative;
-  width: 100%;
-  height: 100%;
-  z-index: 10;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  .footerLogoD {
-    width: 300px;
-    height: 100px;
-    mask-image: url(/pictures/maskForIntroText.png);
-    mask-size: 60% auto;
-  }
-
-  .televisionLinks {
-    margin-top: 4rem;
-    display: flex;
-    gap: 1rem;
-    img {
-      width: 200px;
-      height: 50px;
-    }
-  }
-
-  h5 {
-    margin-top: 2rem;
-    color: #aaaaaa;
-  }
-}
-
 @media (max-width: 1400px) {
   .videoAd {
     margin-top: 5rem;
@@ -374,16 +297,10 @@
 
     &::before {
       left: -4rem;
+      top: -10rem;
       width: 600px;
       height: 600px;
     }
-  }
-
-  .footerHelper {
-    height: 100px;
-  }
-  .footerContainer {
-    top: -400%;
   }
 }
 
@@ -497,25 +414,6 @@
   .mainImgContainer {
     margin-top: 120px;
   }
-
-  .footerHelper {
-    position: relative;
-    width: 100%;
-    height: 200px;
-  }
-  .footerContainer {
-    top: -200%;
-  }
-  .televisionLinks {
-    margin-top: 4rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    img {
-      width: 200px;
-      height: 50px;
-    }
-  }
 }
 
 @media (max-width: 700px) {
@@ -543,44 +441,6 @@
     display: flex;
     flex-direction: column;
     gap: 1rem;
-  }
-}
-
-@media (max-width: 350px) {
-  .footerContent {
-    margin-top: 4rem;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    z-index: 10;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    .footerLogoD {
-      width: 200px;
-      height: 100px;
-      mask-image: url(/pictures/maskForIntroText.png);
-      mask-size: 60% auto;
-    }
-
-    .televisionLinks {
-      margin-top: 4rem;
-      display: flex;
-      gap: 1rem;
-      img {
-        width: 150px;
-        height: 50px;
-      }
-    }
-
-    h5 {
-      margin-top: 2rem;
-      color: #aaaaaa;
-      font-size: 0.7rem;
-    }
   }
 }
 

@@ -1,0 +1,36 @@
+@import '../../SCSS/headerNavMixins.scss';
+
+.headerContainer {
+  z-index: 999;
+  position: relative;
+  background-image: url(/pictures/headerBg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  .headerItems {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    padding: 20px;
+    ul {
+      padding: 0px 0px 0px 20px;
+      display: inline-flex;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      li {
+        font-size: 1.5rem;
+        @include li-header;
+      }
+    }
+
+    .logoD {
+      max-width: 300px;
+      height: auto;
+      @include logo-D;
+    }
+  }
+}

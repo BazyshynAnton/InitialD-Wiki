@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { Image } from '../../shared/nextjsImports'
 import styles from '../HomePage.module.scss'
 
@@ -12,12 +13,24 @@ const NavigationBar = () => {
         className={styles.logoD}
       />
       <ul>
-        <li>Introduction</li>
-        <li>Character</li>
-        <li>Initial D -Product-</li>
-        <li>Goods</li>
-        <li>Youtube</li>
-        <li>Twitter</li>
+        <li>
+          <Link href="/introduction">Introduction</Link>
+        </li>
+        <li>
+          <Link href="/">Character</Link>
+        </li>
+        <li>
+          <Link href="/">Initial D -Product-</Link>
+        </li>
+        <li>
+          <Link href="/">Goods</Link>
+        </li>
+        <li>
+          <Link href="/">Youtube</Link>
+        </li>
+        <li>
+          <Link href="/">Twitter</Link>
+        </li>
       </ul>
       <section className={styles.videoAd}>
         <div>
