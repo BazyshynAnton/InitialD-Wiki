@@ -28,9 +28,24 @@
     }
 
     .logoD {
-      max-width: 300px;
-      height: auto;
-      @include logo-D;
+      // max-width: 300px;
+      // height: auto;
+      @include logo-D(300px, auto);
     }
+  }
+}
+
+@media (max-width: 1200px) {
+  .headerContainer {
+    .headerItems {
+      margin-left: 5rem;
+      margin-right: 5rem;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .headerContainer {
+    display: none;
   }
 }

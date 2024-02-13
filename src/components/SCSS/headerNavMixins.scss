@@ -1,7 +1,9 @@
-@mixin logo-D {
+@mixin logo-D($width, $height) {
   mask-image: url(/pictures/maskForIntroText.png);
   mask-size: 60% auto;
   cursor: pointer;
+  width: $width;
+  height: $height;
 }
 
 @mixin li-header {

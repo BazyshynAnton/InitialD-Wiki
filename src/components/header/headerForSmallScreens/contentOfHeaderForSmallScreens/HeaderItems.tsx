@@ -1,3 +1,5 @@
+import ReusableLinks from '@/components/shared/reusableComponents/ReusableNavLinks'
+
 import { Image } from '../../../shared/nextjsImports'
 import styles from '../HeaderForSmallScreens.module.scss'
 
@@ -19,14 +21,7 @@ const HeaderItems = ({ menuOpen }: Props) => {
         alt="logoD"
         className={styles.logoDInItems}
       />
-      <ul>
-        <li>Introduction</li>
-        <li>Character</li>
-        <li>Initial D -Product-</li>
-        <li>Goods</li>
-        <li>Youtube</li>
-        <li>Twitter</li>
-      </ul>
+      <ReusableLinks />
     </div>
   )
 }

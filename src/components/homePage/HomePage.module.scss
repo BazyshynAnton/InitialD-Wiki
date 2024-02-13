@@ -54,7 +54,7 @@
   background-size: cover;
 
   .logoD {
-    @include logo-D;
+    @include logo-D(auto, auto);
   }
 
   ul {

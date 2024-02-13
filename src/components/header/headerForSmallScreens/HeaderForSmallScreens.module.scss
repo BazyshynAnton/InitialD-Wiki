@@ -1,4 +1,5 @@
 @import '../../SCSS/headerNavMixins.scss';
+@import '../../SCSS/fontSizeMixin.scss';
 
 .smallScreensContainer {
   display: none;
@@ -28,21 +29,21 @@
     padding: 20px 0px;
 
     .logoDInItems {
-      width: 300px;
-      height: 80px;
-      @include logo-D;
+      @include logo-D(300px, auto);
+      margin-left: 1rem;
     }
 
     ul {
       display: flex;
-      flex-direction: column;
+      flex-wrap: wrap;
       gap: 1rem;
       padding: 0px 40px;
+      width: auto;
 
       li {
         width: max-content;
         color: #c23220;
-        font-size: 2rem;
+        @include adaptive-font(0.625, 2, 56.25);
         text-transform: uppercase;
         margin-bottom: 20px;
         font-family: 'Contrail-One';
@@ -70,11 +71,11 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    z-index: 1000;
 
     .logoD {
-      width: 300px;
-      height: auto;
-      @include logo-D;
+      @include logo-D(auto, auto);
+      margin-left: 1rem;
     }
   }
 
@@ -153,24 +154,35 @@
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 460px) {
   .headerItemsOpen {
     .logoDInItems {
-      width: 150px;
-      margin-left: 1rem;
-    }
-
-    ul {
-      li {
-        font-size: 1.5rem;
-      }
+      width: 250px;
     }
   }
+}
+@media (max-width: 420px) {
+  // .headerItemsOpen {
+  //   ul {
+  //     li {
+  //       font-size: 1.5rem;
+  //     }
+  //   }
+  // }
 
   .smallScreensContainer {
     .logoD {
       width: 150px;
-      margin-left: 1rem;
+    }
+  }
+}
+
+@media (max-width: 370px) {
+  .headerItemsOpen {
+    .logoDInItems {
+      width: 150px;
+      margin-top: 0.7rem;
+      margin-left: 2rem;
     }
   }
 }

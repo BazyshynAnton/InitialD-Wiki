@@ -11,6 +11,7 @@ const HomePage = () => {
     <main>
       <section className={styles.containerOfIntroduce}>
         <HeaderForSmallScreens />
+
         <NavigationBar />
         <div className={styles.mainImgContainer}>
           <Image
