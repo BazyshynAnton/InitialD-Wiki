@@ -3,7 +3,7 @@ import { useEffect, useState } from '../../shared/reactImports'
 
 import { Image } from '../../shared/nextjsImports'
 import styles from '../HomePage.module.scss'
-import FilmCards from '@/components/reusable/filmCards/FilmCards'
+import FilmCards from '@/components/shared/reusableComponents/filmCards/FilmCards'
 
 const UnderIntro = () => {
   // Hydration

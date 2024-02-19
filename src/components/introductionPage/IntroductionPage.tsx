@@ -1,22 +1,12 @@
-import Footer from '../footer/Footer'
-import HeaderForBigScreensNextLayout from '../header/headerForBigScreensNextLayout/HeaderForBigScreensNextLayout'
-import HeaderForSmallScreens from '../header/headerForSmallScreens/HeaderForSmallScreens'
+import ReusablePage from '../shared/reusableComponents/reusablePage/ReusablePage'
+import TitleText from '../shared/reusableComponents/titleText/TitleText'
 import styles from './IntroductionPage.module.scss'
 
 const IntroductionPage = () => {
   return (
-    <>
-      <HeaderForBigScreensNextLayout />
-      <HeaderForSmallScreens />
-
-      <span className={styles.introBgFixedPicture}></span>
-      <span className={styles.introBgTexture}></span>
-
+    <ReusablePage>
       <main className={styles.contentContainer}>
-        <h1>
-          <span className={styles.header}>INTRODUCTION</span>
-          <span className={styles.underHeader}>イントロダクション</span>
-        </h1>
+        <TitleText title={'INTRODUCE'} underTitle={'イントロダクション'} />
 
         <p>
           Initial D (頭文字イニシャルD, Inisharu Dī) is a Japanese seinen street
@@ -38,7 +28,7 @@ const IntroductionPage = () => {
           followed by an anime adaptation in 2023.
         </p>
       </main>
-    </>
+    </ReusablePage>
   )
 }
 

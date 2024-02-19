@@ -28,8 +28,6 @@
     }
 
     .logoD {
-      // max-width: 300px;
-      // height: auto;
       @include logo-D(300px, auto);
     }
   }

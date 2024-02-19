@@ -64,9 +64,10 @@
     position: relative;
     padding: 20px 0px;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 100vw;
     height: 80px;
-    justify-content: space-between;
     background-image: url(/pictures/headerBg.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -74,7 +75,7 @@
     z-index: 1000;
 
     .logoD {
-      @include logo-D(auto, auto);
+      @include logo-D(220px, auto);
       margin-left: 1rem;
     }
   }
@@ -162,14 +163,6 @@
   }
 }
 @media (max-width: 420px) {
-  // .headerItemsOpen {
-  //   ul {
-  //     li {
-  //       font-size: 1.5rem;
-  //     }
-  //   }
-  // }
-
   .smallScreensContainer {
     .logoD {
       width: 150px;

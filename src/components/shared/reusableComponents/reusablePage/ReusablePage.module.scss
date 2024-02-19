@@ -1,0 +1,64 @@
+@import '../../../SCSS/reusablePageMixins.scss';
+
+.introductionBg {
+  @include introBgPicture(
+    fixed,
+    0,
+    0,
+    0,
+    0,
+    auto,
+    100vh,
+    100%,
+    url(/pictures/introduce_bg.jpg),
+    no-repeat,
+    center,
+    fixed,
+    cover
+  );
+}
+
+.characterBg {
+  @include introBgPicture(
+    fixed,
+    0,
+    0,
+    0,
+    0,
+    auto,
+    100vh,
+    100%,
+    url(/pictures/char_bg.jpg),
+    no-repeat,
+    center,
+    fixed,
+    cover
+  );
+}
+
+.introBgTexture {
+  &::before {
+    content: '';
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.33);
+    top: -10rem;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    mask-image: url(/pictures/maskBg.webp);
+    mask-size: 100% auto;
+    mask-repeat: no-repeat;
+    mask-position: left top;
+  }
+
+  &::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.33);
+    background-image: url(/pictures/textureStone.webp);
+  }
+}

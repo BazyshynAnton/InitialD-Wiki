@@ -1,0 +1,56 @@
+@mixin introBgPicture(
+  $position,
+  $top,
+  $left,
+  $bottom,
+  $right,
+  $overflow,
+  $height,
+  $width,
+  $bgImg,
+  $bgRepeat,
+  $bgPosition,
+  $bgAttach,
+  $bgSize
+) {
+  position: $position;
+  top: $top;
+  left: $left;
+  bottom: $bottom;
+  right: $right;
+  overflow: $overflow;
+  height: $height;
+  width: $width;
+  background-image: $bgImg;
+  background-repeat: $bgRepeat;
+  background-position: $bgPosition;
+  background-attachment: $bgAttach;
+  background-size: $bgSize;
+}
+
+@mixin bgTexture {
+  &::before {
+    content: '';
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.33);
+    top: -10rem;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    mask-image: url(/pictures/maskBg.webp);
+    mask-size: 100% auto;
+    mask-repeat: no-repeat;
+    mask-position: left top;
+  }
+
+  &::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.33);
+    background-image: url(/pictures/textureStone.webp);
+  }
+}

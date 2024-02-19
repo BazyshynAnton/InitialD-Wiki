@@ -72,7 +72,7 @@
       cursor: pointer;
 
       a {
-        color: #c23220;
+        color: #bf0411;
         text-decoration: none;
         &:hover {
           color: #fff;
@@ -162,7 +162,7 @@
     position: absolute;
     top: 30%;
     left: 0;
-    background-color: #a52110;
+    background-color: #bf0411;
     mask-image: url(/pictures/maskBg.webp);
     mask-size: 100% 100%;
     mask-repeat: no-repeat;
@@ -176,7 +176,7 @@
     position: absolute;
     bottom: -110%;
     left: 0;
-    background-color: #a52110;
+    background-color: #bf0411;
     mask-image: url(/pictures/maskBg.webp);
     mask-size: 100% auto;
     mask-repeat: no-repeat;
@@ -208,7 +208,7 @@
     height: 150px;
     mask-image: url(/pictures/iconPlay.svg);
     mask-repeat: no-repeat;
-    background: linear-gradient(to bottom, #c23220 40%, #000 100%);
+    background: linear-gradient(to bottom, #bf0411 40%, #000 100%);
     transition: all 0.4s ease-in-out;
 
     &:before {
@@ -253,7 +253,7 @@
     align-items: center;
     justify-content: center;
     h2 {
-      color: #c23220;
+      color: #d3000e;
     }
   }
 }

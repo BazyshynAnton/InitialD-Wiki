@@ -1,0 +1,46 @@
+@mixin title(
+  $filter,
+  $display,
+  $fontSize,
+  $lineHeight,
+  $transOrig1,
+  $transOrig2,
+  $transform,
+  $fontWeight,
+  $color,
+  $fontFamily
+) {
+  filter: $filter;
+  display: $display;
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  transform-origin: $transOrig1 $transOrig2;
+  transform: $transform;
+  font-weight: $fontWeight;
+  color: $color;
+  font-family: $fontFamily;
+}
+
+@mixin underTitle(
+  $display,
+  $position,
+  $left,
+  $bottom,
+  $color,
+  $lineHeight,
+  $letterSpace,
+  $fontFamily,
+  $fontSize,
+  $fontWeight
+) {
+  display: $display;
+  position: $position;
+  left: $left;
+  bottom: $bottom;
+  color: $color;
+  line-height: $lineHeight;
+  letter-spacing: $letterSpace;
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+}

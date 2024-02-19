@@ -1,0 +1,101 @@
+@import '../../../SCSS/fontSizeMixin.scss';
+@import '../../../SCSS/titleMixins.scss';
+
+.textBlock {
+  position: relative;
+  padding-bottom: 0.2rem;
+  margin-bottom: 5rem;
+  .titleIntroduction {
+    @include title(
+      drop-shadow(0.2rem 0.2rem 0 rgba(230, 230, 230, 0.4)),
+      block,
+      12rem,
+      0.85,
+      left,
+      bottom,
+      skewX(-20deg),
+      900,
+      #000,
+      'Big-Shoulders-Stencil-Display'
+    );
+  }
+
+  .underTitleIntroduction {
+    @include underTitle(
+      block,
+      absolute,
+      0.1rem,
+      0,
+      #bf0411,
+      1,
+      -0.1em,
+      'Shippori Mincho B1 extrabold',
+      4.1rem,
+      800
+    );
+  }
+
+  .titleCharacter {
+    @include title(
+      drop-shadow(0.2rem 0.2rem 0 rgba(230, 230, 230, 0.4)),
+      block,
+      12rem,
+      0.85,
+      left,
+      bottom,
+      skewX(-20deg),
+      900,
+      #bf0411,
+      'Big-Shoulders-Stencil-Display'
+    );
+  }
+
+  .underTitleCharacter {
+    @include underTitle(
+      block,
+      absolute,
+      0.1rem,
+      0,
+      #000,
+      1,
+      -0.1em,
+      'Shippori Mincho B1 extrabold',
+      4.1rem,
+      800
+    );
+  }
+}
+
+@media (max-width: 1920px) {
+  .textBlock {
+    .titleIntroduction {
+      @include adaptive-font(2, 12, 120);
+    }
+    .underTitleIntroduction {
+      @include adaptive-font(0.875, 4.1, 120);
+    }
+    .titleCharacter {
+      @include adaptive-font(2, 12, 120);
+    }
+    .underTitleCharacter {
+      @include adaptive-font(0.875, 4.1, 120);
+    }
+  }
+}
+
+@media (max-width: 299px) {
+  .textBlock {
+    .titleIntroduction {
+      font-size: 2rem;
+    }
+    .underTitleIntroduction {
+      font-size: 0.875rem;
+    }
+    .titleCharacter {
+      font-size: 2rem;
+    }
+    .underTitleCharacter {
+      font-size: 0.875rem;
+    }
+  }
+}

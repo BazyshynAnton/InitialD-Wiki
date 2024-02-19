@@ -1,86 +1,12 @@
 @import '../SCSS/fontSizeMixin.scss';
 
-.introBgFixedPicture {
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  overflow: auto;
-  height: 100vh;
-  width: 100%;
-  background-image: url(/pictures/introduce_bg.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  background-size: cover;
-}
-
-.introBgTexture {
-  &::before {
-    content: '';
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.33);
-    top: -10rem;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    mask-image: url(/pictures/maskBg.webp);
-    mask-size: 100% auto;
-    mask-repeat: no-repeat;
-    mask-position: left top;
-  }
-
-  &::after {
-    content: '';
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.33);
-    background-image: url(/pictures/textureStone.webp);
-  }
-}
-
 .contentContainer {
   position: relative;
   z-index: 200;
   max-width: 1300px;
-  min-height: 1000px;
-  padding: 40px 40px 100px 40px;
+  padding: 40px 40px 20px 40px;
   margin: 0 auto;
   color: #fff;
-
-  h1 {
-    position: relative;
-    padding-bottom: 0.2rem;
-    margin-bottom: 5rem;
-    .header {
-      filter: drop-shadow(0.2rem 0.2rem 0 rgba(230, 230, 230, 0.4));
-      display: block;
-      font-size: 12rem;
-      line-height: 0.85;
-      transform-origin: left bottom;
-      transform: skewX(-20deg);
-      font-weight: 900;
-      color: #000;
-      font-family: 'Big-Shoulders-Stencil-Display';
-    }
-
-    .underHeader {
-      display: block;
-      position: absolute;
-      left: 0.1em;
-      bottom: 0;
-      color: #e6000f;
-      line-height: 1;
-      letter-spacing: -0.1em;
-      font-family: 'Shippori Mincho B1 extrabold';
-      font-size: 4.1rem;
-      font-weight: 800;
-    }
-  }
 
   p {
     font-family: 'Shippori Mincho B1 extrabold';
@@ -96,14 +22,6 @@
 
 @media (max-width: 1920px) {
   .contentContainer {
-    h1 {
-      .header {
-        @include adaptive-font(2, 12, 120);
-      }
-      .underHeader {
-        @include adaptive-font(0.875, 4.1, 120);
-      }
-    }
     p {
       @include adaptive-font(0.938, 1.5, 120);
     }
@@ -115,15 +33,10 @@
   }
 }
 
-@media (max-width: 299px) {
+@media (max-width: 900px) {
   .contentContainer {
     h1 {
-      .header {
-        font-size: 2rem;
-      }
-      .underHeader {
-        font-size: 0.875rem;
-      }
+      margin-bottom: 2rem;
     }
   }
 }

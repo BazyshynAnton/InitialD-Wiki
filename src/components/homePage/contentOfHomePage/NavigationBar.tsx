@@ -17,7 +17,7 @@ const NavigationBar = () => {
           <Link href="/introduction">Introduction</Link>
         </li>
         <li>
-          <Link href="/">Character</Link>
+          <Link href="/character">Character</Link>
         </li>
         <li>
           <Link href="/">Initial D -Product-</Link>

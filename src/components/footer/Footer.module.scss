@@ -74,7 +74,7 @@
   }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 420px) {
   .footerContent {
     .footerLogoD {
       width: 200px;
@@ -136,5 +136,23 @@
   h5 {
     margin-top: 2rem;
     color: #aaaaaa;
+  }
+}
+
+@media (max-width: 420px) {
+  .footerContentNextLayout {
+    .footerLogoD {
+      width: 200px;
+    }
+
+    .televisionLinks {
+      img {
+        width: 150px;
+      }
+    }
+
+    h5 {
+      font-size: 0.7rem;
+    }
   }
 }
