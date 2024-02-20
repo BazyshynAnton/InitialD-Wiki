@@ -16,6 +16,7 @@ const HeaderForBigScreensNextLayout = () => {
             height={500}
             src="/pictures/logoD.webp"
             alt="logoD"
+            loading="eager"
             className={styles.logoD}
           />
         </Link>

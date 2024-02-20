@@ -20,6 +20,7 @@ const HomePage = () => {
             src="/pictures/previewPicture.jpg"
             alt="poster"
             priority={true}
+            loading="eager"
           />
           <div className={styles.introTextImage}>
             <Image
@@ -27,6 +28,7 @@ const HomePage = () => {
               height={500}
               src="/pictures/introImgText.png"
               alt="poster"
+              loading="eager"
             />
           </div>
         </div>

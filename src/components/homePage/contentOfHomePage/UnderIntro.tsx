@@ -66,6 +66,7 @@ const UnderIntro = () => {
           height={500}
           src="/pictures/initialDVideo.gif"
           alt="intro-video"
+          loading="eager"
         />
       </div>
     </div>

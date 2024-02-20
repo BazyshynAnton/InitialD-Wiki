@@ -15,6 +15,7 @@ const FilmCards = ({ img }: Prop) => {
       alt="film"
       className={styles.imageContainer}
       priority={true}
+      loading="eager"
     />
   )
 }

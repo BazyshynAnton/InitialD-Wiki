@@ -9,9 +9,9 @@ export const metadata: Metadata = {
   title: 'Initial D | Wiki',
   description: '',
   icons: {
-    icon: ['/favicon.ico?v=4'],
-    apple: ['/apple-touch-icon.png?v=4'],
-    shortcut: ['/apple-touch-icon.png'],
+    icon: ['/favicon/favicon.ico?v=4'],
+    apple: ['/favicon/apple-touch-icon.png?v=4'],
+    shortcut: ['/favicon/apple-touch-icon.png'],
   },
 }
 

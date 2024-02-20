@@ -10,6 +10,7 @@ const NavigationBar = () => {
         height={500}
         src="/pictures/logoD.webp"
         alt="logoD"
+        loading="eager"
         className={styles.logoD}
       />
       <ul>
@@ -39,6 +40,7 @@ const NavigationBar = () => {
             height={500}
             src="/pictures/videoPreview.png"
             alt="logoD"
+            loading="eager"
           />
         </div>
       </section>

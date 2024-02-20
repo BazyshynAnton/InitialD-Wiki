@@ -8,6 +8,7 @@ import 'swiper/css'
 import 'swiper/css/pagination'
 import CustomNavigation from './swiperComponents/CustomNavigation'
 import CustomPagination from './swiperComponents/CustomPagination'
+import Image from 'next/image'
 
 const CharacterSwiper = ({ characters }: any) => {
   return (
@@ -33,7 +34,13 @@ const CharacterSwiper = ({ characters }: any) => {
           return (
             <SwiperSlide key={character.id} className={styles.slide}>
               <div className={styles.characterContainer}>
-                <img src={character.img} alt="character" />
+                <Image
+                  width={500}
+                  height={500}
+                  src={character.img}
+                  alt="character"
+                  loading="eager"
+                />
               </div>
               <p>{character.name}</p>
             </SwiperSlide>

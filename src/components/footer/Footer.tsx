@@ -33,6 +33,7 @@ const Footer = () => {
           height={500}
           src="/pictures/logoD.webp"
           alt="logoD"
+          loading="eager"
           className={styles.footerLogoD}
         />
         <div className={styles.televisionLinks}>
@@ -41,18 +42,21 @@ const Footer = () => {
             height={500}
             src="/pictures/ntvLogo.jpg"
             alt="logoD"
+            loading="eager"
           />
           <Image
             width={500}
             height={500}
             src="/pictures/netflixLogo.jpg"
             alt="logoD"
+            loading="eager"
           />
           <Image
             width={500}
             height={500}
             src="/pictures/tbsLogo.png"
             alt="logoD"
+            loading="eager"
           />
         </div>
         <h5>Copyright © {new Date().getFullYear()} All rights are reserved.</h5>
