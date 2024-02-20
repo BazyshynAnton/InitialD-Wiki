@@ -1,25 +1,26 @@
 'use client'
 
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Pagination } from 'swiper/modules'
-
-import Image from 'next/image'
-
+import { Mousewheel } from 'swiper/modules'
 import styles from '../../CharacterPage.module.scss'
 
 import 'swiper/css'
 import 'swiper/css/pagination'
+import CustomNavigation from './swiperComponents/CustomNavigation'
+import CustomPagination from './swiperComponents/CustomPagination'
 
 const CharacterSwiper = ({ characters }: any) => {
   return (
     <div style={{ width: '100%', height: '800px' }}>
       <Swiper
-        slidesPerView={15}
-        spaceBetween={40}
+        slidesPerView={7}
+        spaceBetween={30}
+        mousewheel={true}
         centeredSlides={true}
         pagination={{
           clickable: true,
         }}
+        modules={[Mousewheel]}
         style={{
           overflow: 'visible',
           overflowX: 'clip',
@@ -27,23 +28,20 @@ const CharacterSwiper = ({ characters }: any) => {
           height: 'auto',
           zIndex: '200',
         }}
-        modules={[Pagination]}
       >
         {characters.map((character: any) => {
           return (
             <SwiperSlide key={character.id} className={styles.slide}>
               <div className={styles.characterContainer}>
-                <Image
-                  width={200}
-                  height={300}
-                  src={character.img}
-                  alt="character"
-                />
+                <img src={character.img} alt="character" />
               </div>
               <p>{character.name}</p>
             </SwiperSlide>
           )
         })}
+
+        <CustomNavigation />
+        <CustomPagination characters={characters} />
       </Swiper>
     </div>
   )

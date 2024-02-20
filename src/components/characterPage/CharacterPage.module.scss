@@ -9,8 +9,6 @@
 }
 
 .slide {
-  width: 12rem !important;
-  height: auto !important;
   display: flex !important;
   position: relative !important;
   flex-direction: column;
@@ -23,8 +21,8 @@
 }
 
 .characterContainer {
-  width: 12rem !important;
-  height: 290px !important;
+  width: 250px !important;
+  height: 400px !important;
   transition: all 0.2s ease-in-out;
   background-color: #bf0411;
   background-image: url(/pictures/textureStone.webp);
@@ -46,11 +44,66 @@
 
 // navigation
 
-.arrowLeft {
-  width: 200px;
-  height: auto;
-
+.arrowLeft,
+.arrowRight {
+  position: absolute;
+  width: 90px;
+  height: 90px;
   background-color: #fff;
-  mask-image: url(/public/pictures/arrowLeft.png);
   mask-repeat: no-repeat;
+  mask-size: cover;
+  cursor: pointer;
+  z-index: 999;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    background-color: #000;
+  }
+}
+
+.arrowLeft {
+  top: 35%;
+  margin-left: 20px;
+  mask-image: url(/pictures/arrowLeft.png);
+  &:hover {
+    transform: translateX(-5px);
+  }
+}
+.arrowRight {
+  top: 35%;
+  right: 0;
+  margin-right: 20px;
+  mask-image: url(/pictures/arrowRight.png);
+  &:hover {
+    transform: translateX(5px);
+  }
+}
+
+// custom nav
+.buttonsContainer {
+  position: absolute;
+  bottom: -35px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 5px;
+}
+
+.navBtn,
+.activeIdx {
+  width: 15px;
+  height: 15px;
+  border-radius: 80px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.navBtn {
+  background-color: #ffffff47;
+  &:hover {
+    background-color: #fff;
+  }
+}
+
+.activeIdx {
+  background-color: #d7000e;
 }
