@@ -49,7 +49,7 @@ const UnderIntro = () => {
             <>
               <div className={styles.smallScreenTextContainer}>
                 <h2>Watch</h2>
-                <h2 style={{ color: '#c23220' }}>Now</h2>
+                <h2>Now</h2>
               </div>
               <div className={styles.playLinkToMovies}></div>
               <div className={styles.smallScreenMovieContainer}>
@@ -61,13 +61,21 @@ const UnderIntro = () => {
         </div>
       </div>
       <div className={styles.videoContainer}>
-        <Image
-          width={500}
-          height={500}
-          src="/pictures/initialDVideo.gif"
-          alt="intro-video"
-          loading="eager"
-        />
+        <iframe
+          style={{
+            position: 'absolute',
+            top: '0',
+            left: '0',
+            right: '0',
+            bottom: '0',
+            width: '100%',
+            height: '100%',
+          }}
+          src="https://www.youtube.com/embed/D6T6MeMdjfo?controls=0&autoplay=1&mute=1&loop=1&playlist=D6T6MeMdjfo"
+          title="initd"
+          allow="accelerometer; autoplay; loop; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen
+        ></iframe>
       </div>
     </div>
   )

@@ -259,21 +259,17 @@
 }
 
 .videoContainer {
+  width: 100%;
+  padding-top: 56.25%;
+  border: 0px;
   position: relative;
   top: -15rem;
-  width: 100%;
-  height: 100%;
   clip-path: polygon(0 11vw, 100% 0, 100% 100%, 0 100%);
   z-index: 10;
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
 
   &::after {
     content: '';
-    background-color: rgba($color: #000000, $alpha: 0.3);
+    background-image: url(/pictures/dot.png);
     position: absolute;
     top: 0;
     left: 0;

@@ -2,6 +2,7 @@
 
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Mousewheel } from 'swiper/modules'
+import { Character } from '../../../../app/character/page'
 import styles from '../../CharacterPage.module.scss'
 
 import 'swiper/css'
@@ -10,7 +11,7 @@ import CustomNavigation from './swiperComponents/CustomNavigation'
 import CustomPagination from './swiperComponents/CustomPagination'
 import Image from 'next/image'
 
-const CharacterSwiper = ({ characters }: any) => {
+const CharacterSwiper = ({ characters }: { characters: Character[] }) => {
   return (
     <div style={{ width: '100%', height: '800px' }}>
       <Swiper
@@ -30,7 +31,7 @@ const CharacterSwiper = ({ characters }: any) => {
           zIndex: '200',
         }}
       >
-        {characters.map((character: any) => {
+        {characters.map((character: Character) => {
           return (
             <SwiperSlide key={character.id} className={styles.slide}>
               <div className={styles.characterContainer}>
