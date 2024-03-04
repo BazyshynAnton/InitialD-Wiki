@@ -1,27 +1,32 @@
 'use client'
-import Image from 'next/image'
-import styles from './Footer.module.scss'
 import { usePathname } from 'next/navigation'
 import { useEffect, useState } from 'react'
+import { Character } from '../../app/character/page'
+import Image from 'next/image'
+import characters from '../../../public/data/characters/characters.json'
+
+import styles from './Footer.module.scss'
 
 const Footer = () => {
   const currentPath = usePathname()
 
   const [isHomePage, setIsHomePage] = useState<boolean>()
+  const [isCharacterInfoPage, setIsCharacterInfoPage] = useState<boolean>()
 
   useEffect(() => {
-    if (currentPath !== '/') {
-      setIsHomePage(false)
-    } else {
-      setIsHomePage(true)
-    }
+    setIsHomePage(currentPath === '/')
+    setIsCharacterInfoPage(
+      characters.some(
+        (character: Character) => currentPath === `/character/${character.link}`
+      )
+    )
   }, [currentPath])
 
   return (
     <div
       className={`${
         isHomePage ? styles.footerContainer : styles.footerContainerNextLayout
-      }`}
+      } ${isCharacterInfoPage && styles.hideFooter}`}
     >
       <div
         className={`${

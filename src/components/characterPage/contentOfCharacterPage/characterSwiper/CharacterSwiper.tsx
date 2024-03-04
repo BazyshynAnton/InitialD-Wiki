@@ -10,6 +10,7 @@ import 'swiper/css/pagination'
 import CustomNavigation from './swiperComponents/CustomNavigation'
 import CustomPagination from './swiperComponents/CustomPagination'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const CharacterSwiper = ({ characters }: { characters: Character[] }) => {
   return (
@@ -34,16 +35,18 @@ const CharacterSwiper = ({ characters }: { characters: Character[] }) => {
         {characters.map((character: Character) => {
           return (
             <SwiperSlide key={character.id} className={styles.slide}>
-              <div className={styles.characterContainer}>
-                <Image
-                  width={500}
-                  height={500}
-                  src={character.img}
-                  alt="character"
-                  loading="eager"
-                />
-              </div>
-              <p>{character.name}</p>
+              <Link href={`/character/${character.link}`}>
+                <div className={styles.characterContainer}>
+                  <Image
+                    width={500}
+                    height={500}
+                    src={character.img}
+                    alt="character"
+                    loading="eager"
+                  />
+                </div>
+                <p>{character.name}</p>
+              </Link>
             </SwiperSlide>
           )
         })}

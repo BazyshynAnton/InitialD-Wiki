@@ -8,7 +8,7 @@ export interface Character {
   id: string
 }
 
-export default async function Character() {
+export default async function getCharacter() {
   const data = await fs.readFile(
     process.cwd() + '/public/data/characters/characters.json',
     'utf8'

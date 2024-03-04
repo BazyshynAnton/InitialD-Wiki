@@ -1,5 +1,9 @@
 @import '../SCSS/footerMixins.scss';
 
+.hideFooter {
+  display: none;
+}
+
 .footerContainer {
   position: absolute;
   bottom: 0rem;

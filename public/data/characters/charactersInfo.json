@@ -1,0 +1,286 @@
+[
+  {
+    "name": "Takumi Fujiwara",
+    "img": "/pictures/takumi.png",
+    "aboutCharacter": "",
+    "aboutCar": "",
+    "carImg": "",
+    "id": "018dc184-5193-7bc9-848a-3d55bbb6f666"
+  },
+  {
+    "name": "Natsuki Mogi",
+    "img": "/pictures/mogi.png",
+    "link": "natsuki",
+    "id": "018dc184-5193-757e-bcff-a47a85a6d4c4"
+  },
+  {
+    "name": "Bunta Fujiwara",
+    "img": "/pictures/bunta.png",
+    "link": "bunta",
+    "id": "018dc184-5193-7116-b207-d0614cd27d10"
+  },
+  {
+    "name": "Itsuki Takeuchi",
+    "img": "/pictures/itsuki.png",
+    "link": "itsuki",
+    "id": "018dc184-5193-7ed6-a2cd-af1147f3ea0c"
+  },
+  {
+    "name": "Ryosuke Takahashi",
+    "img": "/pictures/ryosuke.png",
+    "link": "ryosuke",
+    "id": "018dc184-5193-762e-aa12-62c20f77847c"
+  },
+  {
+    "name": "Keisuke Takahashi",
+    "img": "/pictures/keisuke.png",
+    "link": "keisuke",
+    "id": "018dc184-5193-7d66-bfaf-7a257a4912c2"
+  },
+  {
+    "name": "Kenta Nakamura",
+    "img": "/pictures/kenta.png",
+    "link": "kenta",
+    "id": "018dc184-5193-7dcd-9409-1e3e3428a585"
+  },
+  {
+    "name": "Koichiro Iketani",
+    "img": "/pictures/iketani.png",
+    "link": "koichiro",
+    "id": "018dc184-5193-796c-a1b8-bfa252b2f9ae"
+  },
+  {
+    "name": "Mako Sato",
+    "img": "/pictures/mako.png",
+    "link": "mako",
+    "id": "018dc184-5193-7303-88aa-d569e8ebafa0"
+  },
+  {
+    "name": "Sayuki",
+    "img": "/pictures/sayuki.png",
+    "link": "sayuki",
+    "id": "018dc184-5193-7952-8124-879840f3463c"
+  },
+  {
+    "name": "Yuichi Tachibana",
+    "img": "/pictures/yuuichi.png",
+    "link": "yuichi",
+    "id": "018dc184-5193-7573-a331-d03992127526"
+  },
+  {
+    "name": "Kenji",
+    "img": "/pictures/kenji.png",
+    "link": "kenji",
+    "id": "018dc184-5193-75ad-9350-9f8c7552a75d"
+  },
+  {
+    "name": "Shingo Shoji",
+    "img": "/pictures/shingo.png",
+    "link": "shingo",
+    "id": "018dc184-5193-75d0-938e-bc927baf1710"
+  },
+  {
+    "name": "Takeshi Nakazato",
+    "img": "/pictures/takeshi.png",
+    "link": "takeshi",
+    "id": "018dc184-5193-74ab-98b7-c9c11e17b127"
+  },
+  {
+    "name": "Fumihiro",
+    "img": "/pictures/fumihiro.png",
+    "link": "fumihiro",
+    "id": "018dc184-5193-72dd-bbdb-0edc09529f8f"
+  },
+  {
+    "name": "Wataru Akiyama",
+    "img": "/pictures/wataru.png",
+    "link": "wataru",
+    "id": "018dc184-5193-796c-84e0-18b1424ed909"
+  },
+  {
+    "name": "Kazumi Akiyama",
+    "img": "/pictures/kazumi.png",
+    "link": "kazumi",
+    "id": "018dc6a1-456b-7276-9d3d-0538436480c3"
+  },
+  {
+    "name": "Kyoichi Sudo",
+    "img": "/pictures/sudo.png",
+    "link": "kyoichi",
+    "id": "018dc6a1-456b-777c-8b74-ea482a411369"
+  },
+  {
+    "name": "Seiji Iwaki",
+    "img": "/pictures/seiji.png",
+    "link": "seiji",
+    "id": "018dc6a1-456b-7f30-9875-8aeebdcb35db"
+  },
+  {
+    "name": "Miki",
+    "img": "/pictures/miki.png",
+    "link": "miki",
+    "id": "018dc6a1-456b-7cd1-aae6-c0f9687a767d"
+  },
+  {
+    "name": "Kai Kogashiwa",
+    "img": "/pictures/kai.png",
+    "link": "kai",
+    "id": "018dc6c9-120d-7d01-8374-02fc37be2188"
+  },
+  {
+    "name": "Ken Kogashiwa",
+    "img": "/pictures/ken.png",
+    "link": "ken",
+    "id": "018dc6c9-120d-7711-96ed-aec00d67ee87"
+  },
+  {
+    "name": "Atsuro Kawai",
+    "img": "/pictures/atsuro.png",
+    "link": "atsuro",
+    "id": "018dcb97-3f3e-7258-ad8e-a13414357a76"
+  },
+  {
+    "name": "Ichijo",
+    "img": "/pictures/ichijo.png",
+    "link": "ichijo",
+    "id": "018dcb97-3f3e-728e-87fe-4956d537b726"
+  },
+  {
+    "name": "Dr. Toshiya Joshima",
+    "img": "/pictures/joshima.png",
+    "link": "toshiya",
+    "id": "018dcb97-3f3e-7df0-8f25-866f87f46b36"
+  },
+  {
+    "name": "Kozo Hoshino",
+    "img": "/pictures/kozo.png",
+    "link": "kozo",
+    "id": "018dcb97-3f3e-79c7-a2f8-5853cb712f67"
+  },
+  {
+    "name": "Nobuhiko Akiyama",
+    "img": "/pictures/nobuhiko.png",
+    "link": "nobuhiko",
+    "id": "018dcb97-3f3e-7607-a968-317f76a42551"
+  },
+  {
+    "name": "Shuichi Matsumoto",
+    "img": "/pictures/matsumoto.png",
+    "link": "shuichi",
+    "id": "018dcb97-3f3e-705a-9271-6230c4cd45fb"
+  },
+  {
+    "name": "Daiki Ninomiya",
+    "img": "/pictures/daiki.png",
+    "link": "daiki",
+    "id": "018dcb97-3f3e-7570-be7e-1c4b1776209f"
+  },
+  {
+    "name": "Smiley Sakai",
+    "img": "/pictures/sakai.png",
+    "link": "smiley",
+    "id": "018dcb97-3f3e-7627-94c9-1413d85a7e83"
+  },
+  {
+    "name": "Sakamoto",
+    "img": "/pictures/sakamoto.png",
+    "link": "sakamoto",
+    "id": "018dcb97-3f3e-7d87-8cff-1feca9e3effd"
+  },
+  {
+    "name": "Shinichi",
+    "img": "/pictures/shinichi.png",
+    "link": "shinichi",
+    "id": "018dcb97-3f3e-72c8-8a68-11863dc7c082"
+  },
+  {
+    "name": "Toru Suetsugu",
+    "img": "/pictures/toru.png",
+    "link": "toru",
+    "id": "018dcb97-3f3e-7212-8c95-97631f70a09c"
+  },
+  {
+    "name": "Tomoyuki Tachi",
+    "img": "/pictures/tachi.png",
+    "link": "tomoyuki",
+    "id": "018dcb97-3f3e-7cfe-905b-0351efe44a31"
+  },
+  {
+    "name": "Tomiguchi",
+    "img": "/pictures/tomiguchi.png",
+    "link": "tomiguchi",
+    "id": "018dcb97-3f3e-7786-a318-136e4b71f1f8"
+  },
+  {
+    "name": "Kyoko Iwase",
+    "img": "/pictures/kyoko.png",
+    "link": "kyoko",
+    "id": "018dcb97-3f3e-75bb-ac31-8230d2be8da9"
+  },
+  {
+    "name": "Eiji Kubo",
+    "img": "/pictures/eiji.png",
+    "link": "eiji",
+    "id": "018dcb97-3f3e-7fbb-b368-ba457ee9a3ca"
+  },
+  {
+    "name": "Hideo Minagawa",
+    "img": "/pictures/hideo.png",
+    "link": "hideo",
+    "id": "c602b96b-a27a-47df-803a-80492593d0d6"
+  },
+  {
+    "name": "Hiroya Okuyama",
+    "img": "/pictures/hiroya.png",
+    "link": "hiroya",
+    "id": "11062fe3-1fac-4026-83b0-569b35eff215"
+  },
+  {
+    "name": "Go Hojo",
+    "img": "/pictures/go.png",
+    "link": "go",
+    "id": "fd6a42f8-fe15-4b4b-b356-f218ca234c2d"
+  },
+  {
+    "name": "Kaori",
+    "img": "/pictures/kaori.png",
+    "link": "kaori",
+    "id": "dd2e9343-4f05-4430-997d-a8922dc36d78"
+  },
+  {
+    "name": "Kobayakawa",
+    "img": "/pictures/kobayakawa.png",
+    "link": "kobayakawa",
+    "id": "196797c5-23ba-45aa-b267-a7a6d098dcdd"
+  },
+  {
+    "name": "Mika Uehara",
+    "img": "/pictures/mika.png",
+    "link": "mika",
+    "id": "45ced131-6bcf-4345-9817-835546d4aa05"
+  },
+  {
+    "name": "Rin Hojo",
+    "img": "/pictures/rin.png",
+    "link": "rin",
+    "id": "87377c08-2ea7-46bf-9087-328142f08cae"
+  },
+  {
+    "name": "Satoshi Omiya",
+    "img": "/pictures/omiya.png",
+    "link": "satoshi",
+    "id": "8cda8256-b002-4810-a573-2fa75895d404"
+  },
+  {
+    "name": "Ryuji Ikeda",
+    "img": "/pictures/ryuji.png",
+    "link": "ryuji",
+    "id": "21c66cf2-067c-4026-8478-9d59c38d4ee0"
+  },
+  {
+    "name": "Shinji Inui",
+    "img": "/pictures/shinji.png",
+    "link": "shinji",
+    "id": "9f8d5d66-430f-4ded-953b-ff36d3aa25c3"
+  }
+]
