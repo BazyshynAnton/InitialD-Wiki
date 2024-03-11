@@ -6,6 +6,9 @@ export interface Character {
   img: string
   link: string
   id: string
+  aboutCharacter: string
+  aboutCar: string
+  carImg: string
 }
 
 export default async function getCharacter() {
