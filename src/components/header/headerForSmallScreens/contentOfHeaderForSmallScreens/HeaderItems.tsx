@@ -1,6 +1,7 @@
 import ReusableLinks from '@/components/shared/reusableComponents/ReusableNavLinks'
 
 import { Image } from '../../../shared/nextjsImports'
+
 import styles from '../HeaderForSmallScreens.module.scss'
 
 interface Props {

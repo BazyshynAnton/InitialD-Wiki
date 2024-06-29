@@ -1,8 +1,8 @@
-import { Image } from '../shared/nextjsImports'
-
-import HeaderForSmallScreens from '../header/headerForSmallScreens/HeaderForSmallScreens'
-import NavigationBar from './contentOfHomePage/NavigationBar'
 import UnderIntro from './contentOfHomePage/UnderIntro'
+import NavigationBar from './contentOfHomePage/NavigationBar'
+import HeaderForSmallScreens from '../header/headerForSmallScreens/HeaderForSmallScreens'
+
+import { Image } from '../shared/nextjsImports'
 
 import styles from './HomePage.module.scss'
 

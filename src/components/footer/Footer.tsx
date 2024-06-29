@@ -1,8 +1,9 @@
 'use client'
-import { usePathname } from 'next/navigation'
-import { useEffect, useState } from 'react'
+
 import { Character } from '../../app/character/page'
-import Image from 'next/image'
+import { useEffect, useState } from '../shared/reactImports'
+import { Image, usePathname } from '../shared/nextjsImports'
+
 import characters from '../../../public/data/characters/characters.json'
 
 import styles from './Footer.module.scss'

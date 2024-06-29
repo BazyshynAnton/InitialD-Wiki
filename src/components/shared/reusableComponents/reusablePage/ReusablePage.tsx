@@ -1,8 +1,10 @@
 'use client'
-import HeaderForBigScreensNextLayout from '@/components/header/headerForBigScreensNextLayout/HeaderForBigScreensNextLayout'
 import HeaderForSmallScreens from '@/components/header/headerForSmallScreens/HeaderForSmallScreens'
+import HeaderForBigScreensNextLayout from '@/components/header/headerForBigScreensNextLayout/HeaderForBigScreensNextLayout'
+
+import { usePathname } from '../../nextjsImports'
+
 import styles from './ReusablePage.module.scss'
-import { usePathname } from 'next/navigation'
 
 interface ContentProps {
   children: React.ReactNode

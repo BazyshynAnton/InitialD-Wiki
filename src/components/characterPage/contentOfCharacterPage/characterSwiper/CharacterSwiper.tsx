@@ -8,20 +8,13 @@ import React, { useState } from 'react'
 import Image from 'next/image'
 import CustomNavigation from './swiperComponents/CustomNavigation'
 import CustomPagination from './swiperComponents/CustomPagination'
-import CharacterInfo from '../characterInfo/CharacterInfo'
 
 import 'swiper/css'
 import 'swiper/css/pagination'
 import styles from '../../CharacterPage.module.scss'
+import { Link } from '@/components/shared/nextjsImports'
 
 const CharacterSwiper = ({ characters }: { characters: Character[] }) => {
-  const [showInfo, setShowInfo] = useState<boolean>(false)
-
-  const handleCardClick = (link: string) => {
-    setShowInfo(true)
-    window.history.pushState(null, '', `/character/${link}`)
-  }
-
   return (
     <>
       <div style={{ width: '100%', height: '800px' }}>
@@ -49,21 +42,19 @@ const CharacterSwiper = ({ characters }: { characters: Character[] }) => {
                   key={`slide-${character.id}`}
                   className={styles.slide}
                 >
-                  <div
-                    onClick={() => handleCardClick(character.link)}
-                    className={styles.characterContainer}
-                  >
-                    <Image
-                      width={500}
-                      height={500}
-                      src={character.img}
-                      alt="character"
-                      loading="eager"
-                    />
-                  </div>
-                  <p>{character.name}</p>
+                  <Link href={`/character/${character.link}`}>
+                    <div className={styles.characterContainer}>
+                      <Image
+                        width={500}
+                        height={500}
+                        src={character.img}
+                        alt="character"
+                        loading="eager"
+                      />
+                    </div>
+                    <p>{character.name}</p>
+                  </Link>
                 </SwiperSlide>
-                {showInfo && <CharacterInfo character={character} />}
               </React.Fragment>
             )
           })}

@@ -1,8 +1,8 @@
 'use client'
-import Link from 'next/link'
+
+import { usePathname, Image, Link } from '../../shared/nextjsImports'
+
 import styles from './HeaderForBigScreensNextLayout.module.scss'
-import Image from 'next/image'
-import { usePathname } from 'next/navigation'
 
 const HeaderForBigScreensNextLayout = () => {
   const pathname = usePathname()

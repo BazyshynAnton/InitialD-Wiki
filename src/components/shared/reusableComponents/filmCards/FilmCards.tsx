@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import { Image } from '../../nextjsImports'
 
 import styles from './FilmCards.module.scss'
 

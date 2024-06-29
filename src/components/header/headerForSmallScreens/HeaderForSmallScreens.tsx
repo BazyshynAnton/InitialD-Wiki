@@ -1,11 +1,10 @@
 'use client'
-import { useState } from '../../shared/reactImports'
-import { Image } from '../../shared/nextjsImports'
-
 import HeaderItems from './contentOfHeaderForSmallScreens/HeaderItems'
 
+import { useState } from '../../shared/reactImports'
+import { Link, Image } from '../../shared/nextjsImports'
+
 import styles from './HeaderForSmallScreens.module.scss'
-import Link from 'next/link'
 
 const HeaderForSmallScreens = () => {
   const [menuOpen, setMenuOpen] = useState<boolean>(false)

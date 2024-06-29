@@ -2,8 +2,12 @@
   {
     "name": "Takumi Fujiwara",
     "img": "/pictures/takumi.png",
+
+    "prevLink": "shinji",
     "link": "takumi",
-    "aboutCharacter": "",
+    "nextLink": "natsuki",
+
+    "aboutCharacter": "At the age of 13, Takumi was made to become the delivery driver for his father, Bunta's, tofu store. Although he was initially scared of driving, he eventually became accustomed to the task. Bunta placed a cup of water in the cupholder of the car, so that Takumi could make sure he didn't break any of the tofu, and to train his driving skill. Despite improving his skill drastically over the course of a year, he still found the task boring, and resented his father for making him drive, as it was a crime. In the second year of middle school, Takumi meets Itsuki Takeuchi, a talkative boy who would go on to be his best friend. Annoyed with his father's drinking and making him drive, Takumi decides to become a delinquent, wishing for his father to be arrested. His first act was driving without a license in public, however, even after driving around for 2 hours, he was not caught due to his skill at driving. On his 14th birthday, Takumi stays over at Itsuki's house without telling Bunta, drinking and talking about his dad, but he feels bad when he says that his father doesn't love him. At 5AM the next morning, Bunta comes to pick Takumi up, telling him that he was worried for him and was waiting to celebrate his birthday with him. Bunta then takes Takumi on a downhill run on Akina before heading home. One year, during the winter, Takumi figured out how to use the gutters on the side of road to turn the car easier in the snow. Bunta tells him that he has also used the gutters in this way, and tells him that the gutters can also be used to jump out of a turn. Gutter techniques would go on to become one of Takumi's specialties, allowing to make his deliveries much quicker.",
     "aboutCar": "",
     "carImg": "",
     "id": "018dc184-5193-7bc9-848a-3d55bbb6f666"
@@ -11,7 +15,11 @@
   {
     "name": "Natsuki Mogi",
     "img": "/pictures/mogi.png",
+
+    "prevLink": "takumi",
     "link": "natsuki",
+    "nextLink": "bunta",
+
     "aboutCharacter": "",
     "aboutCar": "",
     "carImg": "",
@@ -20,7 +28,11 @@
   {
     "name": "Bunta Fujiwara",
     "img": "/pictures/bunta.png",
+
+    "prevLink": "natsuki",
     "link": "bunta",
+    "nextLink": "itsuki",
+
     "aboutCharacter": "",
     "aboutCar": "",
     "carImg": "",
@@ -29,7 +41,11 @@
   {
     "name": "Itsuki Takeuchi",
     "img": "/pictures/itsuki.png",
+
+    "prevLink": "bunta",
     "link": "itsuki",
+    "nextLink": "ryosuke",
+
     "aboutCharacter": "",
     "aboutCar": "",
     "carImg": "",
@@ -38,7 +54,11 @@
   {
     "name": "Ryosuke Takahashi",
     "img": "/pictures/ryosuke.png",
+
+    "prevLink": "itsuki",
     "link": "ryosuke",
+    "nextLink": "keisuke",
+
     "aboutCharacter": "",
     "aboutCar": "",
     "carImg": "",
@@ -47,7 +67,11 @@
   {
     "name": "Keisuke Takahashi",
     "img": "/pictures/keisuke.png",
+
+    "prevLink": "ryosuke",
     "link": "keisuke",
+    "nextLink": "kenta",
+
     "aboutCharacter": "",
     "aboutCar": "",
     "carImg": "",
@@ -56,7 +80,11 @@
   {
     "name": "Kenta Nakamura",
     "img": "/pictures/kenta.png",
+
+    "prevLink": "keisuke",
     "link": "kenta",
+    "nextLink": "koichiro",
+
     "aboutCharacter": "",
     "aboutCar": "",
     "carImg": "",
@@ -65,7 +93,11 @@
   {
     "name": "Koichiro Iketani",
     "img": "/pictures/iketani.png",
+
+    "prevLink": "kenta",
     "link": "koichiro",
+    "nextLink": "mako",
+
     "aboutCharacter": "",
     "aboutCar": "",
     "carImg": "",
@@ -74,7 +106,11 @@
   {
     "name": "Mako Sato",
     "img": "/pictures/mako.png",
+
+    "prevLink": "koichiro",
     "link": "mako",
+    "nextLink": "sayuki",
+
     "aboutCharacter": "",
     "aboutCar": "",
     "carImg": "",
@@ -83,7 +119,11 @@
   {
     "name": "Sayuki",
     "img": "/pictures/sayuki.png",
+
+    "prevLink": "mako",
     "link": "sayuki",
+    "nextLink": "yuichi",
+
     "aboutCharacter": "",
     "aboutCar": "",
     "carImg": "",
@@ -92,7 +132,11 @@
   {
     "name": "Yuichi Tachibana",
     "img": "/pictures/yuuichi.png",
+
+    "prevLink": "sayuki",
     "link": "yuichi",
+    "nextLink": "kenji",
+
     "aboutCharacter": "",
     "aboutCar": "",
     "carImg": "",
@@ -101,7 +145,11 @@
   {
     "name": "Kenji",
     "img": "/pictures/kenji.png",
+
+    "prevLink": "yuichi",
     "link": "kenji",
+    "nextLink": "shingo",
+
     "aboutCharacter": "",
     "aboutCar": "",
     "carImg": "",
@@ -110,7 +158,11 @@
   {
     "name": "Shingo Shoji",
     "img": "/pictures/shingo.png",
+
+    "prevLink": "kenji",
     "link": "shingo",
+    "nextLink": "takeshi",
+
     "aboutCharacter": "",
     "aboutCar": "",
     "carImg": "",
@@ -119,7 +171,11 @@
   {
     "name": "Takeshi Nakazato",
     "img": "/pictures/takeshi.png",
+
+    "prevLink": "shingo",
     "link": "takeshi",
+    "nextLink": "fumihiro",
+
     "aboutCharacter": "",
     "aboutCar": "",
     "carImg": "",
@@ -128,7 +184,11 @@
   {
     "name": "Fumihiro",
     "img": "/pictures/fumihiro.png",
+
+    "prevLink": "takeshi",
     "link": "fumihiro",
+    "nextLink": "wataru",
+
     "aboutCharacter": "",
     "aboutCar": "",
     "carImg": "",
@@ -137,7 +197,11 @@
   {
     "name": "Wataru Akiyama",
     "img": "/pictures/wataru.png",
+
+    "prevLink": "fumihiro",
     "link": "wataru",
+    "nextLink": "kazumi",
+
     "aboutCharacter": "",
     "aboutCar": "",
     "carImg": "",
@@ -146,7 +210,11 @@
   {
     "name": "Kazumi Akiyama",
     "img": "/pictures/kazumi.png",
+
+    "prevLink": "wataru",
     "link": "kazumi",
+    "nextLink": "kyoichi",
+
     "aboutCharacter": "",
     "aboutCar": "",
     "carImg": "",
@@ -155,7 +223,11 @@
   {
     "name": "Kyoichi Sudo",
     "img": "/pictures/sudo.png",
+
+    "prevLink": "kazumi",
     "link": "kyoichi",
+    "nextLink": "seiji",
+
     "aboutCharacter": "",
     "aboutCar": "",
     "carImg": "",
@@ -164,7 +236,11 @@
   {
     "name": "Seiji Iwaki",
     "img": "/pictures/seiji.png",
+
+    "prevLink": "kyoichi",
     "link": "seiji",
+    "nextLink": "miki",
+
     "aboutCharacter": "",
     "aboutCar": "",
     "carImg": "",
@@ -173,7 +249,11 @@
   {
     "name": "Miki",
     "img": "/pictures/miki.png",
+
+    "prevLink": "seiji",
     "link": "miki",
+    "nextLink": "kai",
+
     "aboutCharacter": "",
     "aboutCar": "",
     "carImg": "",
@@ -182,7 +262,11 @@
   {
     "name": "Kai Kogashiwa",
     "img": "/pictures/kai.png",
+
+    "prevLink": "miki",
     "link": "kai",
+    "nextLink": "ken",
+
     "aboutCharacter": "",
     "aboutCar": "",
     "carImg": "",
@@ -191,7 +275,11 @@
   {
     "name": "Ken Kogashiwa",
     "img": "/pictures/ken.png",
+
+    "prevLink": "kai",
     "link": "ken",
+    "nextLink": "atsuro",
+
     "aboutCharacter": "",
     "aboutCar": "",
     "carImg": "",
@@ -200,7 +288,11 @@
   {
     "name": "Atsuro Kawai",
     "img": "/pictures/atsuro.png",
+
+    "prevLink": "ken",
     "link": "atsuro",
+    "nextLink": "ichijo",
+
     "aboutCharacter": "",
     "aboutCar": "",
     "carImg": "",
@@ -209,7 +301,11 @@
   {
     "name": "Ichijo",
     "img": "/pictures/ichijo.png",
+
+    "prevLink": "atsuro",
     "link": "ichijo",
+    "nextLink": "toshiya",
+
     "aboutCharacter": "",
     "aboutCar": "",
     "carImg": "",
@@ -218,7 +314,11 @@
   {
     "name": "Dr. Toshiya Joshima",
     "img": "/pictures/joshima.png",
+
+    "prevLink": "ichijo",
     "link": "toshiya",
+    "nextLink": "kozo",
+
     "aboutCharacter": "",
     "aboutCar": "",
     "carImg": "",
@@ -227,7 +327,11 @@
   {
     "name": "Kozo Hoshino",
     "img": "/pictures/kozo.png",
+
+    "prevLink": "toshiya",
     "link": "kozo",
+    "nextLink": "nobuhiko",
+
     "aboutCharacter": "",
     "aboutCar": "",
     "carImg": "",
@@ -236,7 +340,11 @@
   {
     "name": "Nobuhiko Akiyama",
     "img": "/pictures/nobuhiko.png",
+
+    "prevLink": "kozo",
     "link": "nobuhiko",
+    "nextLink": "shuichi",
+
     "aboutCharacter": "",
     "aboutCar": "",
     "carImg": "",
@@ -245,7 +353,11 @@
   {
     "name": "Shuichi Matsumoto",
     "img": "/pictures/matsumoto.png",
+
+    "prevLink": "nobuhiko",
     "link": "shuichi",
+    "nextLink": "daiki",
+
     "aboutCharacter": "",
     "aboutCar": "",
     "carImg": "",
@@ -254,7 +366,11 @@
   {
     "name": "Daiki Ninomiya",
     "img": "/pictures/daiki.png",
+
+    "prevLink": "shuichi",
     "link": "daiki",
+    "nextLink": "smiley",
+
     "aboutCharacter": "",
     "aboutCar": "",
     "carImg": "",
@@ -263,7 +379,11 @@
   {
     "name": "Smiley Sakai",
     "img": "/pictures/sakai.png",
+
+    "prevLink": "daiki",
     "link": "smiley",
+    "nextLink": "sakamoto",
+
     "aboutCharacter": "",
     "aboutCar": "",
     "carImg": "",
@@ -272,7 +392,11 @@
   {
     "name": "Sakamoto",
     "img": "/pictures/sakamoto.png",
+
+    "prevLink": "smiley",
     "link": "sakamoto",
+    "nextLink": "shinichi",
+
     "aboutCharacter": "",
     "aboutCar": "",
     "carImg": "",
@@ -281,7 +405,11 @@
   {
     "name": "Shinichi",
     "img": "/pictures/shinichi.png",
+
+    "prevLink": "sakamoto",
     "link": "shinichi",
+    "nextLink": "toru",
+
     "aboutCharacter": "",
     "aboutCar": "",
     "carImg": "",
@@ -290,7 +418,11 @@
   {
     "name": "Toru Suetsugu",
     "img": "/pictures/toru.png",
+
+    "prevLink": "shinichi",
     "link": "toru",
+    "nextLink": "tomoyuki",
+
     "aboutCharacter": "",
     "aboutCar": "",
     "carImg": "",
@@ -299,7 +431,11 @@
   {
     "name": "Tomoyuki Tachi",
     "img": "/pictures/tachi.png",
+
+    "prevLink": "toru",
     "link": "tomoyuki",
+    "nextLink": "tomiguchi",
+
     "aboutCharacter": "",
     "aboutCar": "",
     "carImg": "",
@@ -308,7 +444,11 @@
   {
     "name": "Tomiguchi",
     "img": "/pictures/tomiguchi.png",
+
+    "prevLink": "tomoyuki",
     "link": "tomiguchi",
+    "nextLink": "kyoko",
+
     "aboutCharacter": "",
     "aboutCar": "",
     "carImg": "",
@@ -317,7 +457,11 @@
   {
     "name": "Kyoko Iwase",
     "img": "/pictures/kyoko.png",
+
+    "prevLink": "tomiguchi",
     "link": "kyoko",
+    "nextLink": "eiji",
+
     "aboutCharacter": "",
     "aboutCar": "",
     "carImg": "",
@@ -326,7 +470,11 @@
   {
     "name": "Eiji Kubo",
     "img": "/pictures/eiji.png",
+
+    "prevLink": "kyoko",
     "link": "eiji",
+    "nextLink": "hideo",
+
     "aboutCharacter": "",
     "aboutCar": "",
     "carImg": "",
@@ -335,7 +483,11 @@
   {
     "name": "Hideo Minagawa",
     "img": "/pictures/hideo.png",
+
+    "prevLink": "eiji",
     "link": "hideo",
+    "nextLink": "hiroya",
+
     "aboutCharacter": "",
     "aboutCar": "",
     "carImg": "",
@@ -344,7 +496,11 @@
   {
     "name": "Hiroya Okuyama",
     "img": "/pictures/hiroya.png",
+
+    "prevLink": "hideo",
     "link": "hiroya",
+    "nextLink": "go",
+
     "aboutCharacter": "",
     "aboutCar": "",
     "carImg": "",
@@ -353,7 +509,11 @@
   {
     "name": "Go Hojo",
     "img": "/pictures/go.png",
+
+    "prevLink": "hiroya",
     "link": "go",
+    "nextLink": "kaori",
+
     "aboutCharacter": "",
     "aboutCar": "",
     "carImg": "",
@@ -362,7 +522,11 @@
   {
     "name": "Kaori",
     "img": "/pictures/kaori.png",
+
+    "prevLink": "go",
     "link": "kaori",
+    "nextLink": "kobayakawa",
+
     "aboutCharacter": "",
     "aboutCar": "",
     "carImg": "",
@@ -371,7 +535,11 @@
   {
     "name": "Kobayakawa",
     "img": "/pictures/kobayakawa.png",
+
+    "prevLink": "kaori",
     "link": "kobayakawa",
+    "nextLink": "mika",
+
     "aboutCharacter": "",
     "aboutCar": "",
     "carImg": "",
@@ -380,7 +548,11 @@
   {
     "name": "Mika Uehara",
     "img": "/pictures/mika.png",
+
+    "prevLink": "kobayakawa",
     "link": "mika",
+    "nextLink": "rin",
+
     "aboutCharacter": "",
     "aboutCar": "",
     "carImg": "",
@@ -389,7 +561,11 @@
   {
     "name": "Rin Hojo",
     "img": "/pictures/rin.png",
+
+    "prevLink": "mika",
     "link": "rin",
+    "nextLink": "satoshi",
+
     "aboutCharacter": "",
     "aboutCar": "",
     "carImg": "",
@@ -398,7 +574,11 @@
   {
     "name": "Satoshi Omiya",
     "img": "/pictures/omiya.png",
+
+    "prevLink": "rin",
     "link": "satoshi",
+    "nextLink": "ryuji",
+
     "aboutCharacter": "",
     "aboutCar": "",
     "carImg": "",
@@ -407,7 +587,11 @@
   {
     "name": "Ryuji Ikeda",
     "img": "/pictures/ryuji.png",
+
+    "prevLink": "satoshi",
     "link": "ryuji",
+    "nextLink": "shinji",
+
     "aboutCharacter": "",
     "aboutCar": "",
     "carImg": "",
@@ -416,7 +600,11 @@
   {
     "name": "Shinji Inui",
     "img": "/pictures/shinji.png",
+
+    "prevLink": "ryuji",
     "link": "shinji",
+    "nextLink": "takumi",
+
     "aboutCharacter": "",
     "aboutCar": "",
     "carImg": "",
