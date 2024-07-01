@@ -1,0 +1,35 @@
+// navigation
+
+.arrowLeft,
+.arrowRight {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  background-color: #fff;
+  mask-repeat: no-repeat;
+  mask-size: cover;
+  cursor: pointer;
+  z-index: 999;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    background-color: #000;
+  }
+}
+
+.arrowLeft {
+  top: 35%;
+  margin-left: 20px;
+  mask-image: url(/pictures/arrowLeft.png);
+  &:hover {
+    transform: translateX(-5px);
+  }
+}
+.arrowRight {
+  top: 35%;
+  right: 0;
+  margin-right: 20px;
+  mask-image: url(/pictures/arrowRight.png);
+  &:hover {
+    transform: translateX(5px);
+  }
+}
