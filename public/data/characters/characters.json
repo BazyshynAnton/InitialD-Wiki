@@ -22,9 +22,11 @@
     "link": "natsuki",
     "nextLink": "bunta",
 
-    "aboutCharacter": "",
+    "aboutCharacter": "Takumi Fujiwara's love interest during the Akina's Eight-Six Arc. She's one of the few people to not be terrified by Takumi's racing.",
+    "characterImg": "/pictures/AboutCharacter/natsukiFull.png",
+    "carName": "",
     "aboutCar": "",
-    "carImg": "",
+    "carImg": "noCar",
     "id": "018dc184-5193-757e-bcff-a47a85a6d4c4"
   },
   {
@@ -35,9 +37,11 @@
     "link": "bunta",
     "nextLink": "itsuki",
 
-    "aboutCharacter": "",
-    "aboutCar": "",
-    "carImg": "",
+    "characterImg": "/pictures/AboutCharacter/buntaFull.png",
+    "aboutCharacter": "Is the owner of a tofu shop in Gunma, and the father of Takumi. He used to be the fastest downhill racer on Akina years ago, but he no longer races, preferring to guide Takumi's racing development.",
+    "carName": "Subaru Impreza WRX STi Coupe Type R Version V",
+    "aboutCar": "Also known simply as the Impreza or the Imp, is a car owned by Bunta Fujiwara, though it is occasionally driven by his son, Takumi. It is equipped with an EJ207, a turbocharged engine. The car's actual output is unknown, but a stock model could produce 280PS. After his son, Takumi, joins Project D, Bunta Fujiwara plans to get himself a new car, as the Eight-Six that him and his son use is used by Takumi more than himself. He asks his friend and mechanic Masashi Suzuki to find him a new car to drive, eventually getting him a Subaru Impreza. During a test drive of the new Impreza, he enters into an impromptu battle with his son on Akina's downhill, performing a gutter run alongside him before passing him on the straightaway. After this encounter, Bunta decided to buy the Impreza, keeping it a secret from his son. After Project D's second set of battles with the Northern Saitama Alliance, Bunta reveals the Impreza to Takumi, who realises that Bunta was the racer he battled on Akina. Bunta tells him that he should alternate which car he uses for deliveries from now on. Bunta made this decision so that Takumi can realize the weaknesses that his Eight-Six has, and so that he can become a better driver. Takumi would also use the Impreza on several of his dates with Mika Uehara, as the Impreza had a better air conditioning system than the Eight-Six. Takumi would continue to use the Impreza after Project D's breakup, bringing it with him to the end party with the members and staff. Exclusively in the anime, Takumi passed a Toyota 86 GT while on a delivery run on Akina.",
+    "carImg": "/pictures/AboutCharacter/imprezaFull.png",
     "id": "018dc184-5193-7116-b207-d0614cd27d10"
   },
   {
@@ -48,9 +52,11 @@
     "link": "itsuki",
     "nextLink": "ryosuke",
 
-    "aboutCharacter": "",
-    "aboutCar": "",
-    "carImg": "",
+    "characterImg": "/pictures/AboutCharacter/itsukiFull.png",
+    "aboutCharacter": "is Takumi's best friend and a member of the Akina SpeedStars. He provides the comic relief in the series, and is generally quite loud and obnoxious. Itsuki works part-time at a gas station with Takumi and Iketani; Itsuki plans to use the money he earns to buy an AE86 Corolla Levin (to complement Takumi's AE86 Trueno) but mistakenly buys an inferior (less power, poor brakes, less chassis bracing, and looser suspension) AE85. This upsets him until Takumi takes him for a drive (ultimately racing it downhill), demonstrating that the driver's skill can make a difference. With a car, he is a self-proclaimed member of the Akina SpeedStars. Unlike Kenji and Iketani, Itsuki is the most optimistic and excitable \"member\" of the SpeedStars. He eventually purchases a turbocharger for his Eight-Five. Self-proclaimed \"Lonely Driver\".",
+    "carName": "Toyota Corolla Levin SR (AE85)",
+    "aboutCar": "The Levin is fitted with a 1.5L litre, 8 valve 3A-U. It made around 80PS and revved at 5600RPM. It is later fitted with a bolt-on turbo with front mount intercooler, and some other basic modifications, increasing its power to 150PS.",
+    "carImg": "/pictures/AboutCharacter/levinFull.png",
     "id": "018dc184-5193-7ed6-a2cd-af1147f3ea0c"
   },
   {
@@ -61,9 +67,11 @@
     "link": "ryosuke",
     "nextLink": "keisuke",
 
-    "aboutCharacter": "",
-    "aboutCar": "",
-    "carImg": "",
+    "characterImg": "/pictures/AboutCharacter/ryosukeFull.png",
+    "aboutCharacter": "Is the founder, and leader of both the Akagi RedSuns and Project D. Famously nicknamed Akagi's White Comet (赤城の白い彗星, Akagi no Shiroi Suisei), Ryosuke created the RedSuns with the purpose of dominating the street racing scene all over Japan, recruiting his brother Keisuke and others local to Mount Akagi to achieve this goal. Alongside Keisuke, they're both given the nicknames of the 'Rotary Brothers'. He is a very skilled racer who can predict the racing outcomes by his theories, something that Keisuke (his brother) has been unable to understand and/or replicate. He drives a White Mazda FC3S RX-7. His real aim is to figure out the 'Fastest Racing Theory', and this is where Takumi Fujiwara fits in almost perfectly.",
+    "aboutCar": "The FC is fitted with a 13B-T Twin-rotor rotary engine. The engine was originally tuned to 340PS, and was later detuned to 260PS for his battle against Takumi Fujiwara. It was likely retuned for any subsequent battles, especially the battle with Rin Hojo, though stats are never given.",
+    "carName": "Mazda SAVANNA RX-7 (FC3S)",
+    "carImg": "/pictures/AboutCharacter/savannaFull.png",
     "id": "018dc184-5193-762e-aa12-62c20f77847c"
   },
   {
@@ -74,9 +82,11 @@
     "link": "keisuke",
     "nextLink": "kenta",
 
-    "aboutCharacter": "",
-    "aboutCar": "",
-    "carImg": "",
+    "characterImg": "/pictures/AboutCharacter/keisukeFull.png",
+    "aboutCharacter": "Is a major character in Initial D, and the secondary protagonist of the Project D Arc. An ex-bosozoku gang member, he was introduced to street racing by his brother Ryosuke and joined his team, the Akagi RedSuns, and soon became their second best driver in his Mazda ɛ̃fini RX-7 Type R (FD3S). He and his brother are nicknamed \"The Rotary Brothers\", as they both drive cars with rotary engines. During the RedSuns expedition to Akina, he was defeated by Takumi Fujiwara in an impromptu battle, an event that helped kickstart Fujiwara's racing career and created a rivalry between the two. He was invited by his brother to join Project D as their uphill ace.",
+    "carName": "Mazda ɛ̃fini RX-7 Type R (FD3S)",
+    "aboutCar": "The FD is fitted with a 13B-REW Twin-rotor Rotary engine. The engine had twin sequential turbos. It was tuned to 340PS.",
+    "carImg": "/pictures/AboutCharacter/fdFull.png",
     "id": "018dc184-5193-7d66-bfaf-7a257a4912c2"
   },
   {
@@ -87,9 +97,11 @@
     "link": "kenta",
     "nextLink": "koichiro",
 
-    "aboutCharacter": "",
-    "aboutCar": "",
-    "carImg": "",
+    "characterImg": "/pictures/AboutCharacter/kentaFull.png",
+    "aboutCharacter": " is one of the youngest members of the Akagi RedSuns. Kenta absolutely adores Keisuke Takahashi and is always eager to prove himself to Keisuke. Kenta was recognized by Keisuke himself for his driving skills, and has been somewhat taken under his wing. Kenta specializes in rain conditions, because he had a habit of practicing in the rain since the wet roads wouldn't wear his tires down as much. He is also shown to be a scout for the RedSuns as shown in Second Stage when he was able to scout the Eight-Six during the time the engine was swapped and was able to inform the Rotary Brothers about the Shomaru battle between the two Eight-Sixes.",
+    "carName": "Nissan Silvia Q's (S14)",
+    "aboutCar": "The S14 is equipped with a SR20DE, a naturally aspirated engine. It made 170PS.",
+    "carImg": "/pictures/AboutCharacter/s14Full.png",
     "id": "018dc184-5193-7dcd-9409-1e3e3428a585"
   },
   {
@@ -100,9 +112,11 @@
     "link": "koichiro",
     "nextLink": "mako",
 
-    "aboutCharacter": "",
-    "aboutCar": "",
-    "carImg": "",
+    "characterImg": "/pictures/AboutCharacter/iketaniFull.png",
+    "aboutCharacter": "Is the leader of the Akina SpeedStars. While not a highly skilled street racer, he is likely the most skilled member of the SpeedStars, and leads the team passionately. He works at the Gas Station with Takumi Fujiwara and Itsuki Takeuchi, eventually introducing the two to Gunma's street racing scene by taking them up to Akina to meet his team. After the SpeedStars are challenged by the Akagi RedSuns he seeks the help of a tofu store owner who was the fastest on Akina. The tofu store owner sends his son, Takumi, to race in his stead, kick starting his racing career. During the early stages of Takumi's career, Iketani helps him out on several occasions with his knowledge of cars and street racing.",
+    "carName": "Nissan Silvia K's (S13)",
+    "aboutCar": "The S13 is equipped with a CA18DET, a turbocharged engine. The cars actual output is unknown, but a stock model could produce 175PS.",
+    "carImg": "/pictures/AboutCharacter/s13Full.png",
     "id": "018dc184-5193-796c-a1b8-bfa252b2f9ae"
   },
   {
@@ -113,9 +127,11 @@
     "link": "mako",
     "nextLink": "sayuki",
 
-    "aboutCharacter": "",
-    "aboutCar": "",
-    "carImg": "",
+    "characterImg": "/pictures/AboutCharacter/makoFull.png",
+    "aboutCharacter": "Is the driver of Impact Blue, consisting of her and her co-pilot and best friend Sayuki.",
+    "carName": "Nissan SilEighty (RPS13)",
+    "aboutCar": "The SilEighty is equipped with a SR20DET, a turbocharged engine. It made 230PS.",
+    "carImg": "/pictures/AboutCharacter/sil80Full.png",
     "id": "018dc184-5193-7303-88aa-d569e8ebafa0"
   },
   {
@@ -126,9 +142,11 @@
     "link": "sayuki",
     "nextLink": "yuichi",
 
-    "aboutCharacter": "",
-    "aboutCar": "",
-    "carImg": "",
+    "characterImg": "/pictures/AboutCharacter/sayuki.png",
+    "aboutCharacter": "Is the navigator for Impact Blue. She acts as a co-pilot for Mako Sato, and works with her in her battle against Takumi Fujiwara in First Stage. Sayuki is a cheerful, outgoing girl always looking for good looking men. She's extremely flirtatious and loves to tease men and Mako herself, and also develops a small crush on Takumi Fujiwara after her and Mako's race against him. As Mako's navigator/co-driver, she is responsible for necessary callouts that may inform Mako of something important; for example, obstacles in the course, oncoming traffic, specific braking zones, etc. Notably in the race against Takumi, she instructed Mako to spin out after she entered a corner too quickly and sharply, preventing to recover safely.",
+    "carName": "Nissan SilEighty (RPS13)",
+    "aboutCar": "The SilEighty is equipped with a SR20DET, a turbocharged engine. It made 230PS.",
+    "carImg": "/pictures/AboutCharacter/sil80Full.png",
     "id": "018dc184-5193-7952-8124-879840f3463c"
   },
   {

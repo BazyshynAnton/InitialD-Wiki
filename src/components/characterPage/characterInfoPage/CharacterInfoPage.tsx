@@ -43,13 +43,15 @@ export default function CharacterInfoPage({
         <div className={styles.characterTextInfo}>
           <h3>{character.name}</h3>
           <p>{character.aboutCharacter}</p>
-          <Image
-            width={900}
-            height={500}
-            src={character.carImg}
-            alt="characterCar"
-            loading="eager"
-          />
+          {character.carImg !== 'noCar' && (
+            <Image
+              width={900}
+              height={500}
+              src={character.carImg}
+              alt="characterCar"
+              loading="eager"
+            />
+          )}
           <h3>{character.carName}</h3>
           <p>{character.aboutCar}</p>
         </div>
