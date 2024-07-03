@@ -38,12 +38,12 @@ const UnderIntro = () => {
             <>
               <div className={styles.watchPlusMovieContainer}>
                 <h2>Watch</h2>
-                <FilmCards img="/pictures/fifthStageLogo.jpg" />
+                <FilmCards img="/pictures/userInterface/fifthStageLogo.jpg" />
               </div>
               <div className={styles.playLinkToMovies}></div>
               <div className={styles.nowPlusMovieContainer}>
                 <h2>Now</h2>
-                <FilmCards img="/pictures/firstStageLogo.jpg" />
+                <FilmCards img="/pictures/userInterface/firstStageLogo.jpg" />
               </div>
             </>
           ) : (
@@ -54,8 +54,8 @@ const UnderIntro = () => {
               </div>
               <div className={styles.playLinkToMovies}></div>
               <div className={styles.smallScreenMovieContainer}>
-                <FilmCards img="/pictures/fifthStageLogo.jpg" />
-                <FilmCards img="/pictures/firstStageLogo.jpg" />
+                <FilmCards img="/pictures/userInterface/fifthStageLogo.jpg" />
+                <FilmCards img="/pictures/userInterface/firstStageLogo.jpg" />
               </div>
             </>
           )}

@@ -10,7 +10,7 @@
     auto,
     100vh,
     100%,
-    url(/pictures/introduce_bg.jpg),
+    url(/pictures/bgPictures/introduce_bg.jpg),
     no-repeat,
     center,
     fixed,
@@ -28,7 +28,7 @@
     auto,
     100vh,
     100%,
-    url(/pictures/char_bg.jpg),
+    url(/pictures/bgPictures/char_bg.jpg),
     no-repeat,
     center,
     fixed,
@@ -45,7 +45,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    mask-image: url(/pictures/maskBg.webp);
+    mask-image: url(/pictures/userInterface/maskBg.webp);
     mask-size: 100% auto;
     mask-repeat: no-repeat;
     mask-position: left top;
@@ -59,6 +59,6 @@
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.33);
-    background-image: url(/pictures/textureStone.webp);
+    background-image: url(/pictures/userInterface/textureStone.webp);
   }
 }

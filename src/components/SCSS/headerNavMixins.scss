@@ -1,5 +1,5 @@
 @mixin logo-D($width, $height) {
-  mask-image: url(/pictures/maskForIntroText.png);
+  mask-image: url(/pictures/userInterface/maskForIntroText.png);
   mask-size: 60% auto;
   cursor: pointer;
   width: $width;

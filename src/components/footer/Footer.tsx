@@ -37,7 +37,7 @@ const Footer = () => {
         <Image
           width={500}
           height={500}
-          src="/pictures/logoD.webp"
+          src="/pictures/userInterface/logoD.webp"
           alt="logoD"
           loading="eager"
           className={styles.footerLogoD}
@@ -46,21 +46,21 @@ const Footer = () => {
           <Image
             width={500}
             height={500}
-            src="/pictures/ntvLogo.jpg"
+            src="/pictures/userInterface/ntvLogo.jpg"
             alt="logoD"
             loading="eager"
           />
           <Image
             width={500}
             height={500}
-            src="/pictures/netflixLogo.jpg"
+            src="/pictures/userInterface/netflixLogo.jpg"
             alt="logoD"
             loading="eager"
           />
           <Image
             width={500}
             height={500}
-            src="/pictures/tbsLogo.png"
+            src="/pictures/userInterface/tbsLogo.png"
             alt="logoD"
             loading="eager"
           />

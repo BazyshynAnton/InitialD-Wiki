@@ -19,7 +19,7 @@
 .arrowLeft {
   top: 35%;
   margin-left: 20px;
-  mask-image: url(/pictures/arrowLeft.png);
+  mask-image: url(/pictures/icons/arrowLeft.png);
   &:hover {
     transform: translateX(-5px);
   }
@@ -28,7 +28,7 @@
   top: 35%;
   right: 0;
   margin-right: 20px;
-  mask-image: url(/pictures/arrowRight.png);
+  mask-image: url(/pictures/icons/arrowRight.png);
   &:hover {
     transform: translateX(5px);
   }

@@ -33,7 +33,7 @@
         width: 100%;
         height: auto;
         object-fit: contain;
-        mask-image: url(/pictures/maskForIntroText.png);
+        mask-image: url(/pictures/userInterface/maskForIntroText.png);
         mask-size: 70% auto;
       }
     }
@@ -49,7 +49,7 @@
   grid-template-rows: max-content max-content 1fr;
 
   padding: 40px 0px 0px 0px;
-  background-image: url(/pictures/navbarBg.webp);
+  background-image: url(/pictures/userInterface/navbarBg.webp);
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -105,7 +105,7 @@
       left: 59%;
       width: 100px;
       height: 100px;
-      mask-image: url(/pictures/iconPlay.svg);
+      mask-image: url(/pictures/icons/iconPlay.svg);
       mask-repeat: no-repeat;
       background-color: #fff;
       transition: all 0.3s ease-in-out;
@@ -125,7 +125,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     content: '';
-    background-image: url(/pictures/movieBg.webp);
+    background-image: url(/pictures/userInterface/movieBg.webp);
 
     z-index: -1;
   }
@@ -143,7 +143,7 @@
     content: '';
     width: 100%;
     height: 100%;
-    background-image: url(/pictures/textureStone.webp);
+    background-image: url(/pictures/userInterface/textureStone.webp);
     position: absolute;
     top: 0;
     left: 0;
@@ -163,7 +163,7 @@
     top: 30%;
     left: 0;
     background-color: #bf0411;
-    mask-image: url(/pictures/maskBg.webp);
+    mask-image: url(/pictures/userInterface/maskBg.webp);
     mask-size: 100% 100%;
     mask-repeat: no-repeat;
     rotate: 180deg;
@@ -177,7 +177,7 @@
     bottom: -110%;
     left: 0;
     background-color: #bf0411;
-    mask-image: url(/pictures/maskBg.webp);
+    mask-image: url(/pictures/userInterface/maskBg.webp);
     mask-size: 100% auto;
     mask-repeat: no-repeat;
   }
@@ -206,7 +206,7 @@
     cursor: pointer;
     width: 150px;
     height: 150px;
-    mask-image: url(/pictures/iconPlay.svg);
+    mask-image: url(/pictures/icons/iconPlay.svg);
     mask-repeat: no-repeat;
     background: linear-gradient(to bottom, #bf0411 40%, #000 100%);
     transition: all 0.4s ease-in-out;
@@ -269,7 +269,7 @@
 
   &::after {
     content: '';
-    background-image: url(/pictures/dot.png);
+    background-image: url(/pictures/userInterface/dot.png);
     position: absolute;
     top: 0;
     left: 0;

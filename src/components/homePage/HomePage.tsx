@@ -17,7 +17,7 @@ const HomePage = () => {
           <Image
             width={2000}
             height={3000}
-            src="/pictures/previewPicture.jpg"
+            src="/pictures/userInterface/previewPicture.jpg"
             alt="poster"
             priority={true}
             loading="eager"
@@ -26,7 +26,7 @@ const HomePage = () => {
             <Image
               width={500}
               height={500}
-              src="/pictures/introImgText.png"
+              src="/pictures/userInterface/introImgText.png"
               alt="poster"
               loading="eager"
             />

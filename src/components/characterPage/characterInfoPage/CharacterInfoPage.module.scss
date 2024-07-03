@@ -33,7 +33,7 @@
     height: 100%;
     top: 0;
     left: 0;
-    background-image: url(/pictures/textureStone.webp);
+    background-image: url(/pictures/userInterface/textureStone.webp);
   }
 }
 
@@ -124,7 +124,7 @@
   mask-size: cover;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
-  mask-image: url(/pictures/cross.png);
+  mask-image: url(/pictures/icons/cross.png);
 
   &:hover {
     background-color: #000;
