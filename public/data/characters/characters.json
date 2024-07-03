@@ -142,7 +142,7 @@
     "link": "sayuki",
     "nextLink": "yuichi",
 
-    "characterImg": "/pictures/AboutCharacter/sayuki.png",
+    "characterImg": "/pictures/AboutCharacter/sayukiFull.png",
     "aboutCharacter": "Is the navigator for Impact Blue. She acts as a co-pilot for Mako Sato, and works with her in her battle against Takumi Fujiwara in First Stage. Sayuki is a cheerful, outgoing girl always looking for good looking men. She's extremely flirtatious and loves to tease men and Mako herself, and also develops a small crush on Takumi Fujiwara after her and Mako's race against him. As Mako's navigator/co-driver, she is responsible for necessary callouts that may inform Mako of something important; for example, obstacles in the course, oncoming traffic, specific braking zones, etc. Notably in the race against Takumi, she instructed Mako to spin out after she entered a corner too quickly and sharply, preventing to recover safely.",
     "carName": "Nissan SilEighty (RPS13)",
     "aboutCar": "The SilEighty is equipped with a SR20DET, a turbocharged engine. It made 230PS.",
@@ -157,9 +157,11 @@
     "link": "yuichi",
     "nextLink": "kenji",
 
-    "aboutCharacter": "",
-    "aboutCar": "",
-    "carImg": "",
+    "characterImg": "/pictures/AboutCharacter/yuichiFull.png",
+    "aboutCharacter": "Is the owner of the gas station that Takumi Fujiwara and his friends worked in. An old friend of Bunta Fujiwara's and a racer in his youth, Yuichi acts like a father figure to the Akina SpeedStars. His 1994 Toyota Camry (V40) appears in the first episode of Initial D First Stage while Takumi (assumed to be Bunta by Yuichi) passes Yuichi on a downhill run in Akina.",
+    "carName": "Toyota Camry (V40)",
+    "aboutCar": "The Toyota Camry is an automobile sold internationally by the Japanese manufacturer Toyota since 1982, spanning multiple generations. Originally compact in size (narrow-body), later Camry models have grown to fit the mid-size classification (wide-body)—although the two sizes co-existed in the 1990s. Yuichi Tachibana is the owner of a 1994 narrow body Toyota Camry.",
+    "carImg": "/pictures/AboutCharacter/camryV40Full.png",
     "id": "018dc184-5193-7573-a331-d03992127526"
   },
   {
@@ -170,9 +172,11 @@
     "link": "kenji",
     "nextLink": "shingo",
 
-    "aboutCharacter": "",
-    "aboutCar": "",
-    "carImg": "",
+    "characterImg": "/pictures/AboutCharacter/kenjiFull.png",
+    "aboutCharacter": "Is a member of the Akina SpeedStars and Koichiro Iketani's childhood best friend. He is the second-best driver in the SpeedStars and was set to race Keisuke Takahashi in Iketani's stead, though he was replaced when the Eight-Six arrived at the last minute. His last name has never been revealed.",
+    "carName": "Nissan 180SX Type II (RPS13)",
+    "aboutCar": "The 180SX is equipped with a SR20DET engine, a turbocharged engine. The cars actual output is unknown, but a stock model could produce 205PS.",
+    "carImg": "/pictures/AboutCharacter/180SXFull.png",
     "id": "018dc184-5193-75ad-9350-9f8c7552a75d"
   },
   {
@@ -183,9 +187,11 @@
     "link": "shingo",
     "nextLink": "takeshi",
 
-    "aboutCharacter": "",
-    "aboutCar": "",
-    "carImg": "",
+    "characterImg": "/pictures/AboutCharacter/shingoFull.png",
+    "aboutCharacter": "Is a member of the Myogi NightKids who drives a red Honda Civic SiR-II (EG6). Shingo races dangerously; he will nudge his rival's car in order to make the other driver lose control if he's unsure about his own chances of winning. He doesn't find plain downhill races any fun, preferring to race against a handicap. In a particular handicap match, Shingo tapes his right hand to the steering wheel for the duration of the race. By doing this, Shingo limits his own steering capabilities. In terms of racing ability, Shingo is the best driver on the Night Kids team. He is also a childhood friend of Impact Blue's navigator, Sayuki.",
+    "carName": "Honda Civic SiR-II (EG6)",
+    "aboutCar": "Also known simply as the Civic, the SiR-II or the EG6, is the signature car of Myogi NightKids member Shingo Shoji. It is the first Honda Civic encountered in the series. It is equipped with an B16A engine, a naturally aspirated engine. It was lightly tuned and made 185PS.",
+    "carImg": "/pictures/AboutCharacter/eg6Full.png",
     "id": "018dc184-5193-75d0-938e-bc927baf1710"
   },
   {
@@ -196,9 +202,11 @@
     "link": "takeshi",
     "nextLink": "fumihiro",
 
-    "aboutCharacter": "",
-    "aboutCar": "",
-    "carImg": "",
+    "characterImg": "/pictures/AboutCharacter/takeshiFull.png",
+    "aboutCharacter": "Is the leader of the Myogi NightKids. He made his first appearance at the race in Akina where Keisuke Takahashi of the RedSuns is to race against Takumi Fujiwara. Surprised that Takumi could defeat Keisuke, Takeshi decides that he is going to be the one to challenge and defeat the \"Akina downhill specialist\", and that the RedSuns are next on his list.",
+    "carName": "Nissan Skyline GT-R V-Spec II (BNR32)",
+    "aboutCar": "Known as the Skyline GT-R, the GTR, or the R32, is the signature vehicle of Myogi NightKids leader, Takeshi Nakazato. It is the first Nissan Skyline introduced in the series. The R32 is equipped with a RB26DETT, a twin-turbocharged engine. The R32 made 380PS during the battle with Takumi, and was later tuned up to 395PS for the battle with Keisuke.",
+    "carImg": "/pictures/AboutCharacter/r32Full.png",
     "id": "018dc184-5193-74ab-98b7-c9c11e17b127"
   },
   {
@@ -209,9 +217,11 @@
     "link": "fumihiro",
     "nextLink": "wataru",
 
-    "aboutCharacter": "",
+    "characterImg": "/pictures/AboutCharacter/fumihiroFull.png",
+    "aboutCharacter": "Serves as Project D's second in command and handler, setting up and organizing battles with other teams, as well as scouting out prospective courses. In many ways he is also a sort of Executive Assistant to Ryosuke Takahashi. He had the same role during his time with the Akagi RedSuns and, presumably, has known Ryosuke for some time. It is not specifically known whether he has a history as a street racer or how he came into contact with Ryosuke and the RedSuns. Fumihiro typically drives the Number 1 van during Project D's events.",
+    "carName": "",
     "aboutCar": "",
-    "carImg": "",
+    "carImg": "noCar",
     "id": "018dc184-5193-72dd-bbdb-0edc09529f8f"
   },
   {
@@ -222,9 +232,11 @@
     "link": "wataru",
     "nextLink": "kazumi",
 
-    "aboutCharacter": "",
-    "aboutCar": "",
-    "carImg": "",
+    "characterImg": "/pictures/AboutCharacter/wataruFull.png",
+    "aboutCharacter": "Wataru is a skilled driver who honed his skills on the treacherous Shomaru Pass. He came to Gunma in hopes of facing new racers to challenge, as well as to watch over his sister Kazumi, who just got a job at a hotel with her aunt. He was first seen appearing at Akagi to spectate the battle between Ryosuke Takahashi and Kyoichi Sudo.",
+    "carName": "Toyota Corolla Levin GT-APEX (AE86)",
+    "aboutCar": "Occasionally known as the Eight-Six Turbo, or the Levin Turbo. Is the second Toyota AE86 introduced in Initial D. It is owned by Wataru Akiyama, a lone racer who later joins his cousin Nobuhiko as part of the Northern Saitama Alliance.",
+    "carImg": "/pictures/AboutCharacter/levin86Full.png",
     "id": "018dc184-5193-796c-84e0-18b1424ed909"
   },
   {
