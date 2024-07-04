@@ -247,9 +247,11 @@
     "link": "kazumi",
     "nextLink": "kyoichi",
 
-    "aboutCharacter": "",
+    "characterImg": "/pictures/aboutCharacter/kazumiFull.png",
+    "aboutCharacter": "Is Wataru Akiyama's younger sister and Itsuki Takeuchi's first love interest (second in the anime, after Saori).",
+    "carName": "",
     "aboutCar": "",
-    "carImg": "",
+    "carImg": "noCar",
     "id": "018dc6a1-456b-7276-9d3d-0538436480c3"
   },
   {
@@ -260,9 +262,11 @@
     "link": "kyoichi",
     "nextLink": "seiji",
 
-    "aboutCharacter": "",
-    "aboutCar": "",
-    "carImg": "",
+    "characterImg": "/pictures/aboutCharacter/sudoFull.png",
+    "aboutCharacter": "Like the rest of the team, he drives a Mitsubishi Lancer Evolution. He has a long time rivalry with Ryosuke Takahashi. He is also a graduate of the Todo School. Unlike other students, however, he doesn't drive a Honda, and doesn't use Spoon parts on his car.",
+    "carName": "Mitsubishi Lancer Evolution III GSR (CE9A)",
+    "aboutCar": "Known as the Lan Evo, or as the Evo III, is the signature vehicle of Emperor leader Kyoichi Sudo. The Evo III is fitted with a 4G63T, a turbocharged engine. For the battle against Takumi on Akagi the car had 310PS, however it was raised to 350PS for his battle with Ryosuke.",
+    "carImg": "/pictures/aboutCharacter/evoIIIFull.png",
     "id": "018dc6a1-456b-777c-8b74-ea482a411369"
   },
   {
@@ -273,9 +277,11 @@
     "link": "seiji",
     "nextLink": "miki",
 
-    "aboutCharacter": "",
-    "aboutCar": "",
-    "carImg": "",
+    "characterImg": "/pictures/aboutCharacter/seijiFull.png",
+    "aboutCharacter": "Is the number two driver in the Lancer Evolution-only Emperor team, driving a Lancer Evolution IV. Seiji is a driver with good racing skills, but he is rather arrogant and occasionally imprudent. He has won many races driving for Emperor against other teams, including Takeshi Nakazato of the NightKids.",
+    "carName": "Mitsubishi Lancer Evolution IV RS (CN9A)",
+    "aboutCar": "Known as the Lan Evo, or as the Evo IV, is the signature vehicle of Emperor member Seiji Iwaki. The Evo IV is fitted with a 4G63T, a turbocharged engine. The engine had 300PS.",
+    "carImg": "/pictures/aboutCharacter/evoIVFull.png",
     "id": "018dc6a1-456b-7f30-9875-8aeebdcb35db"
   },
   {
@@ -286,9 +292,11 @@
     "link": "miki",
     "nextLink": "kai",
 
-    "aboutCharacter": "",
-    "aboutCar": "",
-    "carImg": "",
+    "characterImg": "/pictures/aboutCharacter/mikiFull.png",
+    "aboutCharacter": "Is Natsuki Mogi's ex-boyfriend, and a former member of their high school's soccer club. After his graduation, he moved to Tokyo to attend university, returning to Gunma during the winter. He serves as Takumi Fujiwara's final opponent in the Akina's Eight-Six arc, and as his penultimate opponent in Third Stage.",
+    "carName": "Toyota Celica GT-Four (ST205)",
+    "aboutCar": "Also known as the Celica, is the signature vehicle of Natsuki Mogi's ex-boyfriend Miki. It is equipped with a 3S-GTE, a turbocharged engine. The cars actual output is unknown, but a stock model could produce 255PS.",
+    "carImg": "/pictures/aboutCharacter/celicaFull.png",
     "id": "018dc6a1-456b-7cd1-aae6-c0f9687a767d"
   },
   {
@@ -299,9 +307,11 @@
     "link": "kai",
     "nextLink": "ken",
 
-    "aboutCharacter": "",
-    "aboutCar": "",
-    "carImg": "",
+    "characterImg": "/pictures/aboutCharacter/kogashiwaFull.png",
+    "aboutCharacter": "Is a street racer from Tochigi prefecture, and the son of Ken Kogashiwa. He was a go-kart driver in his youth, later having a brief stint as a street racer (originally on motorcycles, and then later cars) before becoming a professional racer and joining Katagiri. He originally drove his father's Toyota MR2, before getting his own Toyota MR-S when he became a professional.",
+    "carName": "Toyota MR2 G-Limited (SW20)",
+    "aboutCar": "Often known simply as the MR2 or by its chassis code \"SW20\", was the signature vehicle of Kai Kogashiwa when he was a solo racer on Irohazaka. The MR2 is equipped with a 3S-GE, a naturally aspirated engine. The cars actual output is unknown, but a stock model could produce 175PS.",
+    "carImg": "/pictures/aboutCharacter/sw20Full.png",
     "id": "018dc6c9-120d-7d01-8374-02fc37be2188"
   },
   {
@@ -312,9 +322,11 @@
     "link": "ken",
     "nextLink": "atsuro",
 
-    "aboutCharacter": "",
-    "aboutCar": "",
-    "carImg": "",
+    "characterImg": "/pictures/aboutCharacter/kenFull.png",
+    "aboutCharacter": "Is Kai's father and Bunta Fujiwara's lifelong rival. Ken was defeated multiple times by Bunta, and it still seems to be a sore spot for him.",
+    "carName": "Toyota MR2 G-Limited (SW20)",
+    "aboutCar": "Often known simply as the MR2 or by its chassis code \"SW20\", was the signature vehicle of Kai Kogashiwa when he was a solo racer on Irohazaka. The MR2 is equipped with a 3S-GE, a naturally aspirated engine. The cars actual output is unknown, but a stock model could produce 175PS.",
+    "carImg": "/pictures/aboutCharacter/sw20Full.png",
     "id": "018dc6c9-120d-7711-96ed-aec00d67ee87"
   },
   {
@@ -325,9 +337,11 @@
     "link": "atsuro",
     "nextLink": "ichijo",
 
-    "aboutCharacter": "",
-    "aboutCar": "",
-    "carImg": "",
+    "characterImg": "/pictures/aboutCharacter/atsuroFull.png",
+    "aboutCharacter": "Is the hillclimb racer and the leader of the Tochigi-based Seven Star Leaf. He seems to be a decent enough driver, again favouring the grip racing techniques, but his mastery of it is incomparable to that of Takeshi Nakazato. Atsuro races against Keisuke Takahashi during Project D's first expedition in Tochigi.",
+    "carName": "Nissan Skyline 25GT Turbo (ER34)",
+    "aboutCar": "Known as the Skyline GT-T, the GT-T, or the ER34, is the signature vehicle of Seven Star Leaf leader, Atsuro Kawai and the second Nissan Skyline introduced in the series. The ER34 is equipped with a RB25DET, a turbocharged engine. Atsuro's ER34 made 400PS.",
+    "carImg": "/pictures/aboutCharacter/eR34Full.png",
     "id": "018dcb97-3f3e-7258-ad8e-a13414357a76"
   },
   {
@@ -338,9 +352,11 @@
     "link": "ichijo",
     "nextLink": "toshiya",
 
-    "aboutCharacter": "",
-    "aboutCar": "",
-    "carImg": "",
+    "characterImg": "/pictures/aboutCharacter/ichijoFull.png",
+    "aboutCharacter": "Is the downhill racer for the Tsuchisaka Lancer Evolution Team.",
+    "carName": "Mitsubishi Lancer Evolution VI GSR Tommi Mäkinen Edition (CP9A)",
+    "aboutCar": "Known as the Lan Evo, or as the Evo VI, is the signature vehicle of Ichijo, the downhill driver for a Tsuchisaka based Lancer Evolution racing team. The Evo VI is fitted with a 4G63T, a turbocharged engine. The cars actual output is unknown, but a stock model could produce 280PS.",
+    "carImg": "/pictures/aboutCharacter/evoVIFull.png",
     "id": "018dcb97-3f3e-728e-87fe-4956d537b726"
   },
   {
