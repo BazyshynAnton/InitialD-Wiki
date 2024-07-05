@@ -38,7 +38,7 @@ const NavigationBar = () => {
           <Image
             width={500}
             height={500}
-            src="/pictures/videoPreview.png"
+            src="/pictures/userInterface/videoPreview.png"
             alt="logoD"
             loading="eager"
           />

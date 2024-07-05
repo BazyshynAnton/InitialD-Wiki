@@ -367,9 +367,11 @@
     "link": "toshiya",
     "nextLink": "kozo",
 
-    "aboutCharacter": "",
-    "aboutCar": "",
-    "carImg": "",
+    "characterImg": "/pictures/aboutCharacter/joushimaFull.png",
+    "aboutCharacter": "Is one of the top members of the Tsukuba based team Purple Shadow, alongside Kozo Hoshino.",
+    "carName": "Honda S2000 (AP1)",
+    "aboutCar": "Known simply as the S2000 or the S2K, is the signature vehicle of Purple Shadow veteran Toshiya Joshima. The S2000 is fitted with a F20C, a naturally aspirated engine. The car is estimated to have about 250PS.",
+    "carImg": "/pictures/aboutCharacter/s2000Full.png",
     "id": "018dcb97-3f3e-7df0-8f25-866f87f46b36"
   },
   {
@@ -380,9 +382,11 @@
     "link": "kozo",
     "nextLink": "nobuhiko",
 
-    "aboutCharacter": "",
-    "aboutCar": "",
-    "carImg": "",
+    "characterImg": "/pictures/aboutCharacter/hoshinoFull.png",
+    "aboutCharacter": "Is one of the best members of Tsukuba based team Purple Shadow, alongside Toshiya Joshima.",
+    "carName": "Nissan Skyline GT-R V-Spec II Nür (BNR34)",
+    "aboutCar": "Known as the Skyline GT-R, the GTR, or the R34, is the fourth Nissan Skyline GT-R owned by Purple Shadow veteran, Kozo \"God Foot\" Hoshino. It is the third Skyline seen in the series. The R34 is equipped with a RB26DETT. This is a twin-turbocharged engine. The car's actual output is unknown, but a stock model could produce 334PS.",
+    "carImg": "/pictures/aboutCharacter/hoshinoR34Full.png",
     "id": "018dcb97-3f3e-79c7-a2f8-5853cb712f67"
   },
   {
@@ -393,9 +397,11 @@
     "link": "nobuhiko",
     "nextLink": "shuichi",
 
-    "aboutCharacter": "",
-    "aboutCar": "",
-    "carImg": "",
+    "characterImg": "/pictures/aboutCharacter/nobuhikoFull.png",
+    "aboutCharacter": "Is the leader of the Northern Saitama Alliance and Wataru Akiyama's cousin.",
+    "carName": "Toyota Altezza RS200 Z Edition (SXE10)",
+    "aboutCar": "Is the signature car of the Northern Saitama Alliance leader, Nobuhiko Akiyama. The Altezza is equipped with a 3S-GE, a naturally aspirated engine. The cars actual output is unknown, but a stock model could produce 209PS.",
+    "carImg": "/pictures/aboutCharacter/altezzaFull.png",
     "id": "018dcb97-3f3e-7607-a968-317f76a42551"
   },
   {
@@ -406,9 +412,11 @@
     "link": "shuichi",
     "nextLink": "daiki",
 
-    "aboutCharacter": "",
+    "characterImg": "/pictures/aboutCharacter/matsumotoFull.png",
+    "aboutCharacter": "Is a member of Project D's support staff, and the designated mechanic for Takumi Fujiwara and his Toyota AE86. He is also the one who is in charge of modifying and maintaining Ryosuke's FC3S.",
+    "carName": "",
     "aboutCar": "",
-    "carImg": "",
+    "carImg": "noCar",
     "id": "018dcb97-3f3e-705a-9271-6230c4cd45fb"
   },
   {
@@ -419,9 +427,11 @@
     "link": "daiki",
     "nextLink": "smiley",
 
-    "aboutCharacter": "",
-    "aboutCar": "",
-    "carImg": "",
+    "characterImg": "/pictures/aboutCharacter/daikiFull.png",
+    "aboutCharacter": "Is a student of the Todo School, and their downhill representative in their battles with Project D. Driving a yellow Civic Type R (EK9), Daiki races against Takumi of Project D in a downhill battle. He excels in braking, being able to release the brake pedal in the perfect spot during a corner, every time. He is good friends with fellow students Smiley Sakai and Tomoyuki Tachi.",
+    "carName": "Honda Civic Type R (EK9)",
+    "aboutCar": "Also known simply as the Civic, the Type R or the EK9, is the signature car of Todo School student Daiki Ninomiya. It is the second Honda Civic encountered in the series. It is equipped with an B16B engine, a naturally aspirated engine. The cars actual output is unknown, but a stock model could produce 185PS.",
+    "carImg": "/pictures/aboutCharacter/civicEK9Full.png",
     "id": "018dcb97-3f3e-7570-be7e-1c4b1776209f"
   },
   {
@@ -432,9 +442,11 @@
     "link": "smiley",
     "nextLink": "sakamoto",
 
-    "aboutCharacter": "",
-    "aboutCar": "",
-    "carImg": "",
+    "characterImg": "/pictures/aboutCharacter/smileyFull.png",
+    "aboutCharacter": "Is a student of the Todo School and one of Daiki's friends and drives an Integra Type R DC2, equipped with an aftermarket turbocharger. Sakai races against Keisuke Takahashi of Project D in a hillclimb battle. He uses two techniques to race, first, using high speeds to enter a corner to get the other person to do the same, then correcting his speed during the turn. The other trick is to feint brake his opponent, forcing them to back off while he speeds away. His face tenses up when he is racing to make him look like he is smiling, hence his nickname, Smiley Sakai. Judging by the way that Daiki refers to him with the honorific san (Sakai-san), it can be inferred that Smiley is a senior student of the Todo School, and probably the reason why he knows much of Todo's experiences in racing, especially the school's rivalry with Purple Shadow and their top racers.",
+    "carName": "Honda Integra Type R (DC2)",
+    "aboutCar": "Known simply as the Integra or as the Integra Type R, is the signature vehicle of Todo School student Smiley Sakai. The Integra is fitted with a B18C engine, with the addition of a turbocharger. The output of this engine is unknown, but a stock engine (without a turbocharger) makes 200PS.",
+    "carImg": "/pictures/aboutCharacter/integraFull.png",
     "id": "018dcb97-3f3e-7627-94c9-1413d85a7e83"
   },
   {
@@ -445,9 +457,11 @@
     "link": "sakamoto",
     "nextLink": "shinichi",
 
-    "aboutCharacter": "",
-    "aboutCar": "",
-    "carImg": "",
+    "characterImg": "/pictures/aboutCharacter/sakamotoFull.png",
+    "aboutCharacter": "Is a professional rally driver, who was recruited by the Northern Saitama Alliance to race for them in their battles with Project D.",
+    "carName": "Suzuki Cappuccino (EA11R)",
+    "aboutCar": "Is a car purchased by the members of the Northern Saitama Alliance for use by the rally driver Sakamoto. The Cappuccino is equipped with a F6A engine that is fitted with a large diameter turbocharger to make 130PS.",
+    "carImg": "/pictures/aboutCharacter/cappuccinoFull.png",
     "id": "018dcb97-3f3e-7d87-8cff-1feca9e3effd"
   },
   {
@@ -458,9 +472,11 @@
     "link": "shinichi",
     "nextLink": "toru",
 
-    "aboutCharacter": "",
+    "characterImg": "/pictures/aboutCharacter/shinichiFull.png",
+    "aboutCharacter": "Is a member of Seven Star Leaf.",
+    "carName": "",
     "aboutCar": "",
-    "carImg": "",
+    "carImg": "noCar",
     "id": "018dcb97-3f3e-72c8-8a68-11863dc7c082"
   },
   {
@@ -471,9 +487,11 @@
     "link": "toru",
     "nextLink": "tomoyuki",
 
-    "aboutCharacter": "",
-    "aboutCar": "",
-    "carImg": "",
+    "characterImg": "/pictures/aboutCharacter/toruFull.png",
+    "aboutCharacter": "Is the downhill racer of the Momiji Line based team Seven Star Leaf. He is known for his reckless, kamikaze downhill style.",
+    "carName": "Eunos Roadster (NA6CE)",
+    "aboutCar": "Known as the Roadster, is the signature vehicle of Seven Star Leaf member Toru Suetsugu. The Roadster is fitted with a B6-ZE(RS), a naturally aspirated engine. Toru had increased the displacement of the B6 from 1600 to 1800. It had a maximum output of 190PS.",
+    "carImg": "/pictures/aboutCharacter/roadsterFull.png",
     "id": "018dcb97-3f3e-7212-8c95-97631f70a09c"
   },
   {

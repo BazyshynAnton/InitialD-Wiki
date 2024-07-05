@@ -8,6 +8,7 @@ export interface Character {
   id: string
   aboutCharacter: string
   aboutCar: string
+  carName: string
   carImg: string
 }
 
