@@ -18,6 +18,10 @@ const CharacterSwiper = ({ characters }: { characters: Character[] }) => {
   if (typeof window === 'undefined') {
   }
 
+  const sortedCharactersByChapters = characters.sort(
+    (a, b) => parseInt(a.chapter) - parseInt(b.chapter)
+  )
+
   const [slidesNumber, setSlidesNumber] = useState<number>(7)
 
   useEffect(() => {
@@ -78,7 +82,7 @@ const CharacterSwiper = ({ characters }: { characters: Character[] }) => {
               zIndex: '200',
             }}
           >
-            {characters.map((character: Character) => {
+            {sortedCharactersByChapters.map((character: Character) => {
               return (
                 <React.Fragment key={character.id}>
                   <SwiperSlide
@@ -103,12 +107,12 @@ const CharacterSwiper = ({ characters }: { characters: Character[] }) => {
             })}
 
             <CustomNavigation />
-            <CustomPagination characters={characters} />
+            <CustomPagination characters={sortedCharactersByChapters} />
           </Swiper>
         </div>
       ) : (
         <div className={styles.notSlide}>
-          {characters.map((character: Character) => {
+          {sortedCharactersByChapters.map((character: Character) => {
             return (
               <Link
                 key={character.id}
