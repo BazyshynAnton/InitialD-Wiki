@@ -4,7 +4,7 @@ import { useSwiper } from 'swiper/react'
 
 import styles from '@/styles/characterPage/CharacterPage.module.scss'
 
-const CustomNavigation = () => {
+export default function CustomNavigation() {
   const swiper = useSwiper()
 
   return (
@@ -20,5 +20,3 @@ const CustomNavigation = () => {
     </>
   )
 }
-
-export default CustomNavigation

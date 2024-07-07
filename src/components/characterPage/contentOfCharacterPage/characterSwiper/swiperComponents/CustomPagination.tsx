@@ -6,7 +6,11 @@ import { useEffect, useState } from '@/components/shared/reactImports'
 
 import styles from '@/styles/characterPage/CharacterPage.module.scss'
 
-const CustomPagination = ({ characters }: { characters: Character[] }) => {
+export default function CustomPagination({
+  characters,
+}: {
+  characters: Character[]
+}) {
   const swiper = useSwiper()
   const [activeIndex, setActiveIndex] = useState(swiper.activeIndex)
   const buttons = new Array(characters.length).fill(0)
@@ -41,5 +45,3 @@ const CustomPagination = ({ characters }: { characters: Character[] }) => {
     </div>
   )
 }
-
-export default CustomPagination

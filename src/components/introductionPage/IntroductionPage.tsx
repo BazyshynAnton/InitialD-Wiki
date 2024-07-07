@@ -3,7 +3,7 @@ import ReusablePage from '../shared/reusableComponents/reusablePage/ReusablePage
 
 import styles from '@/styles/introductionPage/IntroductionPage.module.scss'
 
-const IntroductionPage = () => {
+export default function IntroductionPage() {
   return (
     <ReusablePage>
       <main className={styles.contentContainer}>
@@ -32,5 +32,3 @@ const IntroductionPage = () => {
     </ReusablePage>
   )
 }
-
-export default IntroductionPage

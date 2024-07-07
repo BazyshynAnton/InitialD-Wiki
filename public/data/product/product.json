@@ -1,0 +1,106 @@
+[
+  {
+    "picture": "../../pictures/initialDProduct/brcVol1.jpg",
+    "title": "頭文字[イニシャル]D　Memorial Blu-ray Collection Vol.1",
+    "releaseDate": "2019.02.01",
+    "price": "¥22,000 (¥20,000 excluding tax)",
+    "productNumber": "EYAX-121",
+    "type": "blue-ray"
+  },
+  {
+    "picture": "../../pictures/initialDProduct/brcVol2.jpg",
+    "title": "頭文字[イニシャル]D　Memorial Blu-ray Collection Vol.2",
+    "releaseDate": "2019.02.01",
+    "price": "¥22,000 (¥20,000 excluding tax)",
+    "productNumber": "EYAX-126",
+    "type": "blue-ray"
+  },
+  {
+    "picture": "../../pictures/initialDProduct/brcVol3.jpg",
+    "title": "頭文字[イニシャル]D　Memorial Blu-ray Collection Vol.3",
+    "releaseDate": "2019.02.01",
+    "price": "¥13,200 (¥12,000 excluding tax)",
+    "productNumber": "EYAX-129",
+    "type": "blue-ray"
+  },
+  {
+    "picture": "../../pictures/initialDProduct/brcd.jpg",
+    "title": "新劇場版 頭文字[イニシャル]D Blu-ray Collection",
+    "releaseDate": "2019.03.01",
+    "price": "¥6,600 (¥6,000 excluding tax)",
+    "productNumber": "EYXA-105",
+    "type": "blue-ray"
+  },
+  {
+    "picture": "../../pictures/initialDProduct/sebVol1.jpg",
+    "title": "SUPER EUROBEAT presents 頭文字[イニシャル]D Dream Collection",
+    "releaseDate": "2019.01.11",
+    "price": "¥3,666 (¥3,333 without tax)",
+    "productNumber": "EYCA-121",
+    "type": "cd"
+  },
+  {
+    "picture": "../../pictures/initialDProduct/sebVol2.jpg",
+    "title": "SUPER EUROBEAT presents 頭文字[イニシャル]D Dream Collection Vol.2",
+    "releaseDate": "2019.11.20",
+    "price": "¥3,000 (¥2,727 excluding tax)",
+    "productNumber": "EYCA-155",
+    "type": "cd"
+  },
+  {
+    "picture": "../../pictures/initialDProduct/sebVol3.jpg",
+    "title": "SUPER EUROBEAT presents 頭文字[イニシャル]D Dream Collection Vol.3",
+    "releaseDate": "2020.01.08",
+    "price": "¥3,000 (¥2,727 excluding tax)",
+    "productNumber": " EYCA-157",
+    "type": "cd"
+  },
+  {
+    "picture": "../../pictures/initialDProduct/sebVol4.jpg",
+    "title": "SUPER EUROBEAT presents 頭文字[イニシャル]D Dream Collection Vol.4",
+    "releaseDate": "2020.09.16",
+    "price": " ¥3,000 (¥2,727 excluding tax)",
+    "productNumber": "EYCA-130",
+    "type": "cd"
+  },
+  {
+    "picture": "../../pictures/initialDProduct/sebVol5.jpg",
+    "title": "SUPER EUROBEAT presents 頭文字[イニシャル]D Dream Collection Vol.5",
+    "releaseDate": "2021.01.08",
+    "price": "¥3,000 (¥2,727 excluding tax)",
+    "productNumber": "EYCA-173",
+    "type": "cd"
+  },
+  {
+    "picture": "../../pictures/initialDProduct/bs3.jpg",
+    "title": "INITIAL[イニシャル] D BATTLE STAGE 3",
+    "releaseDate": "2021.03.05",
+    "price": "¥6,380 (¥5,800 excluding tax)",
+    "productNumber": "EYA-1353",
+    "type": "blue-ray"
+  },
+  {
+    "picture": "../../pictures/initialDProduct/bs31.jpg",
+    "title": "SUPER EUROBEAT presents INITIAL[イニシャル] D BATTLE STAGE 3",
+    "releaseDate": "2021.03.05",
+    "price": "¥3,000 (¥2,727 excluding tax)",
+    "productNumber": "EYCA-132",
+    "type": "blue-ray"
+  },
+  {
+    "picture": "../../pictures/initialDProduct/bs32.jpg",
+    "title": "新劇場版 頭文字[イニシャル]D BATTLE DIGEST",
+    "releaseDate": "2022.01.07",
+    "price": "¥7,000 (¥6,364 excluding tax)",
+    "productNumber": "EXA-1358",
+    "type": "blue-ray"
+  },
+  {
+    "picture": "../../pictures/initialDProduct/sebVol6.jpg",
+    "title": "SUPER EUROBEAT presents 頭文字[イニシャル]D THE BEST OF DREAM COLLECTION",
+    "releaseDate": "2022.01.07",
+    "price": "¥4,000 (¥3,636 excluding tax)",
+    "productNumber": "YCA-1381",
+    "type": "cd"
+  }
+]

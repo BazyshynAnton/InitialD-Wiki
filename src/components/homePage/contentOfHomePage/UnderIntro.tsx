@@ -6,7 +6,7 @@ import { useEffect, useState } from '@/components/shared/reactImports'
 
 import styles from '@/styles/homePage/HomePage.module.scss'
 
-const UnderIntro = () => {
+export default function UnderIntro() {
   // Hydration
   const [isDesktop, setIsDesktop] = useState<boolean | null>()
 
@@ -81,5 +81,3 @@ const UnderIntro = () => {
     </div>
   )
 }
-
-export default UnderIntro

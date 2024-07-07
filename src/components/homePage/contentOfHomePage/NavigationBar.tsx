@@ -2,7 +2,7 @@ import { Image, Link } from '@/components/shared/nextjsImports'
 
 import styles from '@/styles/homePage/HomePage.module.scss'
 
-const NavigationBar = () => {
+export default function NavigationBar() {
   return (
     <div className={styles.navigationBarContainer}>
       <Image
@@ -21,7 +21,7 @@ const NavigationBar = () => {
           <Link href="/character">Character</Link>
         </li>
         <li>
-          <Link href="/">Initial D -Product-</Link>
+          <Link href="/initiald_product">Initial D -Product-</Link>
         </li>
         <li>
           <Link href="/">Goods</Link>
@@ -47,5 +47,3 @@ const NavigationBar = () => {
     </div>
   )
 }
-
-export default NavigationBar

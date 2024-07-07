@@ -13,7 +13,11 @@ import 'swiper/css'
 import 'swiper/css/pagination'
 import styles from '@/styles/characterPage/CharacterPage.module.scss'
 
-const CharacterSwiper = ({ characters }: { characters: Character[] }) => {
+export default function CharacterSwiper({
+  characters,
+}: {
+  characters: Character[]
+}) {
   if (typeof window === 'undefined') {
   }
 
@@ -141,5 +145,3 @@ const CharacterSwiper = ({ characters }: { characters: Character[] }) => {
     </>
   )
 }
-
-export default CharacterSwiper

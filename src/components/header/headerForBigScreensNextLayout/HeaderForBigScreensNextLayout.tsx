@@ -4,7 +4,7 @@ import { usePathname, Image, Link } from '@/components/shared/nextjsImports'
 
 import styles from '@/styles/header/headerForBigScreensNextLayout/HeaderForBigScreensNextLayout.module.scss'
 
-const HeaderForBigScreensNextLayout = () => {
+export default function HeaderForBigScreensNextLayout() {
   const pathname = usePathname()
 
   return (
@@ -38,7 +38,10 @@ const HeaderForBigScreensNextLayout = () => {
             </Link>
           </li>
           <li>
-            <Link className={`${pathname === '/' ? 'active' : ''}`} href="/">
+            <Link
+              className={`${pathname === '/initiald_product' ? 'active' : ''}`}
+              href="/initiald_product"
+            >
               Initial D -Product-
             </Link>
           </li>
@@ -62,5 +65,3 @@ const HeaderForBigScreensNextLayout = () => {
     </header>
   )
 }
-
-export default HeaderForBigScreensNextLayout

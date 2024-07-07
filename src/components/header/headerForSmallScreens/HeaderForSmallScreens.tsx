@@ -6,7 +6,7 @@ import { Link, Image } from '@/components/shared/nextjsImports'
 
 import styles from '@/styles/header/headerForSmallScreens/HeaderForSmallScreens.module.scss'
 
-const HeaderForSmallScreens = () => {
+export default function HeaderForSmallScreens() {
   const [menuOpen, setMenuOpen] = useState<boolean>(false)
 
   const handleClick = (event: React.MouseEvent<HTMLElement>) => {
@@ -38,5 +38,3 @@ const HeaderForSmallScreens = () => {
     </div>
   )
 }
-
-export default HeaderForSmallScreens

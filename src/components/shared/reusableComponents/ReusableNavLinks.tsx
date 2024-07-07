@@ -23,7 +23,10 @@ export default function ReusableLinks() {
         </Link>
       </li>
       <li>
-        <Link className={`${pathname === '/' ? 'active' : ''}`} href="/">
+        <Link
+          className={`${pathname === '/initiald_product' ? 'active' : ''}`}
+          href="/initiald_product"
+        >
           Initial D -Product-
         </Link>
       </li>

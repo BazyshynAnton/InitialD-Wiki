@@ -15,14 +15,18 @@ const TitleText = ({ title, underTitle }: Props) => {
       <span
         className={`${
           currentPath === '/introduction' ? styles.titleIntroduction : ''
-        } ${currentPath === '/character' ? styles.titleCharacter : ''}`}
+        } ${currentPath === '/character' ? styles.titleCharacter : ''} ${
+          currentPath === '/initiald_product' ? styles.titleProduct : ''
+        }`}
       >
         {title}
       </span>
       <span
         className={`${
           currentPath === '/introduction' ? styles.underTitleIntroduction : ''
-        } ${currentPath === '/character' ? styles.underTitleCharacter : ''}`}
+        } ${currentPath === '/character' ? styles.underTitleCharacter : ''} ${
+          currentPath === '/initiald_product' ? styles.underTitleProduct : ''
+        }`}
       >
         {underTitle}
       </span>

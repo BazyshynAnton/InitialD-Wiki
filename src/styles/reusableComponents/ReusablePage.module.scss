@@ -36,6 +36,24 @@
   );
 }
 
+.productBg {
+  @include introBgPicture(
+    fixed,
+    0,
+    0,
+    0,
+    0,
+    auto,
+    100vh,
+    100%,
+    #656565,
+    no-repeat,
+    center,
+    fixed,
+    cover
+  );
+}
+
 .introBgTexture {
   &::before {
     content: '';

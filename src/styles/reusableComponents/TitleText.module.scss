@@ -64,6 +64,36 @@
       800
     );
   }
+
+  .titleProduct {
+    @include title(
+      drop-shadow(0.2rem 0.2rem 0 rgba(230, 230, 230, 0.4)),
+      block,
+      10rem,
+      0.85,
+      left,
+      bottom,
+      skewX(-20deg),
+      900,
+      #444,
+      'Big-Shoulders-Stencil-Display'
+    );
+  }
+
+  .underTitleProduct {
+    @include underTitle(
+      block,
+      absolute,
+      0.1rem,
+      0,
+      #bf0411,
+      1,
+      -0.1em,
+      'Shippori Mincho B1 extrabold',
+      4.1rem,
+      800
+    );
+  }
 }
 
 @media (max-width: 1920px) {

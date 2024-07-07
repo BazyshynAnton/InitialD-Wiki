@@ -8,7 +8,7 @@ interface Props {
   menuOpen: boolean
 }
 
-const HeaderItems = ({ menuOpen }: Props) => {
+export default function HeaderItems({ menuOpen }: Props) {
   return (
     <div
       className={`${
@@ -27,5 +27,3 @@ const HeaderItems = ({ menuOpen }: Props) => {
     </div>
   )
 }
-
-export default HeaderItems

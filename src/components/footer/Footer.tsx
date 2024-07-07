@@ -8,7 +8,7 @@ import characters from '../../../public/data/characters/characters.json'
 
 import styles from '@/styles/footer/Footer.module.scss'
 
-const Footer = () => {
+export default function Footer() {
   const currentPath = usePathname()
 
   const [isHomePage, setIsHomePage] = useState<boolean>()
@@ -70,5 +70,3 @@ const Footer = () => {
     </div>
   )
 }
-
-export default Footer

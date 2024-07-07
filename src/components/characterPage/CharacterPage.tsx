@@ -6,7 +6,11 @@ import { Character } from '@/types/character/characterTypes'
 
 import styles from '@/styles/characterPage/CharacterPage.module.scss'
 
-const CharacterPage = ({ characters }: { characters: Character[] }) => {
+export default function CharacterPage({
+  characters,
+}: {
+  characters: Character[]
+}) {
   return (
     <ReusablePage>
       <main className={styles.mainContainer}>
@@ -18,5 +22,3 @@ const CharacterPage = ({ characters }: { characters: Character[] }) => {
     </ReusablePage>
   )
 }
-
-export default CharacterPage

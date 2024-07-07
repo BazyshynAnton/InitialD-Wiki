@@ -6,7 +6,7 @@ import { Image } from '@/components/shared/nextjsImports'
 
 import styles from '@/styles/homePage/HomePage.module.scss'
 
-const HomePage = () => {
+export default function HomePage() {
   return (
     <main>
       <section className={styles.containerOfIntroduce}>
@@ -37,5 +37,3 @@ const HomePage = () => {
     </main>
   )
 }
-
-export default HomePage
