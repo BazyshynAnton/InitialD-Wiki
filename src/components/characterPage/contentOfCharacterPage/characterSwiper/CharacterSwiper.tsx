@@ -1,18 +1,17 @@
 'use client'
 
-import { Swiper, SwiperSlide, useSwiper } from 'swiper/react'
-import { Mousewheel } from 'swiper/modules'
-import { Character } from '../../../../app/character/page'
-import React, { useEffect, useState } from 'react'
-
-import Image from 'next/image'
 import CustomNavigation from './swiperComponents/CustomNavigation'
 import CustomPagination from './swiperComponents/CustomPagination'
 
+import { Character } from '@/types/character/characterTypes'
+import { Mousewheel } from 'swiper/modules'
+import { Link, Image } from '@/components/shared/nextjsImports'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { React, useEffect, useState } from '@/components/shared/reactImports'
+
 import 'swiper/css'
 import 'swiper/css/pagination'
-import styles from '../../CharacterPage.module.scss'
-import { Link } from '@/components/shared/nextjsImports'
+import styles from '@/styles/characterPage/CharacterPage.module.scss'
 
 const CharacterSwiper = ({ characters }: { characters: Character[] }) => {
   if (typeof window === 'undefined') {

@@ -1,6 +1,6 @@
 import { Image } from '../../nextjsImports'
 
-import styles from './FilmCards.module.scss'
+import styles from '@/styles/reusableComponents/FilmCards.module.scss'
 
 interface Prop {
   img: string

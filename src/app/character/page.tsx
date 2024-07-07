@@ -1,13 +1,7 @@
-import { promises as fs } from 'fs'
 import CharacterPage from '@/components/characterPage/CharacterPage'
 
-export interface Character {
-  name: string
-  img: string
-  link: string
-  chapter: string
-  id: string
-}
+import { promises as fs } from 'fs'
+import { Character } from '@/types/character/characterTypes'
 
 export default async function getCharacter() {
   const data = await fs.readFile(

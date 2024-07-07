@@ -2,9 +2,9 @@ import UnderIntro from './contentOfHomePage/UnderIntro'
 import NavigationBar from './contentOfHomePage/NavigationBar'
 import HeaderForSmallScreens from '../header/headerForSmallScreens/HeaderForSmallScreens'
 
-import { Image } from '../shared/nextjsImports'
+import { Image } from '@/components/shared/nextjsImports'
 
-import styles from './HomePage.module.scss'
+import styles from '@/styles/homePage/HomePage.module.scss'
 
 const HomePage = () => {
   return (

@@ -4,7 +4,7 @@ import HeaderForBigScreensNextLayout from '@/components/header/headerForBigScree
 
 import { usePathname } from '../../nextjsImports'
 
-import styles from './ReusablePage.module.scss'
+import styles from '@/styles/reusableComponents/ReusablePage.module.scss'
 
 interface ContentProps {
   children: React.ReactNode

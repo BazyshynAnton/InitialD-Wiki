@@ -1,12 +1,12 @@
 'use client'
 
-import { Character } from '../../app/character/page'
-import { useEffect, useState } from '../shared/reactImports'
+import { Character } from '@/types/character/characterTypes'
 import { Image, usePathname } from '../shared/nextjsImports'
+import { useEffect, useState } from '../shared/reactImports'
 
 import characters from '../../../public/data/characters/characters.json'
 
-import styles from './Footer.module.scss'
+import styles from '@/styles/footer/Footer.module.scss'
 
 const Footer = () => {
   const currentPath = usePathname()

@@ -1,7 +1,8 @@
 'use client'
 
 import { useSwiper } from 'swiper/react'
-import styles from '../../../CharacterPage.module.scss'
+
+import styles from '@/styles/characterPage/CharacterPage.module.scss'
 
 const CustomNavigation = () => {
   const swiper = useSwiper()

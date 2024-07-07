@@ -1,11 +1,9 @@
 'use client'
 
-import Image from 'next/image'
-import { Character } from '../../../app/character/[characterLink]/page'
-import { usePathname } from 'next/navigation'
+import { Character } from '@/types/character/characterInfo/characterInfoTypes'
+import { Image, usePathname, Link } from '@/components/shared/nextjsImports'
 
-import styles from './CharacterInfoPage.module.scss'
-import Link from 'next/link'
+import styles from '@/styles/characterPage/characterInfoPage/CharacterInfoPage.module.scss'
 
 export default function CharacterInfoPage({
   characters,

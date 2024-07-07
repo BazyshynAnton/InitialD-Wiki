@@ -1,6 +1,6 @@
-import { Image, Link } from '../../shared/nextjsImports'
+import { Image, Link } from '@/components/shared/nextjsImports'
 
-import styles from '../HomePage.module.scss'
+import styles from '@/styles/homePage/HomePage.module.scss'
 
 const NavigationBar = () => {
   return (

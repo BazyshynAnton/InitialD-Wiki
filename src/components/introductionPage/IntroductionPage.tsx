@@ -1,7 +1,7 @@
 import TitleText from '../shared/reusableComponents/titleText/TitleText'
 import ReusablePage from '../shared/reusableComponents/reusablePage/ReusablePage'
 
-import styles from './IntroductionPage.module.scss'
+import styles from '@/styles/introductionPage/IntroductionPage.module.scss'
 
 const IntroductionPage = () => {
   return (

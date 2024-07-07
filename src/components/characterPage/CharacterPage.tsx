@@ -1,8 +1,10 @@
-import ReusablePage from '../shared/reusableComponents/reusablePage/ReusablePage'
 import TitleText from '../shared/reusableComponents/titleText/TitleText'
-import styles from './CharacterPage.module.scss'
+import ReusablePage from '../shared/reusableComponents/reusablePage/ReusablePage'
 import CharacterSwiper from './contentOfCharacterPage/characterSwiper/CharacterSwiper'
-import { Character } from '../../app/character/page'
+
+import { Character } from '@/types/character/characterTypes'
+
+import styles from '@/styles/characterPage/CharacterPage.module.scss'
 
 const CharacterPage = ({ characters }: { characters: Character[] }) => {
   return (

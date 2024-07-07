@@ -1,8 +1,8 @@
 import ReusableLinks from '@/components/shared/reusableComponents/ReusableNavLinks'
 
-import { Image } from '../../../shared/nextjsImports'
+import { Image } from '@/components/shared/nextjsImports'
 
-import styles from '../HeaderForSmallScreens.module.scss'
+import styles from '@/styles/header/headerForSmallScreens/HeaderForSmallScreens.module.scss'
 
 interface Props {
   menuOpen: boolean

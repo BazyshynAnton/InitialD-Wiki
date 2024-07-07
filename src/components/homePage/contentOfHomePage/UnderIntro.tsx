@@ -2,9 +2,9 @@
 
 import FilmCards from '@/components/shared/reusableComponents/filmCards/FilmCards'
 
-import { useEffect, useState } from '../../shared/reactImports'
+import { useEffect, useState } from '@/components/shared/reactImports'
 
-import styles from '../HomePage.module.scss'
+import styles from '@/styles/homePage/HomePage.module.scss'
 
 const UnderIntro = () => {
   // Hydration

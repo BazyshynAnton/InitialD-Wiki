@@ -1,10 +1,10 @@
 'use client'
+
 import { useSwiper } from 'swiper/react'
-import { Character } from '../../../../../app/character/page'
+import { Character } from '@/types/character/characterTypes'
+import { useEffect, useState } from '@/components/shared/reactImports'
 
-import { useEffect, useState } from 'react'
-
-import styles from '../../../CharacterPage.module.scss'
+import styles from '@/styles/characterPage/CharacterPage.module.scss'
 
 const CustomPagination = ({ characters }: { characters: Character[] }) => {
   const swiper = useSwiper()

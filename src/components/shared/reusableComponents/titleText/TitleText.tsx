@@ -1,6 +1,8 @@
 'use client'
+
 import { usePathname } from 'next/navigation'
-import styles from './TitleText.module.scss'
+
+import styles from '@/styles/reusableComponents/TitleText.module.scss'
 
 interface Props {
   title: string
