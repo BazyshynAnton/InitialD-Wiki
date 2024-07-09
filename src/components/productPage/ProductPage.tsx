@@ -4,6 +4,7 @@ import TitleText from '../shared/reusableComponents/titleText/TitleText'
 import { Product } from '@/types/product/initialdProductType'
 
 import styles from '@/styles/productPage/ProductPage.module.scss'
+import AllProducts from './allProducts/AllProducts'
 
 export default function ProductPage({ products }: { products: Product[] }) {
   return (
@@ -16,7 +17,9 @@ export default function ProductPage({ products }: { products: Product[] }) {
           ></TitleText>
         </div>
 
-        <div className={styles.contentContainer}></div>
+        <div className={styles.contentContainer}>
+          <AllProducts products={products} />
+        </div>
       </main>
     </ReusablePage>
   )

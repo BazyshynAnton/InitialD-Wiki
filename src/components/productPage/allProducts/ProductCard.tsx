@@ -5,7 +5,7 @@ import styles from '@/styles/productPage/ProductPage.module.scss'
 
 export default function ProductCard({ product }: { product: Product }) {
   return (
-    <div>
+    <div className={styles.productCardContainer}>
       <Image
         width={500}
         height={500}
@@ -13,15 +13,15 @@ export default function ProductCard({ product }: { product: Product }) {
         alt="product-picture"
         loading="eager"
       />
-      <div>
+      <div className={styles.productTextContainer}>
         <h4>{product.title}</h4>
         <p>{product.releaseDate}</p>
         <p>{product.price}</p>
         <p>{product.productNumber}</p>
       </div>
-      <div>
+      <div className={styles.productCardButton}>
         <p>MORE</p>
-        {/* ANIMATED LINE */}
+        <hr />
       </div>
     </div>
   )
