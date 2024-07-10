@@ -6,10 +6,6 @@
 
 .contentContainer {
   position: relative;
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  gap: 4rem;
 
   max-width: 65.7rem;
   width: 100%;
@@ -23,6 +19,42 @@
   max-width: 1300px;
   padding: 40px 40px 20px 40px;
   margin: 0 auto;
+}
+
+.sortProducts {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+
+  button {
+    cursor: pointer;
+    max-width: 300px;
+    width: 100%;
+    font-family: 'Contrail-One';
+    color: #e6000f;
+    font-size: 2rem;
+    padding: 1rem 5rem 1rem 5rem;
+    background: none;
+    border: none;
+    transition: all 0.2s ease-in-out;
+    border-bottom: 2px solid #ffffff00;
+  }
+
+  button:hover,
+  .activeButton {
+    color: #fff;
+    border-bottom: 2px solid #fff;
+  }
+}
+
+.productsContainer {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 4rem;
 }
 
 // PRODUCT CARD
