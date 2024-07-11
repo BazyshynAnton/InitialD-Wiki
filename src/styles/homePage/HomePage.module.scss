@@ -1,4 +1,5 @@
 @import '../SCSS/headerNavMixins.scss';
+@import '../SCSS/animationsMixin.scss';
 
 .containerOfIntroduce {
   position: relative;
@@ -38,6 +39,13 @@
       }
     }
     z-index: -1;
+
+    animation-name: slide;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(1.3, 0.4, 0.25, 0.65);
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
   }
 }
 
@@ -71,7 +79,18 @@
       transition: all 0.2s ease-in-out;
       cursor: pointer;
 
-      a {
+      .animOne {
+        @include appearanceAnim(-30, 0, 0);
+      }
+      // .animTwo {
+      //   @include appearanceAnim(-30, 0, 0);
+      // } HERE!!!!!!!!!!!!!!!!!
+
+      .animOne,
+      .animTwo,
+      .animThree,
+      .animFour,
+      .animFive {
         color: #bf0411;
         text-decoration: none;
         &:hover {
@@ -460,5 +479,16 @@
     display: flex;
     flex-direction: column;
     gap: 1rem;
+  }
+}
+
+@keyframes slide {
+  0% {
+    opacity: 1;
+    clip-path: polygon(-100% 100%, 100% -100%, 100% -100%, -100% 100%);
+  }
+  100% {
+    opacity: 1;
+    clip-path: polygon(-100% 100%, 100% -100%, 200% 0, 0 200%);
   }
 }

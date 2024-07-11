@@ -110,6 +110,12 @@
     .underTitleCharacter {
       @include adaptive-font(0.875, 4.1, 120);
     }
+    .titleProduct {
+      @include adaptive-font(2, 9, 120);
+    }
+    .underTitleProduct {
+      @include adaptive-font(0.875, 4.1, 120);
+    }
   }
 }
 

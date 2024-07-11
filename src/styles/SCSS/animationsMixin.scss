@@ -1,0 +1,21 @@
+@mixin appearanceAnim($transformInitialX, $transformFinalX, $delay) {
+  animation-name: appearance;
+  animation-duration: 1s;
+  animation-delay: #{$delay}s;
+  animation-fill-mode: forwards;
+
+  @keyframes appearance {
+    0% {
+      opacity: 0;
+      transform: translateX(#{$transformInitialX}px);
+      visibility: hidden;
+    }
+    1% {
+      visibility: visible;
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(#{$transformFinalX}px);
+    }
+  }
+}
