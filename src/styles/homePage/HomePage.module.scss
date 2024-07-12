@@ -63,6 +63,7 @@
 
   .logoD {
     @include logo-D(auto, auto);
+    @include appearanceAnim(-30, 0, 1);
   }
 
   ul {
@@ -70,7 +71,27 @@
     flex-direction: column;
     padding: 40px;
 
-    li {
+    .animOne {
+      @include appearanceAnim(-30, 0, 1.1);
+    }
+    .animTwo {
+      @include appearanceAnim(-30, 0, 1.2);
+    }
+    .animThree {
+      @include appearanceAnim(-30, 0, 1.3);
+    }
+    .animFour {
+      @include appearanceAnim(-30, 0, 1.4);
+    }
+    .animFive {
+      @include appearanceAnim(-30, 0, 1.5);
+    }
+
+    .animOne,
+    .animTwo,
+    .animThree,
+    .animFour,
+    .animFive {
       width: max-content;
       font-size: 2rem;
       text-transform: uppercase;
@@ -79,18 +100,7 @@
       transition: all 0.2s ease-in-out;
       cursor: pointer;
 
-      .animOne {
-        @include appearanceAnim(-30, 0, 0);
-      }
-      // .animTwo {
-      //   @include appearanceAnim(-30, 0, 0);
-      // } HERE!!!!!!!!!!!!!!!!!
-
-      .animOne,
-      .animTwo,
-      .animThree,
-      .animFour,
-      .animFive {
+      a {
         color: #bf0411;
         text-decoration: none;
         &:hover {
@@ -102,6 +112,7 @@
 }
 
 .videoAd {
+  @include appearanceAnim(-30, 0, 1.6);
   margin-top: 21rem;
   position: relative;
   height: 100px;

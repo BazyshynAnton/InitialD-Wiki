@@ -37,7 +37,7 @@ export default function UnderIntro() {
           {isDesktop ? (
             <>
               <div className={styles.watchPlusMovieContainer}>
-                <h2>Watch</h2>
+                <h2 data-aos="fade-right">Watch</h2>
                 <FilmCards img="/pictures/userInterface/fifthStageLogo.jpg" />
               </div>
               <div className={styles.playLinkToMovies}></div>

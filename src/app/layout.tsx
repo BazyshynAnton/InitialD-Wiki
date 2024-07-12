@@ -2,6 +2,7 @@ import Footer from '@/components/footer/Footer'
 
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import { AOSInit } from '@/aos/AOSInit'
 
 import './globals.scss'
 
@@ -24,6 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <AOSInit />
       <body className={inter.className}>
         {children}
         <Footer />
