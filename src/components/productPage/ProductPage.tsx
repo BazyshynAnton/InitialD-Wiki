@@ -6,6 +6,7 @@ import AllProducts from './allProducts/AllProducts'
 import { Product } from '@/types/product/initialdProductType'
 import { useState } from '@/components/shared/reactImports'
 import { initialSortStateType } from '@/types/productPage/productPageTypes'
+import { motion } from '@/components/shared/framerMotionImports'
 
 import styles from '@/styles/productPage/ProductPage.module.scss'
 
@@ -48,7 +49,13 @@ export default function ProductPage({ products }: { products: Product[] }) {
             underTitle={'頭文字D』プロダクト'}
           ></TitleText>
         </div>
-        <div className={styles.contentContainer}>
+        <motion.div
+          className={styles.contentContainer}
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.2, ease: 'easeInOut' }}
+          viewport={{ once: true }}
+        >
           <div className={styles.sortProducts}>
             <button
               className={`${sortState.all && styles.activeButton}`}
@@ -70,7 +77,7 @@ export default function ProductPage({ products }: { products: Product[] }) {
             </button>
           </div>
           <AllProducts products={sortedProducts} />
-        </div>
+        </motion.div>
       </main>
     </ReusablePage>
   )

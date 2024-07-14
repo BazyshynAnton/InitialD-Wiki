@@ -1,6 +1,7 @@
 'use client'
 
 import { useSwiper } from 'swiper/react'
+import { motion } from '@/components/shared/framerMotionImports'
 
 import styles from '@/styles/characterPage/CharacterPage.module.scss'
 

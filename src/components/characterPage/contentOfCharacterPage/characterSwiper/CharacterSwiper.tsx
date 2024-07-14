@@ -8,6 +8,7 @@ import { Mousewheel } from 'swiper/modules'
 import { Link, Image } from '@/components/shared/nextjsImports'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { React, useEffect, useState } from '@/components/shared/reactImports'
+import { motion } from '@/components/shared/framerMotionImports'
 
 import 'swiper/css'
 import 'swiper/css/pagination'
@@ -85,29 +86,45 @@ export default function CharacterSwiper({
               zIndex: '200',
             }}
           >
-            {sortedCharactersByChapters.map((character: Character) => {
-              return (
-                <React.Fragment key={character.id}>
-                  <SwiperSlide
-                    key={`slide-${character.id}`}
-                    className={styles.slide}
-                  >
-                    <Link href={`/character/${character.link}`}>
-                      <div className={styles.characterContainer}>
-                        <Image
-                          width={500}
-                          height={500}
-                          src={character.img}
-                          alt="character"
-                          loading="eager"
-                        />
-                      </div>
-                      <p>{character.name}</p>
-                    </Link>
-                  </SwiperSlide>
-                </React.Fragment>
-              )
-            })}
+            {sortedCharactersByChapters.map(
+              (character: Character, index: number) => {
+                const delay = 0.2 * index
+
+                return (
+                  <React.Fragment key={character.id}>
+                    <SwiperSlide
+                      key={`slide-${character.id}`}
+                      className={styles.slide}
+                    >
+                      <motion.div
+                        style={{ width: 'fit-content', height: 'fit-content' }}
+                        initial={{ opacity: 0, y: 50 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{
+                          duration: 1,
+                          delay: delay,
+                          ease: 'easeInOut',
+                        }}
+                        viewport={{ once: true }}
+                      >
+                        <Link href={`/character/${character.link}`}>
+                          <div className={styles.characterContainer}>
+                            <Image
+                              width={500}
+                              height={500}
+                              src={character.img}
+                              alt="character"
+                              loading="eager"
+                            />
+                          </div>
+                          <p>{character.name}</p>
+                        </Link>
+                      </motion.div>
+                    </SwiperSlide>
+                  </React.Fragment>
+                )
+              }
+            )}
 
             <CustomNavigation />
             <CustomPagination characters={sortedCharactersByChapters} />

@@ -55,8 +55,13 @@
 .characterTextInfo {
   width: 48rem;
   padding-left: 20px;
-
   padding-right: 20px;
+
+  animation-name: left-to-right;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
 
   img {
     width: 100%;
@@ -87,6 +92,12 @@
   left: 0;
   top: 8rem;
   pointer-events: none;
+
+  animation-name: left-to-right;
+  animation-duration: 1s;
+  animation-delay: 0.8s;
+  animation-fill-mode: forwards;
+  opacity: 0;
 }
 
 .characterFigure {
@@ -173,5 +184,19 @@
 
   .characterVisualWrapper {
     display: none;
+  }
+}
+
+@keyframes left-to-right {
+  0% {
+    opacity: 1;
+    transform: translateX(-20px);
+
+    clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
 }

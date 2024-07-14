@@ -30,6 +30,7 @@ export default function CustomPagination({
   return (
     <div className={styles.buttonsContainer}>
       {buttons.map((_, idx: number) => {
+        const delay = 0.1 * idx
         return (
           <div
             className={`${
