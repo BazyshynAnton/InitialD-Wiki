@@ -79,7 +79,7 @@ export default function UnderIntro() {
                   transition={{ duration: 0.5, delay: 0.4, ease: 'easeInOut' }}
                   viewport={{ once: true }}
                 >
-                  <FilmCards img="/pictures/userInterface/firstStageLogo.jpg" />{' '}
+                  <FilmCards img="/pictures/userInterface/firstStageLogo.jpg" />
                 </motion.div>
               </div>
             </>

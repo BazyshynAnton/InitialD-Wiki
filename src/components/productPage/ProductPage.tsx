@@ -9,6 +9,7 @@ import { initialSortStateType } from '@/types/productPage/productPageTypes'
 import { motion } from '@/components/shared/framerMotionImports'
 
 import styles from '@/styles/productPage/ProductPage.module.scss'
+import Footer from '../footer/Footer'
 
 export default function ProductPage({ products }: { products: Product[] }) {
   const initialSortState: initialSortStateType = {
@@ -41,44 +42,47 @@ export default function ProductPage({ products }: { products: Product[] }) {
   }
 
   return (
-    <ReusablePage>
-      <main className={styles.mainContainer}>
-        <div className={styles.textContainer}>
-          <TitleText
-            title={'INITIAL D -PRODUCT-'}
-            underTitle={'頭文字D』プロダクト'}
-          ></TitleText>
-        </div>
-        <motion.div
-          className={styles.contentContainer}
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.2, ease: 'easeInOut' }}
-          viewport={{ once: true }}
-        >
-          <div className={styles.sortProducts}>
-            <button
-              className={`${sortState.all && styles.activeButton}`}
-              onClick={() => handleSortProducts('all')}
-            >
-              All
-            </button>
-            <button
-              className={`${sortState.cd && styles.activeButton}`}
-              onClick={() => handleSortProducts('cd')}
-            >
-              CD
-            </button>
-            <button
-              className={`${sortState.blueRay && styles.activeButton}`}
-              onClick={() => handleSortProducts('blue-ray')}
-            >
-              Blue-Ray
-            </button>
+    <>
+      <ReusablePage>
+        <main className={styles.mainContainer}>
+          <div className={styles.textContainer}>
+            <TitleText
+              title={'INITIAL D -PRODUCT-'}
+              underTitle={'頭文字D』プロダクト'}
+            ></TitleText>
           </div>
-          <AllProducts products={sortedProducts} />
-        </motion.div>
-      </main>
-    </ReusablePage>
+          <motion.div
+            className={styles.contentContainer}
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2, ease: 'easeInOut' }}
+            viewport={{ once: true }}
+          >
+            <div className={styles.sortProducts}>
+              <button
+                className={`${sortState.all && styles.activeButton}`}
+                onClick={() => handleSortProducts('all')}
+              >
+                All
+              </button>
+              <button
+                className={`${sortState.cd && styles.activeButton}`}
+                onClick={() => handleSortProducts('cd')}
+              >
+                CD
+              </button>
+              <button
+                className={`${sortState.blueRay && styles.activeButton}`}
+                onClick={() => handleSortProducts('blue-ray')}
+              >
+                Blue-Ray
+              </button>
+            </div>
+            <AllProducts products={sortedProducts} />
+          </motion.div>
+        </main>
+      </ReusablePage>
+      <Footer />
+    </>
   )
 }

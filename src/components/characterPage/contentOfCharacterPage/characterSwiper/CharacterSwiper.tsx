@@ -3,12 +3,12 @@
 import CustomNavigation from './swiperComponents/CustomNavigation'
 import CustomPagination from './swiperComponents/CustomPagination'
 
+import { motion } from '@/components/shared/framerMotionImports'
 import { Character } from '@/types/character/characterTypes'
 import { Mousewheel } from 'swiper/modules'
 import { Link, Image } from '@/components/shared/nextjsImports'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { React, useEffect, useState } from '@/components/shared/reactImports'
-import { motion } from '@/components/shared/framerMotionImports'
 
 import 'swiper/css'
 import 'swiper/css/pagination'
@@ -19,9 +19,6 @@ export default function CharacterSwiper({
 }: {
   characters: Character[]
 }) {
-  if (typeof window === 'undefined') {
-  }
-
   const sortedCharactersByChapters = characters.sort(
     (a, b) => parseInt(a.chapter) - parseInt(b.chapter)
   )
@@ -52,7 +49,10 @@ export default function CharacterSwiper({
     }
   }, [])
 
-  const [isSwiper, setIsSwiper] = useState<boolean | undefined>()
+  const [isSwiper, setIsSwiper] = useState<boolean | undefined>(
+    window.innerWidth <= 1000
+  )
+
   useEffect(() => {
     const handleResize = () => {
       setIsSwiper(window.innerWidth <= 1000)
@@ -63,7 +63,7 @@ export default function CharacterSwiper({
     return () => {
       window.removeEventListener('resize', handleResize)
     }
-  })
+  }, [])
 
   return (
     <>
@@ -132,31 +132,46 @@ export default function CharacterSwiper({
         </div>
       ) : (
         <div className={styles.notSlide}>
-          {sortedCharactersByChapters.map((character: Character) => {
-            return (
-              <Link
-                key={character.id}
-                href={`/character/${character.link}`}
-                style={{
-                  display: 'block',
-                  width: 'fit-content',
-                  height: 'fit-content',
-                  textAlign: 'center',
-                }}
-              >
-                <div className={styles.characterContainer}>
-                  <Image
-                    width={500}
-                    height={500}
-                    src={character.img}
-                    alt="character"
-                    loading="eager"
-                  />
-                </div>
-                <p>{character.name}</p>
-              </Link>
-            )
-          })}
+          {sortedCharactersByChapters.map(
+            (character: Character, index: number) => {
+              const delay = 0.2 * index
+              return (
+                <motion.div
+                  key={character.id}
+                  style={{ width: 'fit-content', height: 'fit-content' }}
+                  initial={{ opacity: 0, y: 50 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{
+                    duration: 1,
+                    delay: delay,
+                    ease: 'easeInOut',
+                  }}
+                  viewport={{ once: true }}
+                >
+                  <Link
+                    href={`/character/${character.link}`}
+                    style={{
+                      display: 'block',
+                      width: 'fit-content',
+                      height: 'fit-content',
+                      textAlign: 'center',
+                    }}
+                  >
+                    <div className={styles.characterContainer}>
+                      <Image
+                        width={500}
+                        height={500}
+                        src={character.img}
+                        alt="character"
+                        loading="eager"
+                      />
+                    </div>
+                    <p>{character.name}</p>
+                  </Link>
+                </motion.div>
+              )
+            }
+          )}
         </div>
       )}
     </>
