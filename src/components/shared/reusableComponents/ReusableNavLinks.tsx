@@ -1,5 +1,4 @@
-import Link from 'next/link'
-import { usePathname } from 'next/navigation'
+import { Link, usePathname } from '@/components/shared/nextjsImports'
 
 export default function ReusableLinks() {
   const pathname = usePathname()

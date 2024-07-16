@@ -1,6 +1,6 @@
-import { Product } from '@/types/product/initialdProductType'
-
 import ProductCard from './ProductCard'
+
+import { Product } from '@/types/product/initialdProductType'
 
 import styles from '@/styles/productPage/ProductPage.module.scss'
 

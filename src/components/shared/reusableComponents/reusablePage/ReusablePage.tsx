@@ -1,4 +1,5 @@
 'use client'
+
 import HeaderForSmallScreens from '@/components/header/headerForSmallScreens/HeaderForSmallScreens'
 import HeaderForBigScreensNextLayout from '@/components/header/headerForBigScreensNextLayout/HeaderForBigScreensNextLayout'
 

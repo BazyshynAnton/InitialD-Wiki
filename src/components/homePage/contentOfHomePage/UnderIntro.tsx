@@ -2,13 +2,12 @@
 
 import FilmCards from '@/components/shared/reusableComponents/filmCards/FilmCards'
 
-import { useEffect, useState } from '@/components/shared/reactImports'
 import { motion } from '@/components/shared/framerMotionImports'
+import { useEffect, useState } from '@/components/shared/reactImports'
 
 import styles from '@/styles/homePage/HomePage.module.scss'
 
 export default function UnderIntro() {
-  // Hydration
   const [isDesktop, setIsDesktop] = useState<boolean | null>()
 
   useEffect(() => {
@@ -86,13 +85,49 @@ export default function UnderIntro() {
           ) : (
             <>
               <div className={styles.smallScreenTextContainer}>
-                <h2>Watch</h2>
-                <h2>Now</h2>
+                <motion.h2
+                  initial={{ opacity: 0, x: -100 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.5, delay: 0.2, ease: 'easeInOut' }}
+                  viewport={{ once: true }}
+                >
+                  Watch
+                </motion.h2>
+                <motion.h2
+                  initial={{ opacity: 0, x: 100 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.5, delay: 0.2, ease: 'easeInOut' }}
+                  viewport={{ once: true }}
+                >
+                  Now
+                </motion.h2>
               </div>
-              <div className={styles.playLinkToMovies}></div>
+              <motion.div
+                className={styles.playLinkToMovies}
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 0.5, delay: 0.6, ease: 'easeInOut' }}
+                viewport={{ once: true }}
+              ></motion.div>
               <div className={styles.smallScreenMovieContainer}>
-                <FilmCards img="/pictures/userInterface/fifthStageLogo.jpg" />
-                <FilmCards img="/pictures/userInterface/firstStageLogo.jpg" />
+                <motion.div
+                  style={{ width: 'fit-content', height: 'fit-content' }}
+                  initial={{ opacity: 0, x: -100 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.5, delay: 0.3, ease: 'easeInOut' }}
+                  viewport={{ once: true }}
+                >
+                  <FilmCards img="/pictures/userInterface/fifthStageLogo.jpg" />
+                </motion.div>
+                <motion.div
+                  style={{ width: 'fit-content', height: 'fit-content' }}
+                  initial={{ opacity: 0, x: 100 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.5, delay: 0.3, ease: 'easeInOut' }}
+                  viewport={{ once: true }}
+                >
+                  <FilmCards img="/pictures/userInterface/firstStageLogo.jpg" />
+                </motion.div>
               </div>
             </>
           )}

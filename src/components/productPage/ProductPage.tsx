@@ -1,12 +1,13 @@
 'use client'
+
 import ReusablePage from '../shared/reusableComponents/reusablePage/ReusablePage'
 import TitleText from '../shared/reusableComponents/titleText/TitleText'
 import AllProducts from './allProducts/AllProducts'
 
+import { motion } from '@/components/shared/framerMotionImports'
 import { Product } from '@/types/product/initialdProductType'
 import { useState } from '@/components/shared/reactImports'
 import { initialSortStateType } from '@/types/productPage/productPageTypes'
-import { motion } from '@/components/shared/framerMotionImports'
 
 import styles from '@/styles/productPage/ProductPage.module.scss'
 import Footer from '../footer/Footer'

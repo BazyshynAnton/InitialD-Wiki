@@ -5,6 +5,7 @@
   position: relative;
   display: grid;
   grid-template-columns: 25rem 1fr;
+  background-color: #bf0411;
 
   img {
     object-fit: contain;
@@ -38,7 +39,6 @@
         mask-size: 70% auto;
       }
     }
-    z-index: -1;
 
     animation-name: slide;
     animation-duration: 2s;
@@ -115,6 +115,7 @@
   @include appearanceAnim(-30, 0, 1.6);
   margin-top: 21rem;
   position: relative;
+  z-index: 100;
   height: 100px;
   filter: drop-shadow(0.5rem 0.5rem 0 rgba(136, 136, 136, 0.2));
   div {
@@ -283,7 +284,7 @@
     align-items: center;
     justify-content: center;
     h2 {
-      color: #d3000e;
+      color: #000;
     }
   }
 }

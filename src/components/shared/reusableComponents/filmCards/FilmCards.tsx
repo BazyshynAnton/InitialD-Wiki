@@ -1,4 +1,4 @@
-import { Image } from '../../nextjsImports'
+import { Image } from '@/components/shared/nextjsImports'
 
 import styles from '@/styles/reusableComponents/FilmCards.module.scss'
 

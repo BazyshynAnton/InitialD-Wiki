@@ -1,5 +1,3 @@
-'use client'
-
 import { useSwiper } from 'swiper/react'
 import { Character } from '@/types/character/characterTypes'
 import { useEffect, useState } from '@/components/shared/reactImports'
