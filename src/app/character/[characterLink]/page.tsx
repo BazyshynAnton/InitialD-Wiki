@@ -11,12 +11,9 @@ export default async function AboutCharacter() {
       'utf8'
     )
     characters = JSON.parse(data)
-  } catch (error: unknown) {
-    if (error instanceof Error) {
-      console.error('Error reading or parsing JSON:', error.message)
-    } else {
-      console.error('Unexpected error:', error)
-    }
+  } catch (error: any) {
+    console.error('Error reading or parsing JSON:', error.message)
+    console.error('Error reading or parsing JSON:', error)
 
     return <div style={{ color: '#fff' }}>Error</div>
   }
