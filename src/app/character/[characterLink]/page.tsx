@@ -4,19 +4,13 @@ import { promises as fs } from 'fs'
 import { Character } from '@/types/character/characterInfo/characterInfoTypes'
 
 export default async function AboutCharacter() {
-  let characters: Character[]
-  try {
-    const data = await fs.readFile(
-      process.cwd() + '/public/data/characters/characters.json',
-      'utf8'
-    )
-    characters = JSON.parse(data)
-  } catch (error: any) {
-    console.error('Error reading or parsing JSON:', error.message)
-    console.error('Error reading or parsing JSON:', error)
+  const data = await fs.readFile(
+    process.cwd() + '/public/data/characters/characters.json',
+    'utf8'
+  )
+  console.log(data)
 
-    return <div style={{ color: '#fff' }}>Error</div>
-  }
+  const characters: Character[] = JSON.parse(data)
 
   return <CharacterInfoPage characters={characters} />
 }
