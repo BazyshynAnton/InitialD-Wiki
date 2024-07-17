@@ -4,6 +4,7 @@ import { Character } from '@/types/character/characterInfo/characterInfoTypes'
 import { Image, usePathname, Link } from '@/components/shared/nextjsImports'
 
 import styles from '@/styles/characterPage/characterInfoPage/CharacterInfoPage.module.scss'
+import ClientLoader from '@/components/shared/reusableComponents/clientLoader/ClientLoader'
 
 export default function CharacterInfoPage({
   characters,
@@ -19,7 +20,9 @@ export default function CharacterInfoPage({
     currLink
   )
 
-  if (!character) return
+  if (!character) {
+    return <ClientLoader />
+  }
 
   return (
     <div className={styles.characterContainer}>

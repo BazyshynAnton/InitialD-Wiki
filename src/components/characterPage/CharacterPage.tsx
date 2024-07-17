@@ -33,3 +33,6 @@ export default function CharacterPage({
     </>
   )
 }
+
+// CHARACTERS DOESN'T SHOW
+// ROBOTO DOESN'T APPLY
