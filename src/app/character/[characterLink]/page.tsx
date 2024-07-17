@@ -5,7 +5,7 @@ import { Character } from '@/types/character/characterInfo/characterInfoTypes'
 
 export default async function AboutCharacter() {
   const data = await fs.readFile(
-    process.cwd() + '/data/characters/characters.json',
+    process.cwd() + '/data/characters/characters2.json',
     'utf8'
   )
 
