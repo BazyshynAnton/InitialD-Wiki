@@ -5,7 +5,7 @@ import { promises as fs } from 'fs'
 
 export default async function InitialDProduct() {
   const data = await fs.readFile(
-    process.cwd() + '/public/data/product/product.json',
+    process.cwd() + '/data/product/product.json',
     'utf8'
   )
 
