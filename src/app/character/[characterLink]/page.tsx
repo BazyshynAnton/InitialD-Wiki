@@ -11,9 +11,14 @@ export default async function AboutCharacter() {
       'utf8'
     )
     characters = JSON.parse(data)
-  } catch (error) {
-    console.error('Error reading or parsing JSON:', error)
-    return <div>Error loading character data</div>
+  } catch (error: unknown) {
+    if (error instanceof Error) {
+      console.error('Error reading or parsing JSON:', error.message)
+    } else {
+      console.error('Unexpected error:', error)
+    }
+
+    return <div style={{ color: '#fff' }}>Error</div>
   }
 
   return <CharacterInfoPage characters={characters} />
