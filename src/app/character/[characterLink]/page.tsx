@@ -1,15 +1,6 @@
 import CharacterInfoPage from '@/components/characterPage/characterInfoPage/CharacterInfoPage'
+import characters from '../../../../public/data/characters/characters.json'
 
-import { promises as fs } from 'fs'
-import { Character } from '@/types/character/characterInfo/characterInfoTypes'
-
-export default async function AboutCharacter() {
-  const data = await fs.readFile(
-    process.cwd() + '/data/characters/characters2.json',
-    'utf8'
-  )
-
-  const characters: Character[] = JSON.parse(data)
-
+export default function AboutCharacter() {
   return <CharacterInfoPage characters={characters} />
 }

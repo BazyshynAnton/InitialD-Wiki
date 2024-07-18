@@ -1,6 +1,14 @@
 import type { Metadata } from 'next'
 
+import { Roboto } from 'next/font/google'
+
 import './globals.scss'
+
+const roboto = Roboto({
+  weight: ['400'],
+  style: ['normal'],
+  subsets: ['latin'],
+})
 
 export const metadata: Metadata = {
   title: 'Initial D | Wiki',
@@ -19,7 +27,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className={roboto.className}>{children}</body>
     </html>
   )
 }

@@ -4,7 +4,7 @@ import { Character } from '@/types/character/characterTypes'
 import { Image, usePathname } from '../shared/nextjsImports'
 import { useEffect, useState } from '../shared/reactImports'
 
-import characters from '../../../data/characters/characters.json'
+import characters from '../../../public/data/characters/characters.json'
 
 import styles from '@/styles/footer/Footer.module.scss'
 
