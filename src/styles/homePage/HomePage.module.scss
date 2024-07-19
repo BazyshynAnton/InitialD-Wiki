@@ -1,5 +1,6 @@
 @import '../SCSS/headerNavMixins.scss';
 @import '../SCSS/animationsMixin.scss';
+@import '../SCSS/fontMixin.scss';
 
 .containerOfIntroduce {
   position: relative;
@@ -96,7 +97,7 @@
       font-size: 2rem;
       text-transform: uppercase;
       margin-bottom: 20px;
-      font-family: 'Contrail-One';
+      @include ContrailOneFont;
       transition: all 0.2s ease-in-out;
       cursor: pointer;
 
@@ -226,7 +227,7 @@
     align-items: center;
 
     h2 {
-      font-family: 'Big-Shoulders-Stencil-Display';
+      @include BigShouldersFont;
       font-weight: 700;
       font-size: 10rem;
       font-style: italic;

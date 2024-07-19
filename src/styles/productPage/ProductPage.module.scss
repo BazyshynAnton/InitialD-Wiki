@@ -1,3 +1,5 @@
+@import '../SCSS/fontMixin.scss';
+
 .mainContainer {
   width: 100%;
   height: 100%;
@@ -36,7 +38,7 @@
     cursor: pointer;
     max-width: 300px;
     width: 100%;
-    font-family: 'Contrail-One';
+    @include ContrailOneFont;
     color: #e6000f;
     font-size: 2rem;
     padding: 1rem 5rem 1rem 5rem;
@@ -74,12 +76,12 @@
 
   h4 {
     padding: 20px 0px 25px 0px;
-    font-family: 'Shippori Mincho B1 extrabold';
+    @include ShipporiExtraboldFont;
   }
 
   p {
     padding-bottom: 4px;
-    font-family: 'Shippori Mincho B1 regular';
+    @include ShipporiRegularFont;
   }
 
   h4,

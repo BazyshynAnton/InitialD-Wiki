@@ -1,4 +1,5 @@
 @import '../SCSS/fontSizeMixin.scss';
+@import '../SCSS/fontMixin.scss';
 
 .contentContainer {
   position: relative;
@@ -9,7 +10,7 @@
   color: #fff;
 
   p {
-    font-family: 'Shippori Mincho B1 extrabold';
+    @include ShipporiExtraboldFont;
     font-size: 1.5rem;
     max-width: 800px;
     margin-bottom: 1rem;

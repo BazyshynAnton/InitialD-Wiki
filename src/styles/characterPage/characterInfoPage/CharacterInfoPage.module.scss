@@ -1,6 +1,6 @@
 @import '../../SCSS/fontSizeMixin.scss';
-// navigation
 @import '../../SCSS/navArrows.scss';
+@import '../../SCSS/fontMixin.scss';
 
 .characterContainer {
   position: relative;
@@ -81,7 +81,7 @@
 
   h3,
   p {
-    font-family: 'Shippori Mincho B1 extrabold';
+    @include ShipporiExtraboldFont;
     color: #fff;
   }
 }

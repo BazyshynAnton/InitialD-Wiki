@@ -1,5 +1,6 @@
 @import '../../SCSS/headerNavMixins.scss';
 @import '../../SCSS/fontSizeMixin.scss';
+@import '../../SCSS/fontMixin.scss';
 
 .smallScreensContainer {
   display: none;
@@ -46,7 +47,7 @@
         @include adaptive-font(1, 2, 56.25);
         text-transform: uppercase;
         margin-bottom: 20px;
-        font-family: 'Contrail-One';
+        @include ContrailOneFont;
         transition: all 0.2s ease-in-out;
         cursor: pointer;
         &:hover {
