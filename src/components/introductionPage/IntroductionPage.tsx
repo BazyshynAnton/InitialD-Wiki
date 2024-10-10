@@ -1,24 +1,24 @@
-'use client'
+"use client"
 
-import TitleText from '../shared/reusableComponents/titleText/TitleText'
-import ReusablePage from '../shared/reusableComponents/reusablePage/ReusablePage'
-import Footer from '../footer/Footer'
+import TitleText from "../shared/reusableComponents/titleText/TitleText"
+import ReusablePage from "../shared/reusableComponents/reusablePage/ReusablePage"
+import Footer from "../footer/Footer"
 
-import { motion } from '@/components/shared/framerMotionImports'
+import { motion } from "@/components/shared/framerMotionImports"
 
-import styles from '@/styles/introductionPage/IntroductionPage.module.scss'
+import styles from "@/styles/introductionPage/IntroductionPage.module.scss"
 
 export default function IntroductionPage() {
   return (
     <>
       <ReusablePage>
-        <main className={styles.contentContainer}>
-          <TitleText title={'INTRODUCE'} underTitle={'イントロダクション'} />
+        <main className={styles.introduction}>
+          <TitleText title={"INTRODUCE"} underTitle={"イントロダクション"} />
 
           <motion.p
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.2, ease: 'easeInOut' }}
+            transition={{ duration: 0.5, delay: 0.2, ease: "easeInOut" }}
             viewport={{ once: true }}
           >
             Initial D (頭文字イニシャルD, Inisharu Dī) is a Japanese seinen

@@ -1,11 +1,11 @@
-'use client'
+"use client"
 
-import HeaderItems from './contentOfHeaderForSmallScreens/HeaderItems'
+import HeaderContent from "./contentOfHeaderForSmallScreens/HeaderContent"
 
-import { useState } from '@/components/shared/reactImports'
-import { Link, Image } from '@/components/shared/nextjsImports'
+import { useState } from "@/components/shared/reactImports"
+import { Link, Image } from "@/components/shared/nextjsImports"
 
-import styles from '@/styles/header/headerForSmallScreens/HeaderForSmallScreens.module.scss'
+import styles from "@/styles/header/headerForSmallScreens/HeaderForSmallScreens.module.scss"
 
 export default function HeaderForSmallScreens() {
   const [menuOpen, setMenuOpen] = useState<boolean>(false)
@@ -15,7 +15,7 @@ export default function HeaderForSmallScreens() {
   }
 
   return (
-    <div className={styles.smallScreensContainer}>
+    <div className={styles.headerSmall}>
       <Link href="/">
         <Image
           width={500}
@@ -28,14 +28,14 @@ export default function HeaderForSmallScreens() {
       </Link>
 
       <div
-        className={`${styles.icon4} ${menuOpen ? styles.open : ''}`}
+        className={`${styles.icon4} ${menuOpen ? styles.open : ""}`}
         onClick={handleClick}
       >
         <span></span>
         <span></span>
         <span></span>
       </div>
-      <HeaderItems menuOpen={menuOpen} />
+      <HeaderContent menuOpen={menuOpen} />
     </div>
   )
 }

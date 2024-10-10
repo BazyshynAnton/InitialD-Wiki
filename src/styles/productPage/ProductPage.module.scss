@@ -1,12 +1,12 @@
-@import '../SCSS/fontMixin.scss';
+@import "../SCSS/fontMixin.scss";
 
-.mainContainer {
+.product {
   width: 100%;
   height: 100%;
   padding-bottom: 15rem;
 }
 
-.contentContainer {
+.product__content {
   position: relative;
 
   max-width: 65.7rem;
@@ -18,7 +18,7 @@
   z-index: 99;
 }
 
-.textContainer {
+.product__text {
   max-width: 1600px;
   width: 100%;
   padding: 40px 40px 20px 40px;
@@ -26,7 +26,7 @@
   box-sizing: border-box;
 }
 
-.sortProducts {
+.product__content__sort {
   max-width: 100%;
   display: flex;
   justify-content: center;
@@ -55,7 +55,7 @@
   }
 }
 
-.productsContainer {
+.products__all {
   display: grid;
   grid-template-columns: max-content max-content max-content;
   grid-gap: 20px;
@@ -63,7 +63,7 @@
 }
 
 // PRODUCT CARD
-.productCardContainer {
+.productCard {
   width: 300px;
   height: max-content;
   margin-bottom: 2rem;
@@ -90,12 +90,12 @@
     color: white;
   }
 
-  .productTextContainer {
+  .productCard__text {
     width: fit-content;
     height: max-content;
   }
 
-  .productCardButton {
+  .productCard__button {
     position: relative;
     background-color: #bf0411;
     margin-top: 20px;
@@ -128,19 +128,19 @@
 }
 
 @media (max-width: 1040px) {
-  .productsContainer {
+  .products__all {
     grid-template-columns: max-content max-content;
   }
 }
 
 @media (max-width: 740px) {
-  .productsContainer {
+  .products__all {
     grid-template-columns: max-content;
   }
 }
 
 @media (max-width: 480px) {
-  .textContainer {
+  .product__text {
     padding: 20px 20px 20px 20px;
   }
 }

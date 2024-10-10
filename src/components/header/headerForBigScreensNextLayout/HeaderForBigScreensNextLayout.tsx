@@ -1,15 +1,15 @@
-'use client'
+"use client"
 
-import { usePathname, Image, Link } from '@/components/shared/nextjsImports'
+import { usePathname, Image, Link } from "@/components/shared/nextjsImports"
 
-import styles from '@/styles/header/headerForBigScreensNextLayout/HeaderForBigScreensNextLayout.module.scss'
+import styles from "@/styles/header/headerForBigScreensNextLayout/HeaderForBigScreensNextLayout.module.scss"
 
 export default function HeaderForBigScreensNextLayout() {
   const pathname = usePathname()
 
   return (
-    <header className={styles.headerContainer}>
-      <div className={styles.headerItems}>
+    <header className={styles.header}>
+      <div className={styles.header__content}>
         <Link href="/">
           <Image
             width={500}
@@ -23,7 +23,7 @@ export default function HeaderForBigScreensNextLayout() {
         <ul>
           <li>
             <Link
-              className={`${pathname === '/introduction' ? 'active' : ''}`}
+              className={`${pathname === "/introduction" ? "active" : ""}`}
               href="/introduction"
             >
               Introduction
@@ -31,7 +31,7 @@ export default function HeaderForBigScreensNextLayout() {
           </li>
           <li>
             <Link
-              className={`${pathname === '/character' ? 'active' : ''}`}
+              className={`${pathname === "/character" ? "active" : ""}`}
               href="/character"
             >
               Character
@@ -39,7 +39,7 @@ export default function HeaderForBigScreensNextLayout() {
           </li>
           <li>
             <Link
-              className={`${pathname === '/initiald_product' ? 'active' : ''}`}
+              className={`${pathname === "/initiald_product" ? "active" : ""}`}
               href="/initiald_product"
             >
               Initial D -Product-

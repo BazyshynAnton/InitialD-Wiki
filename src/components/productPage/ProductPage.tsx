@@ -1,16 +1,16 @@
-'use client'
+"use client"
 
-import ReusablePage from '../shared/reusableComponents/reusablePage/ReusablePage'
-import TitleText from '../shared/reusableComponents/titleText/TitleText'
-import AllProducts from './allProducts/AllProducts'
-import Footer from '../footer/Footer'
+import ReusablePage from "../shared/reusableComponents/reusablePage/ReusablePage"
+import TitleText from "../shared/reusableComponents/titleText/TitleText"
+import AllProducts from "./allProducts/AllProducts"
+import Footer from "../footer/Footer"
 
-import { motion } from '@/components/shared/framerMotionImports'
-import { Product } from '@/types/product/initialdProductType'
-import { useState } from '@/components/shared/reactImports'
-import { initialSortStateType } from '@/types/productPage/productPageTypes'
+import { motion } from "@/components/shared/framerMotionImports"
+import { Product } from "@/types/product/initialdProductType"
+import { useState } from "@/components/shared/reactImports"
+import { initialSortStateType } from "@/types/productPage/productPageTypes"
 
-import styles from '@/styles/productPage/ProductPage.module.scss'
+import styles from "@/styles/productPage/ProductPage.module.scss"
 
 export default function ProductPage({ products }: { products: Product[] }) {
   const initialSortState: initialSortStateType = {
@@ -26,12 +26,12 @@ export default function ProductPage({ products }: { products: Product[] }) {
 
   const handleSortProducts = (sortBy: string) => {
     let updatedProducts = products
-    if (sortBy === 'cd') {
-      updatedProducts = products.filter((product) => product.type === 'cd')
+    if (sortBy === "cd") {
+      updatedProducts = products.filter((product) => product.type === "cd")
       setSortState({ all: false, cd: true, blueRay: false })
-    } else if (sortBy === 'blue-ray') {
+    } else if (sortBy === "blue-ray") {
       updatedProducts = products.filter(
-        (product) => product.type === 'blue-ray'
+        (product) => product.type === "blue-ray"
       )
       setSortState({ all: false, cd: false, blueRay: true })
     } else {
@@ -45,36 +45,36 @@ export default function ProductPage({ products }: { products: Product[] }) {
   return (
     <>
       <ReusablePage>
-        <main className={styles.mainContainer}>
-          <div className={styles.textContainer}>
+        <main className={styles.product}>
+          <div className={styles.product__text}>
             <TitleText
-              title={'INITIAL D -PRODUCT-'}
-              underTitle={'頭文字D』プロダクト'}
-            ></TitleText>
+              title={"INITIAL D -PRODUCT-"}
+              underTitle={"頭文字D』プロダクト"}
+            />
           </div>
           <motion.div
-            className={styles.contentContainer}
+            className={styles.product__content}
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.2, ease: 'easeInOut' }}
+            transition={{ duration: 0.5, delay: 0.2, ease: "easeInOut" }}
             viewport={{ once: true }}
           >
-            <div className={styles.sortProducts}>
+            <div className={styles.product__content__sort}>
               <button
                 className={`${sortState.all && styles.activeButton}`}
-                onClick={() => handleSortProducts('all')}
+                onClick={() => handleSortProducts("all")}
               >
                 All
               </button>
               <button
                 className={`${sortState.cd && styles.activeButton}`}
-                onClick={() => handleSortProducts('cd')}
+                onClick={() => handleSortProducts("cd")}
               >
                 CD
               </button>
               <button
                 className={`${sortState.blueRay && styles.activeButton}`}
-                onClick={() => handleSortProducts('blue-ray')}
+                onClick={() => handleSortProducts("blue-ray")}
               >
                 Blue-Ray
               </button>

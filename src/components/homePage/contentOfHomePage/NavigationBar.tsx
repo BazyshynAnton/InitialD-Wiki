@@ -1,17 +1,17 @@
-import { Image, Link } from '@/components/shared/nextjsImports'
+import { Image, Link } from "@/components/shared/nextjsImports"
 
-import styles from '@/styles/homePage/HomePage.module.scss'
+import styles from "@/styles/homePage/HomePage.module.scss"
 
 export default function NavigationBar() {
   return (
-    <div className={styles.navigationBarContainer}>
+    <div className={styles.navigation}>
       <Image
         width={500}
         height={500}
         src="/pictures/userInterface/logoD.webp"
         alt="logoD"
         loading="eager"
-        className={styles.logoD}
+        className={styles.navigation__logoD}
       />
       <ul>
         <li className={styles.animOne}>

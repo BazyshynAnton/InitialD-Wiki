@@ -1,13 +1,13 @@
-@import '../../SCSS/headerNavMixins.scss';
-@import '../../SCSS/fontSizeMixin.scss';
-@import '../../SCSS/fontMixin.scss';
+@import "../../SCSS/headerNavMixins.scss";
+@import "../../SCSS/fontSizeMixin.scss";
+@import "../../SCSS/fontMixin.scss";
 
-.smallScreensContainer {
+.headerSmall {
   display: none;
 }
 
 @media (max-width: 900px) {
-  .headerItemsOpen {
+  .headerSmall__content_open {
     animation-name: showMenu;
     animation-fill-mode: forwards;
     animation-duration: 0.2s;
@@ -29,7 +29,7 @@
     gap: 3rem;
     padding: 20px 0px;
 
-    .logoDInItems {
+    .logoDInContent {
       @include logo-D(300px, auto);
       margin-left: 1rem;
     }
@@ -57,11 +57,11 @@
     }
   }
 
-  .headerItemsClose {
+  .headerSmall__content_close {
     display: none;
   }
 
-  .smallScreensContainer {
+  .headerSmall {
     position: relative;
     padding: 20px 0px;
     display: flex;
@@ -157,14 +157,14 @@
 }
 
 @media (max-width: 460px) {
-  .headerItemsOpen {
-    .logoDInItems {
+  .headerSmall__content_open {
+    .logoDInContent {
       width: 250px;
     }
   }
 }
 @media (max-width: 420px) {
-  .smallScreensContainer {
+  .headerSmall {
     .logoD {
       width: 150px;
     }
@@ -172,8 +172,8 @@
 }
 
 @media (max-width: 370px) {
-  .headerItemsOpen {
-    .logoDInItems {
+  .headerSmall__content_open {
+    .logoDInContent {
       width: 150px;
       margin-top: 0.7rem;
       margin-left: 2rem;

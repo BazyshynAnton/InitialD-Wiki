@@ -1,11 +1,11 @@
 // navigation
-@import '../SCSS/navArrows.scss';
+@import "../SCSS/navArrows.scss";
 
-.mainContainer {
+.character {
   position: relative;
 }
 
-.textContainer {
+.character__text {
   max-width: 1300px;
   padding: 40px 40px 20px 40px;
   margin: 0 auto;

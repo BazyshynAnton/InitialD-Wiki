@@ -1,10 +1,10 @@
-@import '../SCSS/footerMixins.scss';
+@import "../SCSS/footerMixins.scss";
 
 .hideFooter {
   display: none;
 }
 
-.footerContainer {
+.footer {
   position: absolute;
   bottom: 0rem;
   width: 100%;
@@ -20,20 +20,20 @@
   }
 }
 
-.footerContent {
+.footer__content {
   padding: 10rem 0rem 1rem 0rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  .footerLogoD {
+  .footer__content__logoD {
     width: 300px;
     height: 100px;
     mask-image: url(/pictures/userInterface/maskForIntroText.png);
     mask-size: 60% auto;
   }
 
-  .televisionLinks {
+  .footer__content__tvLinks {
     margin-top: 4rem;
     display: flex;
     gap: 1rem;
@@ -50,17 +50,17 @@
 }
 
 @media (max-width: 1400px) {
-  .footerContainer {
+  .footer {
     bottom: -3rem;
   }
 }
 
 @media (max-width: 900px) {
-  .footerContainer {
+  .footer {
     bottom: -12rem;
   }
 
-  .televisionLinks {
+  .footer__content__tvLinks {
     margin-top: 4rem;
     display: flex;
     flex-direction: column;
@@ -73,18 +73,18 @@
 }
 
 @media (max-width: 500px) {
-  .footerContainer {
+  .footer {
     bottom: -14rem;
   }
 }
 
 @media (max-width: 420px) {
-  .footerContent {
-    .footerLogoD {
+  .footer__content {
+    .footer__content__logoD {
       width: 200px;
     }
 
-    .televisionLinks {
+    .footer__content__tvLinks {
       img {
         width: 150px;
       }
@@ -98,7 +98,7 @@
 
 // Next layout
 
-.footerContainerNextLayout {
+.footerNextLayout {
   position: absolute;
   bottom: -18rem;
   width: 100%;
@@ -114,20 +114,20 @@
   }
 }
 
-.footerContentNextLayout {
+.footerNextLayout__content {
   padding: 10rem 0rem 1rem 0rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  .footerLogoD {
+  .footer__content__logoD {
     width: 300px;
     height: 100px;
     mask-image: url(/pictures/userInterface/maskForIntroText.png);
     mask-size: 60% auto;
   }
 
-  .televisionLinks {
+  .footer__content__tvLinks {
     margin-top: 4rem;
     display: flex;
     gap: 1rem;
@@ -144,12 +144,12 @@
 }
 
 @media (max-width: 420px) {
-  .footerContentNextLayout {
-    .footerLogoD {
+  .footerNextLayout__content {
+    .footer__content__logoD {
       width: 200px;
     }
 
-    .televisionLinks {
+    .footer__content__tvLinks {
       img {
         width: 150px;
       }

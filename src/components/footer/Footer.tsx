@@ -1,12 +1,12 @@
-'use client'
+"use client"
 
-import { Character } from '@/types/character/characterTypes'
-import { Image, usePathname } from '../shared/nextjsImports'
-import { useEffect, useState } from '../shared/reactImports'
+import { Character } from "@/types/character/characterTypes"
+import { Image, usePathname } from "../shared/nextjsImports"
+import { useEffect, useState } from "../shared/reactImports"
 
-import characters from '../../../public/data/characters/characters.json'
+import characters from "../../../public/data/characters/characters.json"
 
-import styles from '@/styles/footer/Footer.module.scss'
+import styles from "@/styles/footer/Footer.module.scss"
 
 export default function Footer() {
   const currentPath = usePathname()
@@ -15,7 +15,7 @@ export default function Footer() {
   const [isCharacterInfoPage, setIsCharacterInfoPage] = useState<boolean>()
 
   useEffect(() => {
-    setIsHomePage(currentPath === '/')
+    setIsHomePage(currentPath === "/")
     setIsCharacterInfoPage(
       characters.some(
         (character: Character) => currentPath === `/character/${character.link}`
@@ -25,13 +25,13 @@ export default function Footer() {
 
   return (
     <div
-      className={`${
-        isHomePage ? styles.footerContainer : styles.footerContainerNextLayout
-      } ${isCharacterInfoPage && styles.hideFooter}`}
+      className={`${isHomePage ? styles.footer : styles.footerNextLayout} ${
+        isCharacterInfoPage && styles.hideFooter
+      }`}
     >
       <div
         className={`${
-          isHomePage ? styles.footerContent : styles.footerContentNextLayout
+          isHomePage ? styles.footer__content : styles.footerNextLayout__content
         }`}
       >
         <Image
@@ -40,9 +40,9 @@ export default function Footer() {
           src="/pictures/userInterface/logoD.webp"
           alt="logoD"
           loading="eager"
-          className={styles.footerLogoD}
+          className={styles.footer__content__logoD}
         />
-        <div className={styles.televisionLinks}>
+        <div className={styles.footer__content__tvLinks}>
           <Image
             width={500}
             height={500}
