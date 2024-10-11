@@ -1,18 +1,18 @@
-'use client'
+"use client"
 
-import CustomNavigation from './swiperComponents/CustomNavigation'
-import CustomPagination from './swiperComponents/CustomPagination'
+import CustomNavigation from "./swiperComponents/CustomNavigation"
+import CustomPagination from "./swiperComponents/CustomPagination"
 
-import { motion } from '@/components/shared/framerMotionImports'
-import { Character } from '@/types/character/characterTypes'
-import { Mousewheel } from 'swiper/modules'
-import { Link, Image } from '@/components/shared/nextjsImports'
-import { Swiper, SwiperSlide } from 'swiper/react'
-import { React, useEffect, useState } from '@/components/shared/reactImports'
+import { motion } from "@/components/shared/framerMotionImports"
+import { Character } from "@/types/character/characterTypes"
+import { Mousewheel } from "swiper/modules"
+import { Link, Image } from "@/components/shared/nextjsImports"
+import { Swiper, SwiperSlide } from "swiper/react"
+import { React, useEffect, useState } from "@/components/shared/reactImports"
 
-import 'swiper/css'
-import 'swiper/css/pagination'
-import styles from '@/styles/characterPage/CharacterPage.module.scss'
+import "swiper/css"
+import "swiper/css/pagination"
+import styles from "@/styles/characterPage/CharacterPage.module.scss"
 
 export default function CharacterSwiper({
   characters,
@@ -42,10 +42,10 @@ export default function CharacterSwiper({
     }
 
     handleSlidesNumberChange()
-    window.addEventListener('resize', handleSlidesNumberChange)
+    window.addEventListener("resize", handleSlidesNumberChange)
 
     return () => {
-      window.removeEventListener('resize', handleSlidesNumberChange)
+      window.removeEventListener("resize", handleSlidesNumberChange)
     }
   }, [])
 
@@ -58,17 +58,17 @@ export default function CharacterSwiper({
       setIsSwiper(window.innerWidth <= 1000)
     }
 
-    window.addEventListener('resize', handleResize)
+    window.addEventListener("resize", handleResize)
 
     return () => {
-      window.removeEventListener('resize', handleResize)
+      window.removeEventListener("resize", handleResize)
     }
   }, [])
 
   return (
     <>
       {!isSwiper ? (
-        <div style={{ width: '100%', height: '800px' }}>
+        <div style={{ width: "100%", height: "800px" }}>
           <Swiper
             slidesPerView={slidesNumber}
             spaceBetween={30}
@@ -79,11 +79,11 @@ export default function CharacterSwiper({
             }}
             modules={[Mousewheel]}
             style={{
-              overflow: 'visible',
-              overflowX: 'clip',
-              overflowY: 'visible',
-              height: 'auto',
-              zIndex: '200',
+              overflow: "visible",
+              overflowX: "clip",
+              overflowY: "visible",
+              height: "auto",
+              zIndex: "200",
             }}
           >
             {sortedCharactersByChapters.map(
@@ -97,18 +97,18 @@ export default function CharacterSwiper({
                       className={styles.slide}
                     >
                       <motion.div
-                        style={{ width: 'fit-content', height: 'fit-content' }}
+                        style={{ width: "fit-content", height: "fit-content" }}
                         initial={{ opacity: 0, y: 50 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{
                           duration: 1,
                           delay: delay,
-                          ease: 'easeInOut',
+                          ease: "easeInOut",
                         }}
                         viewport={{ once: true }}
                       >
                         <Link href={`/character/${character.link}`}>
-                          <div className={styles.characterContainer}>
+                          <div className={styles.slide__character}>
                             <Image
                               width={500}
                               height={500}
@@ -131,30 +131,30 @@ export default function CharacterSwiper({
           </Swiper>
         </div>
       ) : (
-        <div className={styles.notSlide}>
+        <div className={styles.charactersTable}>
           {sortedCharactersByChapters.map(
             (character: Character, index: number) => {
               const delay = 0.2 * index
               return (
                 <motion.div
                   key={character.id}
-                  style={{ width: 'fit-content', height: 'fit-content' }}
+                  style={{ width: "fit-content", height: "fit-content" }}
                   initial={{ opacity: 0, y: 50 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{
                     duration: 1,
                     delay: delay,
-                    ease: 'easeInOut',
+                    ease: "easeInOut",
                   }}
                   viewport={{ once: true }}
                 >
                   <Link
                     href={`/character/${character.link}`}
                     style={{
-                      display: 'block',
-                      width: 'fit-content',
-                      height: 'fit-content',
-                      textAlign: 'center',
+                      display: "block",
+                      width: "fit-content",
+                      height: "fit-content",
+                      textAlign: "center",
                     }}
                   >
                     <div className={styles.characterContainer}>

@@ -1,11 +1,11 @@
-'use client'
+"use client"
 
-import ClientLoader from '@/components/shared/reusableComponents/clientLoader/ClientLoader'
+import ClientLoader from "@/components/shared/reusableComponents/clientLoader/ClientLoader"
 
-import { Character } from '@/types/character/characterInfo/characterInfoTypes'
-import { Image, usePathname, Link } from '@/components/shared/nextjsImports'
+import { Character } from "@/types/character/characterInfo/characterInfoTypes"
+import { Image, usePathname, Link } from "@/components/shared/nextjsImports"
 
-import styles from '@/styles/characterPage/characterInfoPage/CharacterInfoPage.module.scss'
+import styles from "@/styles/characterPage/characterInfoPage/CharacterInfoPage.module.scss"
 
 export default function CharacterInfoPage({
   characters,
@@ -14,7 +14,7 @@ export default function CharacterInfoPage({
 }) {
   const pathname = usePathname()
 
-  const currLink = pathname.substring(pathname.lastIndexOf('/') + 1)
+  const currLink = pathname.substring(pathname.lastIndexOf("/") + 1)
 
   const character: Character | null = findCharacterByCurrentLink(
     characters,
@@ -26,13 +26,13 @@ export default function CharacterInfoPage({
       {!character ? (
         <ClientLoader />
       ) : (
-        <div className={styles.characterContainer}>
-          <span className={styles.characterBackground}></span>
-          <Link href="/character" className={styles.closeCharacterInfo} />
-          <div className={styles.characterVisualWrapper}>
-            <div className={styles.characterFigure}>
+        <div className={styles.info}>
+          <span className={styles.info__background}></span>
+          <Link href="/character" className={styles.info__closeButton} />
+          <div className={styles.info__visual}>
+            <div className={styles.info__visual__figure}>
               <Image
-                className={styles.characterImg}
+                className={styles.info__visual__figure__img}
                 width={1000}
                 height={1000}
                 src={character.characterImg}
@@ -41,11 +41,11 @@ export default function CharacterInfoPage({
               />
             </div>
           </div>
-          <div className={styles.contentOfCharacter}>
-            <div className={styles.characterTextInfo}>
+          <div className={styles.info__content}>
+            <div className={styles.info__content__text}>
               <h3>{character.name}</h3>
               <p>{character.aboutCharacter}</p>
-              {character.carImg !== 'noCar' && (
+              {character.carImg !== "noCar" && (
                 <Image
                   width={900}
                   height={500}

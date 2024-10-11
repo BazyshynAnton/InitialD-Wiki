@@ -1,8 +1,8 @@
-import { useSwiper } from 'swiper/react'
-import { Character } from '@/types/character/characterTypes'
-import { useEffect, useState } from '@/components/shared/reactImports'
+import { useSwiper } from "swiper/react"
+import { Character } from "@/types/character/characterTypes"
+import { useEffect, useState } from "@/components/shared/reactImports"
 
-import styles from '@/styles/characterPage/CharacterPage.module.scss'
+import styles from "@/styles/characterPage/CharacterPage.module.scss"
 
 export default function CustomPagination({
   characters,
@@ -18,27 +18,26 @@ export default function CustomPagination({
       setActiveIndex(swiper.activeIndex)
     }
 
-    swiper.on('slideChange', handleSlideChange)
+    swiper.on("slideChange", handleSlideChange)
 
     return () => {
-      swiper.off('slideChange', handleSlideChange)
+      swiper.off("slideChange", handleSlideChange)
     }
   }, [swiper])
 
   return (
-    <div className={styles.buttonsContainer}>
+    <div className={styles.buttons}>
       {buttons.map((_, idx: number) => {
-        const delay = 0.1 * idx
         return (
           <div
             className={`${
-              activeIndex === idx ? styles.activeIdx : styles.navBtn
+              activeIndex === idx ? styles.buttons_active : styles.buttons_nav
             }`}
             key={idx}
             onClick={() => {
               swiper.slideTo(idx)
             }}
-          ></div>
+          />
         )
       })}
     </div>
